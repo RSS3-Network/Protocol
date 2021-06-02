@@ -13,7 +13,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/NaturalSelectionLabs/RSS3">
-    <img src="images/logo.svg" alt="Logo" width="900" height="120">
+    <img src="images/Logo.svg" alt="Logo" width="900" height="120">
   </a>
 
   <h3 align="center">RSS3</h3>
