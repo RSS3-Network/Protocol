@@ -25,9 +25,12 @@ RSS3 is an open protocol designed for content and social networks in the Web 3.0
 [![Telegram][telegram-shield]][telegram-url]
 [![Discord][discord-shield]][discord-url]
 
-## Released Versions
+## Latest draft
 
 - [v0.1.1](https://github.com/NaturalSelectionLabs/RSS3/blob/master/versions/v0.1.1.md)
+
+## Historical drafts
+
 - [v0.1.0](https://github.com/NaturalSelectionLabs/RSS3/blob/master/versions/v0.1.0.md)
 - [v0.1.0-alpha.0](https://github.com/NaturalSelectionLabs/RSS3/blob/master/versions/v0.1.0-alpha.0.md)
 
