@@ -1,16 +1,3 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-<br />
-[![Twitter][twitter-shield]][twitter-url]
-[![Telegram][telegram-shield]][telegram-url]
-[![Discord][discord-shield]][discord-url]
-
-
-
-<br />
-<br />
 <p align="center">
   <a href="https://github.com/NaturalSelectionLabs/RSS3">
     <img src="images/Logo.svg" alt="Logo" width="900" height="120">
@@ -33,6 +20,10 @@ RSS3 is an open protocol designed for content and social networks in the Web 3.0
     
   </p>
 </p>
+
+[![Twitter][twitter-shield]][twitter-url]
+[![Telegram][telegram-shield]][telegram-url]
+[![Discord][discord-shield]][discord-url]
 
 ## Released Versions
 
@@ -63,17 +54,9 @@ Project Link: [https://github.com/NaturalSelectionLabs/RSS3](https://github.com/
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/NaturalSelectionLabs/RSS3.svg?style=for-the-badge
-[contributors-url]: https://github.com/NaturalSelectionLabs/RSS3/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/NaturalSelectionLabs/RSS3.svg?style=for-the-badge
-[forks-url]: https://github.com/NaturalSelectionLabs/RSS3/network/members
-[stars-shield]: https://img.shields.io/github/stars/NaturalSelectionLabs/RSS3.svg?style=for-the-badge
-[stars-url]: https://github.com/NaturalSelectionLabs/RSS3/stargazers
-[issues-shield]: https://img.shields.io/github/issues/NaturalSelectionLabs/RSS3.svg?style=for-the-badge
-[issues-url]: https://github.com/NaturalSelectionLabs/RSS3/issues
-[twitter-shield]: https://img.shields.io/twitter/follow/RSS3_?style=for-the-badge
+[twitter-shield]: https://img.shields.io/twitter/follow/RSS3_?style=flat-square&logo=twitter
 [twitter-url]: https://twitter.com/rss3_
-[telegram-shield]: https://img.shields.io/badge/Telegram-Channel-blue?style=for-the-badge&logo=telegram
+[telegram-shield]: https://img.shields.io/badge/Telegram-Channel-blue?style=flat-square&logo=telegram
 [telegram-url]: https://t.me/joinchat/jhhncmdayvNlMDgx
-[discord-shield]: https://img.shields.io/badge/Discord-Server-blueviolet?style=for-the-badge&logo=discord
+[discord-shield]: https://img.shields.io/badge/Discord-Server-blueviolet?style=flat-square&logo=discord
 [discord-url]: https://bit.ly/3aSYvPA
