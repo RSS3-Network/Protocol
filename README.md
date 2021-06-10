@@ -40,7 +40,7 @@ See this [blog](https://blog.rss3.io/stage-one-roadmap) for a list of proposed f
 
 ## Contributing
 
-RSS3 is a community-based project, built with an open ecosystem and creative developers, and we thank every one for their participation.
+RSS3 is a community-based project, built with an open ecosystem and creative developers, and we thank every one for the participation.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
