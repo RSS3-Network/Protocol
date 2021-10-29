@@ -1,61 +1,133 @@
 <p align="center">
-  <a href="https://github.com/NaturalSelectionLabs/RSS3">
-    <img src="images/Logo.svg" alt="Logo" width="900" height="120">
-  </a>
-
-  <h3 align="center">RSS3</h3>
-
   <p align="center">
-    Derived from the best out of RSS,<br>
-RSS3 is an open protocol designed for content and social networks in the Web 3.0 era.
-    <br />
-    <a href="https://github.com/NaturalSelectionLabs/RSS3/tree/main/versions"><strong>Explore versions »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/NaturalSelectionLabs/RSS3/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/NaturalSelectionLabs/RSS3/issues">Request Feature</a>
-    ·
-    <a href="https://github.com/NaturalSelectionLabs/RSS3/discussions">Discussions</a>
-    
+    <img src="https://rss3.mypinata.cloud/ipfs/QmUG6H3Z7D5P511shn7sB4CPmpjH5uZWu4m5mWX7U3Gqbu" alt="RSS3" width="300">
   </p>
 </p>
 
-[![Twitter][twitter-shield]][twitter-url]
-[![Telegram][telegram-shield]][telegram-url]
-[![Discord][discord-shield]][discord-url]
+> Derived from the best out of RSS, RSS3 is an open protocol designed for content and social networks in the Web 3.0 era.
 
 ## Latest draft
 
 - [v0.1.1](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.1.md)
+
+```typescript
+type RSS3ID = string;
+type RSS3ItemID = string;
+type RSS3ItemsID = string;
+type RSS3ListID = string;
+type ThirdPartyAddress = string[];
+
+// Common attributes for each files
+interface RSS3Base {
+    id: RSS3ID | RSS3ItemsID | RSS3ListID;
+    "@version": 'rss3.io/version/v0.1.1';
+    date_created: string;
+    date_updated: string;
+}
+
+// Entrance, RSS3 file
+interface RSS3 extends RSS3Base {
+    id: RSS3ID;
+    signature?: string;
+
+    profile: {
+        name?: string;
+        avatar?: ThirdPartyAddress;
+        bio?: string;
+        tags?: string[];
+        signature?: string;
+    };
+
+    items: RSS3Item[];
+    items_next?: RSS3ItemsID;
+
+    links?: {
+        type: string;
+        tags?: string[];
+        list: RSS3ID[];
+        signature?: string;
+    }[];
+    "@backlinks"?: {
+        type: string;
+        list: RSS3ListID;
+    }[];
+
+    assets?: {
+        type: string;
+        tags?: string[];
+        content: string;
+    }[];
+}
+
+// RSS3Items file
+interface RSS3Items extends RSS3Base {
+    id: RSS3ItemsID;
+    signature?: string;
+
+    items: RSS3Item[];
+    items_next?: RSS3ItemsID;
+}
+
+// RSS3List file
+interface RSS3List extends RSS3Base {
+    id: RSS3ListID;
+
+    list?: RSS3ID[] | RSS3ItemID[];
+    list_next?: RSS3ListID;
+}
+
+interface RSS3Item {
+    id: RSS3ItemID;
+    authors?: RSS3ID[];
+    title?: string;
+    summary?: string;
+    tags?: string[];
+    date_published?: string;
+    date_modified?: string;
+
+    type?: string;
+    upstream?: RSS3ItemID;
+
+    contents?: {
+        address: ThirdPartyAddress;
+        mime_type: string;
+        name?: string;
+        tags?: string[];
+        size_in_bytes?: string;
+        duration_in_seconds?: string;
+    }[];
+
+    "@contexts"?: {
+        type?: string;
+        list?: RSS3ListID;
+    }[];
+
+    signature?: string;
+}
+```
 
 ## Historical drafts
 
 - [v0.1.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.0.md)
 - [v0.1.0-alpha.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.1.0-alpha.0.md)
 
-## Roadmap
-
-See this [blog](https://blog.rss3.io/stage-one-roadmap) for a list of proposed features (and known issues).
-
 ## Contributing
 
 RSS3 is a community-based project, built with an open ecosystem and creative developers, and we thank every one for the participation.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Report irrationality or request feature in [issues](https://github.com/NaturalSelectionLabs/RSS3/issues)
+- Discussion in [discussions](https://github.com/NaturalSelectionLabs/RSS3/discussions)
+- Submit your [pull request](https://github.com/NaturalSelectionLabs/RSS3/pulls)
 
 ## Contact
+
+[![Twitter][twitter-shield]][twitter-url]
+[![Telegram][telegram-shield]][telegram-url]
+[![Discord][discord-shield]][discord-url]
 
 RSS3 - [@rss3_](https://twitter.com/rss3_) - contact@rss3.io
 
 Project Link: [https://github.com/NaturalSelectionLabs/RSS3](https://github.com/NaturalSelectionLabs/RSS3)
-
-
-
 
 [twitter-shield]: https://img.shields.io/twitter/follow/RSS3_?style=flat-square&logo=twitter
 [twitter-url]: https://twitter.com/rss3_
