@@ -4,7 +4,7 @@
   </p>
 </p>
 
-> Derived from the best out of RSS, RSS3 is an open protocol designed for content and social networks in the Web 3.0 era.
+> Derived from the best out of RSS, RSS3 is an open protocol designed for all our cyber existence in the era of Web 3.0.
 
 ## Latest draft
 
