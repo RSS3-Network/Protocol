@@ -8,7 +8,7 @@
 
 ## Latest draft
 
-[CHANGELOG](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG)
+[Changelog](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG.md)
 
 🎉 [v0.3.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.0.md)
 
