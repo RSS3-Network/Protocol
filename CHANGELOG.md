@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.1
+
+### Breaking Changes
+
+- Merge: `account.platform` `account.identity` -> `account.id`, `asset.platform` `asset.identity` `asset.id` `asset.type` -> `RSS3Asset`, 
+
+- Rename: `link.type` -> `link.id`, `backlink.type` -> `backlink.id`
+
+- Segmentation: `items` —> `items.list_custom` `items.list_auto`, `assets` —> `assets.list_custom` `assets.list_auto`, 
+
+### What's new
+
+- A new type of items `RSS3AutoItem` evolved from `RSS3NodeItem`
+
 ## v0.3.0
 
 ### Breaking Changes
