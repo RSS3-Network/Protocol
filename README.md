@@ -6,6 +6,8 @@
 
 > Derived from the best out of RSS, RSS3 is an open protocol designed for all our cyber existence in the era of Web 3.0.
 
+🎇 RSS3 Protocol v0.4.0 is in hot [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/24)
+
 ## Latest draft
 
 [Changelog](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG.md)
