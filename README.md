@@ -1,18 +1,37 @@
 <p align="center">
-  <p align="center">
-    <img src="https://rss3.mypinata.cloud/ipfs/QmUG6H3Z7D5P511shn7sB4CPmpjH5uZWu4m5mWX7U3Gqbu" alt="RSS3" width="300">
-  </p>
+    <p align="center">
+        <img src="https://graphics.rss3.workers.dev/" alt="RSS3" width="100">
+    </p>
+    <p align="center">
+        <img src="https://rss3.mypinata.cloud/ipfs/QmUG6H3Z7D5P511shn7sB4CPmpjH5uZWu4m5mWX7U3Gqbu" alt="RSS3" width="150">
+    </p>
 </p>
 
-> Derived from the best out of RSS, RSS3 is an open protocol designed for all our cyber existence in the era of Web 3.0.
+> RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.
 
-🎇 RSS3 Protocol v0.4.0 is in hot [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/24)
+![Version](https://shields.io/badge/Version-v0.3.1-0072ff?style=flat-square) ![RSS3](https://ipfs.rss3.page/ipfs/QmePwn2TTaaZ6ezYFQB4XfohULEFxcqBvLmm3N3tLZMvRG)
+
+We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
+
+We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development.
 
 ## Latest draft
 
-[Changelog](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG.md)
+**🎇 RSS3 Protocol v0.4.0 is in hot [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/24)**
 
-🎉 [v0.3.1](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+Current version: **v0.3.1**
+
+RSS3 exists in the form of files on the user side. There are two types of RSS3 files - RSS3Index and RSS3List, and each persona-generated file is signed by the persona.
+
+The index file is the entry file named after persona's ethereum address that defines:
+
+- `items`: The activities of a persona which will be constructed into a feed. Custom items are the content posted by the persona natively on RSS3, while auto items are activities from different networks (e.g. transferring an NFT)
+- `profile`: The persona's name, avatar, bio and verified accounts
+- `assets`: Assets are the digital assets owned by the persona collected by nodes, such as NFTs. Self-declared custom assets are supported.
+- `links`: Links are relationships toward other objects
+
+<details>
+<summary><strong>Quick Look Interfaces in TypeScript</strong></summary>
 
 ```tsx
 // File ids
@@ -84,13 +103,13 @@ interface RSS3Index extends RSS3SignedBase {
     }[];
 
     items?: {
-        list_custom?: RSS3CustomItemsListID;
-        list_auto?: RSS3AutoItemsListID;
+        list_custom?: RSS3CustomItemsListID; // Items automatically indexed by nodes
+        list_auto?: RSS3AutoItemsListID; // Items posted by personas themselves
     };
 
     assets?: {
-        list_custom?: RSS3CustomAssetsListID;
-        list_auto?: RSS3AutoAssetsListID;
+        list_custom?: RSS3CustomAssetsListID; // Assets automatically indexed by nodes
+        list_auto?: RSS3AutoAssetsListID; // Assets posted by personas themselves
     };
 }
 
@@ -172,8 +191,13 @@ interface RSS3AutoItem extends RSS3ItemBase {
     };
 }
 ```
+</details>
+
+🎉 [View full details](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
 
 ## Historical drafts
+
+[Changelog](https://github.com/NaturalSelectionLabs/RSS3/blob/main/CHANGELOG.md)
 
 - [v0.3.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.0.md)
 - [v0.2.0](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.2.0.md)
@@ -191,17 +215,6 @@ RSS3 is a community-based project, built with an open ecosystem and creative dev
 
 ## Contact
 
-[![Twitter][twitter-shield]][twitter-url]
-[![Telegram][telegram-shield]][telegram-url]
-[![Discord][discord-shield]][discord-url]
+![Twitter Follow](https://img.shields.io/twitter/follow/rss3_?style=social) ![Discord](https://img.shields.io/discord/837332113677090876?label=Discord&logo=discord&style=social)
 
-RSS3 - [@rss3_](https://twitter.com/rss3_) - contact@rss3.io
-
-Project Link: [https://github.com/NaturalSelectionLabs/RSS3](https://github.com/NaturalSelectionLabs/RSS3)
-
-[twitter-shield]: https://img.shields.io/twitter/follow/RSS3_?style=flat-square&logo=twitter
-[twitter-url]: https://twitter.com/rss3_
-[telegram-shield]: https://img.shields.io/badge/Telegram-Channel-blue?style=flat-square&logo=telegram
-[telegram-url]: https://t.me/joinchat/jhhncmdayvNlMDgx
-[discord-shield]: https://img.shields.io/badge/Discord-Server-blueviolet?style=flat-square&logo=discord
-[discord-url]: https://bit.ly/3aSYvPA
+contact@rss3.io
