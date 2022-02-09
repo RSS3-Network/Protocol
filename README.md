@@ -9,11 +9,11 @@
 
 > RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.
 
-![Version](https://shields.io/badge/Version-v0.3.1-0072ff?style=flat-square) ![RSS3](https://ipfs.rss3.page/ipfs/QmePwn2TTaaZ6ezYFQB4XfohULEFxcqBvLmm3N3tLZMvRG)
+![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)
 
 We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
 
-We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development.
+We all agree that information should be more freely distributed in the Web3 era, and to facilitate this we need a common format that we can all use to syndicate information, reducing the cost of use and development. So we created a new protocol RSS3, RSS stands for a tribute to the history and 3 stands for Web3.
 
 ## Latest draft
 
