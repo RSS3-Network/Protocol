@@ -9,7 +9,7 @@
 
 > RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.
 
-[![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
+[![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.4.0)
 
 We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
 
@@ -19,7 +19,7 @@ We all agree that information should be more freely distributed in the Web3 era,
 
 **🎇 RSS3 Protocol v0.4.0 is in hot [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/24)**
 
-Current version: **v0.3.1**
+Current stable version: **v0.3.1**
 
 RSS3 exists in the form of files on the user side. There are two types of RSS3 files - RSS3Index and RSS3List, and each persona-generated file is signed by the persona.
 
