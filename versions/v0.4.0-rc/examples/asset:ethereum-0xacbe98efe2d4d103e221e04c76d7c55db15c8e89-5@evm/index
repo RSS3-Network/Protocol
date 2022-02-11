@@ -1,0 +1,26 @@
+{
+    "version": "v0.4.0",
+    "identifier": "rss3://asset:ethereum-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89-5@evm",
+    "date_created": "2021-08-17T14:36:00.676Z",
+    "date_updated": "2022-02-10T22:50:53.132Z",
+
+    "auto": true,
+
+    "profile": {
+        "name": "RSS Fruit Token #5",
+        "avatar": [
+            "ipfs://Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd"
+        ],
+        "bio": "RSS Fruits Token (RTF) are demon fruits for those who contribute significantly to the open protocol of RSS3"
+    },
+
+    "links": {
+        "identifier_back": "rss3://asset:ethereum-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89-5@evm/list/backlinks"
+    },
+
+    "items": {
+        "notes": {
+            "identifier": "rss3://asset:ethereum-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89-5@evm/list/notes"
+        }
+    }
+}
