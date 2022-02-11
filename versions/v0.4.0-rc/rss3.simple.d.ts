@@ -2,8 +2,8 @@
 type AccountPlatform = 'evm' | 'solana' | 'flow' | 'twitter' | 'misskey' | 'jike' | 'playstation' | 'github';
 type ItemPlatform = AccountPlatform | 'rss3';
 type LinkType = 'following' | 'comment' | 'like' | 'collection' | 'forward';
-type AutoAssetType = 'evm_gitcoin_donation' | 'evm_xdai_poap' | 'evm_bsc_nft' | 'evm_ethereum_nft' | 'evm_polygon_nft';
-type AutoNoteType = AutoAssetType | 'evm_mirror_entry' | 'twitter_tweet' | 'misskey_note' | 'jike_node';
+type AutoAssetType = 'gitcoin_donation' | 'xdai_poap' | 'bsc_nft' | 'ethereum_nft' | 'polygon_nft';
+type AutoNoteType = AutoAssetType | 'mirror_entry' | 'twitter_tweet' | 'misskey_note' | 'jike_node';
 type ItemAttachmentName = 'thumbnail' | 'main';
 
 // Authority
@@ -99,19 +99,20 @@ type Item = {
     };
 
     tags?: string[];
-    authors?: InstanceURI[];
+    authors: InstanceURI[];
     title?: string;
     summary?: string;
     attachments?: {
+        name?: ItemAttachmentName;
         content?: string; // Actual content, mutually exclusive with address
         address?: URIs; // URIs of same resource pointing to third parties, mutually exclusive with content
         mime_type: string; // [MIME type](https://en.wikipedia.org/wiki/Media_type)
-        name?: ItemAttachmentName;
         size_in_bytes?: number;
     }[];
 
     metadata?: {
         proof: string; // transaction, url, etc.
+        platform: ItemPlatform;
         type: AutoAssetType | AutoNoteType | 'custom';
         from?: string;
         to?: string;

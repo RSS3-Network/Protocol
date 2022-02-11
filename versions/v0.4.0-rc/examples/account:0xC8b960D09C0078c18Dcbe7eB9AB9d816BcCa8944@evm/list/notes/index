@@ -1,0 +1,118 @@
+{
+    "version": "v0.4.0",
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/list/notes/0",
+    "date_created": "2021-08-17T14:36:00.676Z",
+    "date_updated": "2022-02-10T22:50:53.132Z",
+
+    "auto": true,
+
+    "list": [
+        {
+            "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/C97402DD-87BB-4054-ADD0-39F2C3CC8B0F",
+            "date_created": "2021-08-18T14:36:00.676Z",
+            "date_updated": "2022-02-10T22:50:53.132Z",
+
+            "auto": true,
+
+            "links": {
+                "identifier_back": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/C97402DD-87BB-4054-ADD0-39F2C3CC8B0F/list/backlinks"
+            },
+
+            "authors": [
+                "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm"
+            ],
+            "title": "RSS Fruit Token #5",
+            "summary": "RSS Fruits Token (RTF) are demon fruits for those who contribute significantly to the open protocol of RSS3",
+            "attachments": [
+                {
+                    "name": "thumbnail",
+                    "address": [
+                        "https://infura-ipfs.io/ipfs/Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd"
+                    ],
+                    "mime_type": "image/jpg",
+                    "size_in_bytes": 1024
+                },
+                {
+                    "name": "main",
+                    "address": [
+                        "ipfs://Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd"
+                    ],
+                    "mime_type": "image/jpg",
+                    "size_in_bytes": 1024
+                }
+            ],
+
+            "metadata": {
+                "proof": "0xb8adc7580145efeca0a77dfd9453c09f9e1fdb78a77ea51a8c8f8a791ee59bde",
+                "platform": "evm",
+                "type": "ethereum_nft",
+                "from": "0x0000000000000000000000000000000000000000",
+                "to": "0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944",
+                "id": "ethereum-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89-5"
+            }
+        },
+        {
+            "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/1B599C2B-4153-4DFC-8909-25AE1D51E801",
+            "date_created": "2021-08-18T14:36:00.676Z",
+            "date_updated": "2022-02-10T22:50:53.132Z",
+
+            "auto": true,
+            "identifier_instance": "rss3://note:tweet-1483523439721910273@twitter",
+
+            "links": {
+                "identifier_back": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/1B599C2B-4153-4DFC-8909-25AE1D51E801/list/backlinks"
+            },
+
+            "authors": [
+                "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm"
+            ],
+            "summary": "My tweet content",
+            "attachments": [
+                {
+                    "address": [
+                        "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
+                    ],
+                    "mime_type": "image/jpg",
+                    "size_in_bytes": 1024
+                }
+            ],
+
+            "metadata": {
+                "proof": "https://twitter.com/DIYgod/status/1483523439721910273",
+                "platform": "twitter",
+                "type": "twitter_tweet"
+            }
+        },
+        {
+            "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/D52DCF9F-7FF0-400A-9562-66C87DB3A866",
+            "date_created": "2021-08-17T14:36:00.676Z",
+            "date_updated": "2022-02-10T22:50:53.132Z",
+
+            "links": {
+                "identifier_back": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/D52DCF9F-7FF0-400A-9562-66C87DB3A866/list/backlinks",
+                "identifiers": [
+                    "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/note/D52DCF9F-7FF0-400A-9562-66C87DB3A866/list/links/comment/0"
+                ]
+            },
+
+            "authors": [
+                "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm",
+                "rss3://account:0x09D9719d01f48304993b35c5b5c813DdCD622362@evm"
+            ],
+            "title": "RSS3 is born",
+            "summary": "RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.",
+            "attachments": [
+                {
+                    "content": "# I include a markdown",
+                    "mime_type": "text/markdown"
+                }, {
+                    "address": [
+                        "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
+                    ],
+                    "mime_type": "image/jpg",
+                    "size_in_bytes": 1024
+                }
+            ]
+        }
+    ]
+}
