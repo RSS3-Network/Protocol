@@ -16,12 +16,12 @@ type Authority = AccountAuthority | ItemAuthority | ExternalAuthority;
 // URI
 type InstanceURI = string;              // rss3://${Authority}
 
-type ItemURI = string;                  // ${InstanceURI}/${'notes' | 'assets'}/${uuid}
+type ItemURI = string;                  // ${InstanceURI}/${'note' | 'asset'}/${uuid}
 type ItemPageListURI = string;          // ${InstanceURI}/list/${'notes' | 'assets'}/${index}
 type ItemListURI = string;              // ${InstanceURI}/list/${'notes' | 'assets'}
 
 type LinkListURI = string;              // ${InstanceURI | ItemURI}/list/links/${LinkType}/${index}
-type BacklinkListURI = string;          // rss3://${any}/list/backlinks/${LinkType}
+type BacklinkListURI = string;          // rss3://${any}/list/backlinks
 
 type URI = string;                      // Any uri
 type URIs = URI[] | URI;                // A series of uris pointing to accessible resources
@@ -86,12 +86,12 @@ interface Index extends SignedBase, UnsignedBase {
 
 // items
 type Item = {
-    auto?: true; // For auto items
-    identifier_instance?: InstanceURI;
-
     identifier: ItemURI;
     date_created: string; // Specifies the published date in RFC 3339 format
     date_updated: string; // Specifies the modified date in RFC 3339 format
+
+    auto?: true; // For auto items
+    identifier_instance?: InstanceURI;
 
     links: {
         identifier_back: BacklinkListURI;

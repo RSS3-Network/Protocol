@@ -1,0 +1,45 @@
+{
+    "version": "v0.4.0",
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/list/assets/0",
+    "date_created": "2021-08-17T14:36:00.676Z",
+    "date_updated": "2022-02-10T22:50:53.132Z",
+
+    "signature": "0x5b2387a7e1b2ceb1a1b0c177294ca480ec1f43a21ad627476951b0c69baece500bde043d6f3a8ff1a8e248e3216517316b397806f6a6e721df50ed43479d65651c",
+    "agents": [
+        {
+            "pubkey": "rrqJ2xn7oUd4wGW8VbsZk9XeacYMap4/jprIA5b35ns=",
+            "signature": "PObUwUA+BEStJZJoY4xBsOkQujsRAZ4yULZIu0orDHCID2ezI5/eD8EskIK+RFNvSCp9tKTSYqurEFa2egW6Dg==",
+            "app": "Revery",
+            "date_expired": "2023-02-10T22:50:53.132Z"
+        }
+    ],
+
+    "list": [
+        {
+            "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/asset/D52DCF9F-7FF0-400A-9562-66C87DB3A866",
+            "date_created": "2021-08-17T14:36:00.676Z",
+            "date_updated": "2022-02-10T22:50:53.132Z",
+
+            "links": {
+                "identifier_back": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/asset/D52DCF9F-7FF0-400A-9562-66C87DB3A866/list/backlinks"
+            },
+        
+            "tags": [
+                "Garage Kit"
+            ],
+            "authors": [
+                "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm"
+            ],
+            "summary": "My Garage Kit - 2233",
+            "attachments": [
+                {
+                    "address": [
+                        "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
+                    ],
+                    "mime_type": "image/jpg",
+                    "size_in_bytes": 1024
+                }
+            ]
+        }
+    ]
+}

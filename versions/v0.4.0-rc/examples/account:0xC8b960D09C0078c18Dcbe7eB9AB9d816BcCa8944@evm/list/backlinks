@@ -1,0 +1,12 @@
+{
+    "version": "v0.4.0",
+    "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/list/backlinks",
+    "date_created": "2021-08-17T14:36:00.676Z",
+    "date_updated": "2022-02-10T22:50:53.132Z",
+
+    "auto": true,
+
+    "list": [
+        "rss3://account:0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045@evm",
+    ]
+}
