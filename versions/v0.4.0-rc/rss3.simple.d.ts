@@ -48,6 +48,24 @@ interface UnsignedBase extends Base {
     auto: true;
 }
 
+// Base types
+interface Attachment {
+    name?: ItemAttachmentName;
+    content?: string; // Actual content, mutually exclusive with address
+    address?: URIs; // URIs of same resource pointing to third parties, mutually exclusive with content
+    mime_type: string; // [MIME type](https://en.wikipedia.org/wiki/Media_type)
+    size_in_bytes?: number;
+}
+
+interface Metadata {
+    proof: string; // transaction, url, etc.
+    platform: ItemPlatform;
+    type: AutoAssetType | AutoNoteType | 'custom';
+    from?: string;
+    to?: string;
+    id: string; // unique id, eg: ${token_address}-${token_id}
+}
+
 // RSS3 index files, main entrance for a instance
 interface Index extends SignedBase, UnsignedBase {
     identifier: InstanceURI;
@@ -57,12 +75,14 @@ interface Index extends SignedBase, UnsignedBase {
         name?: string;
         avatars?: URIs;
         bio?: string;
-        banners?: URIs;
-        websites?: URIs;
+        attachments?: Attachment[];
+
         accounts?: ({
             account: AccountAuthority;
             signature?: string; // Signature of `[RSS3] I am adding ${SignableAccount} to my RSS3 instance ${InstanceURI}`
         })[];
+
+        metadata?: Metadata;
     };
 
     links: {
@@ -94,30 +114,17 @@ type Item = {
     identifier_instance?: InstanceURI;
 
     links: {
-        identifier_back: BacklinkListURI;
         identifiers?: LinkListURI[];
+        identifier_back: BacklinkListURI;
     };
 
     tags?: string[];
     authors: InstanceURI[];
     title?: string;
     summary?: string;
-    attachments?: {
-        name?: ItemAttachmentName;
-        content?: string; // Actual content, mutually exclusive with address
-        address?: URIs; // URIs of same resource pointing to third parties, mutually exclusive with content
-        mime_type: string; // [MIME type](https://en.wikipedia.org/wiki/Media_type)
-        size_in_bytes?: number;
-    }[];
+    attachments?: Attachment[];
 
-    metadata?: {
-        proof: string; // transaction, url, etc.
-        platform: ItemPlatform;
-        type: AutoAssetType | AutoNoteType | 'custom';
-        from?: string;
-        to?: string;
-        id: string; // unique id, eg: ${token_address}-${token_id}
-    }
+    metadata?: Metadata;
 };
 
 // RSS3 list files

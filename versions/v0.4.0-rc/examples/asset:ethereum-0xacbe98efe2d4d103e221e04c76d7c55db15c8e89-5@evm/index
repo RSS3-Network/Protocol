@@ -11,7 +11,26 @@
         "avatar": [
             "ipfs://Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd"
         ],
-        "bio": "RSS Fruits Token (RTF) are demon fruits for those who contribute significantly to the open protocol of RSS3"
+        "bio": "RSS Fruits Token (RTF) are demon fruits for those who contribute significantly to the open protocol of RSS3",
+        "attachments": [
+            {
+                "name": "thumbnail",
+                "address": [
+                    "https://infura-ipfs.io/ipfs/Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd"
+                ],
+                "mime_type": "image/jpg",
+                "size_in_bytes": 1024
+            }
+        ],
+
+        "metadata": {
+            "proof": "0xb8adc7580145efeca0a77dfd9453c09f9e1fdb78a77ea51a8c8f8a791ee59bde",
+            "platform": "evm",
+            "type": "ethereum_nft",
+            "from": "0x0000000000000000000000000000000000000000",
+            "to": "0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944",
+            "id": "ethereum-0xacbe98efe2d4d103e221e04c76d7c55db15c8e89-5"
+        }
     },
 
     "links": {

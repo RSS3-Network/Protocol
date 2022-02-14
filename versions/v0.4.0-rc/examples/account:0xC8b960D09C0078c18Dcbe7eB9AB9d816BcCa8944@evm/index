@@ -20,12 +20,23 @@
             "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
         ],
         "bio": "写代码是热爱，写到世界充满爱！ Cofounder of RSS3.",
-        "banners": [
-            "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
+        "attachments": [
+            {
+                "name": "banners",
+                "address": [
+                    "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
+                ],
+                "mime_type": "image/jpg",
+                "size_in_bytes": 1024
+            },
+            {
+                "name": "websites",
+                "content": "https://diygod.me",
+                "mime_type": "text/plain",
+                "size_in_bytes": 1024
+            }
         ],
-        "websites": [
-            "https://diygod.me"
-        ],
+
         "accounts": [
             {
                 "account": "account:nya.one-diygod@misskey"

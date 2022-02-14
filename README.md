@@ -9,7 +9,7 @@
 
 > RSS3 is a next-generation feed standard that aims to support efficient and decentralized information distribution.
 
-[![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.4.0)
+[![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc)](https://github.com/NaturalSelectionLabs/RSS3/tree/main/versions/v0.4.0-rc)
 
 We've seen the Web1 era when everyone was happy to use RSS as a standard format for syndication and the Web2 era when RSS declined and the closure of information between platforms are created.
 
@@ -215,6 +215,6 @@ RSS3 is a community-based project, built with an open ecosystem and creative dev
 
 ## Contact
 
-![Twitter Follow](https://img.shields.io/twitter/follow/rss3_?style=social) ![Discord](https://img.shields.io/discord/837332113677090876?label=Discord&logo=discord&style=social)
+[![Twitter Follow](https://img.shields.io/twitter/follow/rss3_?style=social)](https://twitter.com/rss3_) [![Discord](https://img.shields.io/discord/837332113677090876?label=Discord&logo=discord&style=social)](https://discord.gg/rss3)
 
 contact@rss3.io
