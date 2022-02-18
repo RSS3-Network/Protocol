@@ -4,24 +4,25 @@ type ItemPlatform = AccountPlatform | 'rss3';
 type LinkType = 'following' | 'comment' | 'like' | 'collection' | 'forward';
 type AutoAssetType = 'gitcoin_donation' | 'xdai_poap' | 'bsc_nft' | 'ethereum_nft' | 'polygon_nft';
 type AutoNoteType = AutoAssetType | 'mirror_entry' | 'twitter_tweet' | 'misskey_note' | 'jike_node';
-type ItemAttachmentName = 'thumbnail' | 'main';
+type ItemAttachmentName = 'thumbnail' | 'main' | 'attributes' | 'full_description';
 
-// Authority
-type AccountAuthority = string;          // account:${identity}@${AccountPlatform}
-type ItemAuthority = string;             // ${'asset' | 'note'}:${uniqueID}@${ItemPlatform}    uniqueID: uuid ${chain}-${token_address}-${token_id} ...
-type ExternalAuthority = string;         // external:${authority}@${scheme}    eg: external:diygod.me%2Fatom.xml@https
+// Instance
+type AccountInstance = string;          // account:${identity}@${AccountPlatform}
+type ItemInstance = string;             // ${'asset' | 'note'}:${uniqueID}@${ItemPlatform}    uniqueID: uuid ${chain}-${token_address}-${token_id} ...
+type ExternalInstance = string;         // external:${authority}@${scheme}    eg: external:diygod.me%2Fatom.xml@https
 
-type Authority = AccountAuthority | ItemAuthority | ExternalAuthority;
+type Instance = AccountInstance | ItemInstance | ExternalInstance;
 
 // URI
-type InstanceURI = string;              // rss3://${Authority}
+type InstanceURI = string;              // rss3://${Instance}
 
 type ItemURI = string;                  // ${InstanceURI}/${'note' | 'asset'}/${uuid}
-type ItemPageListURI = string;          // ${InstanceURI}/list/${'notes' | 'assets'}/${index}
+type ItemCustomListURI = string;        // ${InstanceURI}/list/${'notes' | 'assets'}/${index}
 type ItemListURI = string;              // ${InstanceURI}/list/${'notes' | 'assets'}
 
-type LinkListURI = string;              // ${InstanceURI | ItemURI}/list/links/${LinkType}/${index}
-type BacklinkListURI = string;          // rss3://${any}/list/backlinks
+type LinkCustomListURI = string;        // ${InstanceURI | ItemURI}/list/links/${LinkType}/${index}
+type LinkListURI = string;              // ${InstanceURI | ItemURI}/list/links/${LinkType}
+type BacklinkListURI = string;          // ${InstanceURI}/list/backlinks
 
 type URI = string;                      // Any uri
 type URIs = URI[] | URI;                // A series of uris pointing to accessible resources
@@ -29,7 +30,7 @@ type URIs = URI[] | URI;                // A series of uris pointing to accessib
 // Common attributes for each files
 interface Base {
     version: 'v0.4.0'; // Proposal version for current file. It should be like `v1.0.0`
-    identifier: InstanceURI | ItemPageListURI | ItemListURI | LinkListURI | BacklinkListURI;
+    identifier: InstanceURI | ItemCustomListURI | ItemListURI | LinkCustomListURI | LinkListURI | BacklinkListURI;
     date_created: string; // Specifies the created date in RFC 3339 format
     date_updated: string; // Specifies the updated date in RFC 3339 format
 }
@@ -66,6 +67,16 @@ interface Metadata {
     id: string; // unique id, eg: ${token_address}-${token_id}
 }
 
+interface LinksSet {
+    identifiers?: {
+        type: LinkType;
+        identifier_custom: LinkCustomListURI;
+        identifier: LinkListURI;
+    }[];
+    identifier_back: BacklinkListURI;
+    filters?: string[];
+}
+
 // RSS3 index files, main entrance for a instance
 interface Index extends SignedBase, UnsignedBase {
     identifier: InstanceURI;
@@ -78,28 +89,25 @@ interface Index extends SignedBase, UnsignedBase {
         attachments?: Attachment[];
 
         accounts?: ({
-            account: AccountAuthority;
+            account: AccountInstance;
             signature?: string; // Signature of `[RSS3] I am adding ${SignableAccount} to my RSS3 instance ${InstanceURI}`
         })[];
 
         metadata?: Metadata;
     };
 
-    links: {
-        identifiers?: LinkListURI[];
-        identifier_back: BacklinkListURI;
-    };
+    links: LinksSet;
 
     items: {
         notes: {
-            filters?: string[];
-            identifier_page?: ItemPageListURI;
+            identifier_custom?: ItemCustomListURI;
             identifier: ItemListURI;
+            filters?: string[];
         };
         assets: {
-            filters?: string[];
-            identifier_page?: ItemPageListURI;
+            identifier_custom?: ItemCustomListURI;
             identifier: ItemListURI;
+            filters?: string[];
         };
     };
 }
@@ -113,10 +121,7 @@ type Item = {
     auto?: true; // For auto items
     identifier_instance?: InstanceURI;
 
-    links: {
-        identifiers?: LinkListURI[];
-        identifier_back: BacklinkListURI;
-    };
+    links: LinksSet;
 
     tags?: string[];
     authors: InstanceURI[];
@@ -134,7 +139,7 @@ interface ListBase<URIType, ElementType> {
     list?: ElementType[];
 }
 
-type ItemPageList = SignedBase & ListBase<ItemPageListURI, Item>;
+type ItemPageList = SignedBase & ListBase<ItemCustomListURI, Item>;
 type ItemList = UnsignedBase & ListBase<ItemListURI, Item>;
 
 type LinkList = SignedBase & ListBase<LinkListURI, URI>;
