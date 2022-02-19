@@ -61,7 +61,6 @@ interface Attachment {
 interface Metadata {
     proof: string; // transaction, url, etc.
     platform: ItemPlatform;
-    type: AutoAssetType | AutoNoteType | 'custom';
     from?: string;
     to?: string;
     id: string; // unique id, eg: ${token_address}-${token_id}
@@ -123,7 +122,7 @@ type Item = {
 
     links: LinksSet;
 
-    tags?: string[];
+    tags?: (AutoAssetType | AutoNoteType | string)[];
     authors: InstanceURI[];
     title?: string;
     summary?: string;
