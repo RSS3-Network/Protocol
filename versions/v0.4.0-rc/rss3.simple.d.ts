@@ -92,6 +92,7 @@ interface Index extends SignedBase, UnsignedBase {
             signature?: string; // Signature of `[RSS3] I am adding ${SignableAccount} to my RSS3 instance ${InstanceURI}`
         })[];
 
+        tags?: (AutoAssetType | AutoNoteType | string)[];
         metadata?: Metadata;
     };
 
