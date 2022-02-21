@@ -25,18 +25,14 @@
             "summary": "RSS Fruits Token (RTF) are demon fruits for those who contribute significantly to the open protocol of RSS3",
             "attachments": [
                 {
-                    "name": "thumbnail",
-                    "address": [
-                        "https://infura-ipfs.io/ipfs/Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd"
-                    ],
+                    "type": "thumbnail",
+                    "address": "https://infura-ipfs.io/ipfs/Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd",
                     "mime_type": "image/jpg",
                     "size_in_bytes": 1024
                 },
                 {
-                    "name": "main",
-                    "address": [
-                        "ipfs://Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd"
-                    ],
+                    "type": "main",
+                    "address": "ipfs://Qmaou2nCtmy1dJX4QQdsCf9HLax5yFCUdkuoyZ2mStWTdd",
                     "mime_type": "image/jpg",
                     "size_in_bytes": 1024
                 }
@@ -69,9 +65,7 @@
             "summary": "My tweet content",
             "attachments": [
                 {
-                    "address": [
-                        "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
-                    ],
+                    "address": "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t",
                     "mime_type": "image/jpg",
                     "size_in_bytes": 1024
                 }
@@ -106,9 +100,7 @@
                     "content": "# I include a markdown",
                     "mime_type": "text/markdown"
                 }, {
-                    "address": [
-                        "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
-                    ],
+                    "address": "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t",
                     "mime_type": "image/jpg",
                     "size_in_bytes": 1024
                 }

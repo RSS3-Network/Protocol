@@ -38,9 +38,7 @@
                     "content": "# I include a markdown",
                     "mime_type": "text/markdown"
                 }, {
-                    "address": [
-                        "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
-                    ],
+                    "address": "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t",
                     "mime_type": "image/jpg",
                     "size_in_bytes": 1024
                 }

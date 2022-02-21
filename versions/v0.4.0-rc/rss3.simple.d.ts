@@ -4,7 +4,7 @@ type ItemPlatform = AccountPlatform | 'rss3';
 type LinkType = 'following' | 'comment' | 'like' | 'collection' | 'forward';
 type AutoAssetType = 'gitcoin_donation' | 'xdai_poap' | 'bsc_nft' | 'ethereum_nft' | 'polygon_nft';
 type AutoNoteType = AutoAssetType | 'mirror_entry' | 'twitter_tweet' | 'misskey_note' | 'jike_node';
-type ItemAttachmentName = 'thumbnail' | 'main' | 'attributes' | 'full_description';
+type ItemAttachmentType = 'thumbnail' | 'main' | 'attributes' | 'full_description';
 
 // Instance
 type AccountInstance = string;          // account:${identity}@${AccountPlatform}
@@ -17,20 +17,20 @@ type Instance = AccountInstance | ItemInstance | ExternalInstance;
 type InstanceURI = string;              // rss3://${Instance}
 
 type ItemURI = string;                  // ${InstanceURI}/${'note' | 'asset'}/${uuid}
-type ItemCustomListURI = string;        // ${InstanceURI}/list/${'notes' | 'assets'}/${index}
-type ItemListURI = string;              // ${InstanceURI}/list/${'notes' | 'assets'}
 
-type LinkCustomListURI = string;        // ${InstanceURI | ItemURI}/list/links/${LinkType}/${index}
-type LinkListURI = string;              // ${InstanceURI | ItemURI}/list/links/${LinkType}
-type BacklinkListURI = string;          // ${InstanceURI}/list/backlinks
+type CustomItemListURI = string;        // ${InstanceURI}/list/${'notes' | 'assets'}/${index}
+type AggregatedItemListURI = string;    // ${InstanceURI}/list/${'notes' | 'assets'}
+
+type CustomLinkListURI = string;        // ${InstanceURI | ItemURI}/list/links/${LinkType}/${index}
+type AggregatedLinkListURI = string;    // ${InstanceURI | ItemURI}/list/links/${LinkType}
+type BacklinkListURI = string;          // ${InstanceURI | ItemURI}/list/backlinks
 
 type URI = string;                      // Any uri
-type URIs = URI[] | URI;                // A series of uris pointing to accessible resources
 
 // Common attributes for each files
 interface Base {
     version: 'v0.4.0'; // Proposal version for current file. It should be like `v1.0.0`
-    identifier: InstanceURI | ItemCustomListURI | ItemListURI | LinkCustomListURI | LinkListURI | BacklinkListURI;
+    identifier: InstanceURI | CustomItemListURI | AggregatedItemListURI | CustomLinkListURI | AggregatedLinkListURI | BacklinkListURI;
     date_created: string; // Specifies the created date in RFC 3339 format
     date_updated: string; // Specifies the updated date in RFC 3339 format
 }
@@ -43,6 +43,7 @@ interface SignedBase extends Base {
         app: string; // Name of the app using this agent, eg: Revery
         date_expired: string; // Specifies the expired date in RFC 3339 format
     }[];
+    controller?: string; // A contract address indicating ownership of the file
 }
 
 interface UnsignedBase extends Base {
@@ -51,9 +52,9 @@ interface UnsignedBase extends Base {
 
 // Base types
 interface Attachment {
-    name?: ItemAttachmentName;
+    type?: ItemAttachmentType;
     content?: string; // Actual content, mutually exclusive with address
-    address?: URIs; // URIs of same resource pointing to third parties, mutually exclusive with content
+    address?: URI; // URI pointing to third parties, mutually exclusive with content
     mime_type: string; // [MIME type](https://en.wikipedia.org/wiki/Media_type)
     size_in_bytes?: number;
 }
@@ -66,24 +67,28 @@ interface Metadata {
     id: string; // unique id, eg: ${token_address}-${token_id}
 }
 
+interface Filters {
+    blocklist: string[];
+    allowlist: string[];
+}
+
 interface LinksSet {
     identifiers?: {
         type: LinkType;
-        identifier_custom: LinkCustomListURI;
-        identifier: LinkListURI;
+        identifier_custom: CustomLinkListURI;
+        identifier: AggregatedLinkListURI;
     }[];
     identifier_back: BacklinkListURI;
-    filters?: string[];
+    filters?: Filters;
 }
 
 // RSS3 index files, main entrance for a instance
 interface Index extends SignedBase, UnsignedBase {
     identifier: InstanceURI;
-    controller?: string; // A contract address indicating ownership of the file
 
     profile?: {
         name?: string;
-        avatars?: URIs;
+        avatars?: URI[];
         bio?: string;
         attachments?: Attachment[];
 
@@ -100,14 +105,14 @@ interface Index extends SignedBase, UnsignedBase {
 
     items: {
         notes: {
-            identifier_custom?: ItemCustomListURI;
-            identifier: ItemListURI;
-            filters?: string[];
+            identifier_custom?: CustomItemListURI;
+            identifier: AggregatedItemListURI;
+            filters?: Filters;
         };
         assets: {
-            identifier_custom?: ItemCustomListURI;
-            identifier: ItemListURI;
-            filters?: string[];
+            identifier_custom?: CustomItemListURI;
+            identifier: AggregatedItemListURI;
+            filters?: Filters;
         };
     };
 }
@@ -133,14 +138,15 @@ type Item = {
 };
 
 // RSS3 list files
-interface ListBase<URIType, ElementType> {
+type ListBase<URIType, ElementType> = {
     identifier: URIType;
     identifier_next?: URIType;
     list?: ElementType[];
 }
 
-type ItemPageList = SignedBase & ListBase<ItemCustomListURI, Item>;
-type ItemList = UnsignedBase & ListBase<ItemListURI, Item>;
+type CustomItemList = SignedBase & ListBase<CustomItemListURI, Item>;
+type AggregatedItemList = UnsignedBase & ListBase<AggregatedItemListURI, Item>;
 
-type LinkList = SignedBase & ListBase<LinkListURI, URI>;
+type CustomLinkList = SignedBase & ListBase<CustomLinkListURI, URI>;
+type AggregatedLinkList = UnsignedBase & ListBase<AggregatedLinkListURI, URI>;
 type BacklinksList = UnsignedBase & ListBase<BacklinkListURI, InstanceURI | ItemURI>;

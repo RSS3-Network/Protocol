@@ -22,15 +22,13 @@
         "bio": "写代码是热爱，写到世界充满爱！ Cofounder of RSS3.",
         "attachments": [
             {
-                "name": "banners",
-                "address": [
-                    "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t"
-                ],
+                "type": "banners",
+                "address": "ipfs://QmT1zZNHvXxdTzHesfEdvFjMPvw536Ltbup7B4ijGVib7t",
                 "mime_type": "image/jpg",
                 "size_in_bytes": 1024
             },
             {
-                "name": "websites",
+                "type": "websites",
                 "content": "https://diygod.me",
                 "mime_type": "text/plain",
                 "size_in_bytes": 1024
@@ -63,16 +61,16 @@
 
     "items": {
         "notes": {
-            "filters": [
-                "evm_bsc_nft"
-            ],
+            "filters": {
+                "blocklist": ["evm_bsc_nft"]
+            },
             "identifier_page": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/list/notes/0",
             "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/list/notes"
         },
         "assets": {
-            "filters": [
-                "evm_bsc_nft"
-            ],
+            "filters": {
+                "blocklist": ["evm_bsc_nft"]
+            },
             "identifier_page": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/list/assets/0",
             "identifier": "rss3://account:0xC8b960D09C0078c18Dcbe7eB9AB9d816BcCa8944@evm/list/assets"
         }
