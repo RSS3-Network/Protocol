@@ -4,6 +4,7 @@ type ItemPlatform = AccountPlatform | 'rss3';
 type LinkType = 'following' | 'comment' | 'like' | 'collection' | 'forward';
 type AutoAssetType = 'gitcoin_donation' | 'xdai_poap' | 'bsc_nft' | 'ethereum_nft' | 'polygon_nft';
 type AutoNoteType = AutoAssetType | 'mirror_entry' | 'twitter_tweet' | 'misskey_note' | 'jike_node';
+type ItemAttachmentType = 'thumbnail' | 'main' | 'attributes' | 'full_description';
 
 // Instance
 type AccountInstance = string;          // account:${identity}@${AccountPlatform}
@@ -52,7 +53,7 @@ interface UnsignedBase extends Base {
 
 // Base types
 interface Attachment {
-    type?: string;
+    type?: ItemAttachmentType;
     content?: string; // Actual content, mutually exclusive with address
     address?: URI; // URI pointing to third parties, mutually exclusive with content
     mime_type: string; // [MIME type](https://en.wikipedia.org/wiki/Media_type)
