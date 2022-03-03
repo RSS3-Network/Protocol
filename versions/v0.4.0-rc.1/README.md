@@ -1,4 +1,4 @@
-# RSS3 Protocol v0.4.0-rc
+# RSS3 Protocol v0.4.0-rc.1
 
 ## 1. Abstract
 

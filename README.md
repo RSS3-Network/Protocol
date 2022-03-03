@@ -21,9 +21,9 @@ In the meantime, we will continue to promote its implementation and use in the W
 
 ## Project Status
 
-🔭 The upcoming RSS3 Protocol v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc)](https://github.com/NaturalSelectionLabs/RSS3-Protocol/tree/main/versions/v0.4.0-rc) is requesting for comments.
+🔭 The upcoming RSS3 Protocol v0.4.0 [![RSS3](https://badge.rss3.workers.dev/?version=v0.4.0--rc.1)](https://github.com/NaturalSelectionLabs/RSS3-Protocol/tree/main/versions/v0.4.0-rc.1) is requesting for comments.
 
-- [View Documents](https://github.com/NaturalSelectionLabs/RSS3-Protocol/tree/main/versions/v0.4.0-rc)
+- [View Documents](https://github.com/NaturalSelectionLabs/RSS3-Protocol/tree/main/versions/v0.4.0-rc.1)
 
 - Participate in the [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/25)
 
