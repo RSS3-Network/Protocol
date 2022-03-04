@@ -30,7 +30,7 @@ This version is a beta version, although this protocol is well established in th
 
 The implementing program returns data and the user submits data in the form of RSS3-compliant JSON files. There are two types of files, Index File and their attached List File, of which you can get an overview by browsing through the [Use Cases](#_6-use-cases).
 
-The mine_type of RSS3 file is `application/rss3+json`, it is recommended to include `content-type: application/rss3+json; charset=utf-8` in the Response Headers of RSS3 file.
+The mime_type of RSS3 file is `application/rss3+json`, it is recommended to include `content-type: application/rss3+json; charset=utf-8` in the Response Headers of RSS3 file.
 
 #### 4.1.1. File Base
 
