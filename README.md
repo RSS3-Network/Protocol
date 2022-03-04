@@ -25,7 +25,7 @@ In the meantime, we will continue to promote its implementation and use in the W
 
 - [View Documents](https://github.com/NaturalSelectionLabs/RSS3-Protocol/tree/main/versions/v0.4.0-rc.1)
 
-- Participate in the [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/25)
+- Participate in the [discussion](https://github.com/NaturalSelectionLabs/RSS3-Protocol/discussions/32)
 
 🔬 Current stable version: RSS3 Protocol v0.3.1 [![RSS3](https://badge.rss3.workers.dev/?version=v0.3.1)](https://github.com/NaturalSelectionLabs/RSS3/blob/main/versions/v0.3.1.md)
 
