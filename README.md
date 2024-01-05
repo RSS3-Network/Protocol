@@ -1,5 +1,5 @@
 
-⚠️ Deprecated - The standards have involved into [RSS3 Unified Metadata Schemas](https://docs.rss3.io/docs/unified-metadata-schemas)
+⚠️ Deprecated - The standards have evolved into [RSS3 Unified Metadata Schemas](https://docs.rss3.io/docs/unified-metadata-schemas)
 
 
 RSS3 is an open information syndication protocol that aims to support efficient and decentralized information distribution in Web3.
