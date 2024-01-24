@@ -1,4 +1,7 @@
 = RSS3 Protocol v1.0.0
+:toc:
+:toc-title: Table of Contents
+:toclevels: 2
 
 include::Collectible/main.adoc[]
 include::Exchange/main.adoc[]
