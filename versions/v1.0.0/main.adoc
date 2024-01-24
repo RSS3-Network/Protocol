@@ -2,6 +2,7 @@
 :toc:
 :toc-title: Table of Contents
 :toclevels: 2
+:source-highlighter: highlight.js
 
 == Editors
 

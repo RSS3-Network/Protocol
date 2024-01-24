@@ -1,1 +1,16 @@
 ==== Feed
+
+Here we follow the original RSS specification to preserve the fields.
+
+[,typescript]
+----
+interface Feed {
+  title: string
+  description: string
+  pub_date: string // Publication date in ISO 8601 format (e.g., "2023-11-09T15:11:35.000Z")
+  tags: string[]
+  authors: {
+    name: string
+  }[]
+}
+----
