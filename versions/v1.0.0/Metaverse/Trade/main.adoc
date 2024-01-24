@@ -1,4 +1,4 @@
-=== Trade
+==== Trade
 include::Buy.adoc[]
 include::Sell.adoc[]
 include::List.adoc[]

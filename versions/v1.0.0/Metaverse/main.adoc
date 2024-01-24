@@ -1,4 +1,7 @@
-== Metaverse
+=== Metaverse
+
+`Metaverse` represents the Gaming sector of the Open Web.
+
 include::Burn/main.adoc[]
 include::Mint/main.adoc[]
 include::Trade/main.adoc[]

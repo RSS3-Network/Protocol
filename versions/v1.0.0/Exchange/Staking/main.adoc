@@ -1,4 +1,4 @@
-=== Staking
+==== Staking
 include::Stake.adoc[]
 include::Unstake.adoc[]
 include::Claim.adoc[]

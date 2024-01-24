@@ -3,9 +3,25 @@
 :toc-title: Table of Contents
 :toclevels: 2
 
+== Editors
+
+. Henry (https://github.com/HenryQW[*@HenryQW*])
+. Polebug (https://github.com/Polebug[*@Polebug*])
+
+== Abstract
+
+RSS3 Protocol v1.0.0 is completely rewritten from the ground up, replacing its predecessor v0.4.0-rc.1.
+It has been tested on the RSS3 DSL v0.4 - v0.9 for over 1 year and is now ready to be employed by the RSS3 DSL v1.0.0.
+
+== Specification
 include::Collectible/main.adoc[]
 include::Exchange/main.adoc[]
 include::Metaverse/main.adoc[]
 include::RSS/main.adoc[]
 include::Social/main.adoc[]
 include::Transaction/main.adoc[]
+
+== Future Compatibility
+
+This version is considered to be the first stable and production-grade version of the RSS3 Protocol.
+It is designed to be compatible with future versions of the RSS3 Protocol, where breaking changes are expected to be minimal.

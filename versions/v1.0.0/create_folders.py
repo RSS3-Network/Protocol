@@ -3,9 +3,10 @@
 
 import os
 
+# Add new tag, type and action here
 folder_structure = {
     "Collectible": {
-        "Approval": ["Approve", "Revoke"],
+        "Approval": ["Approve", "Revoke", "123"],
         "Burn": [],
         "Mint": [],
         "Trade": ["Buy", "Sell"],
@@ -51,31 +52,36 @@ def create_folder_structure_with_action(folder_structure):
         tag_main_adoc = os.path.join(tag_folder, "main.adoc")
         if not os.path.exists(tag_main_adoc):
             with open(tag_main_adoc, "w") as file:
-                file.write(f"== {tag}\n")
+                file.write(f"=== {tag}\n")
 
         for type, actions in types.items():
             type_folder = os.path.join(tag_folder, type)
             os.makedirs(type_folder, exist_ok=True)
 
             type_main_adoc = os.path.join(type_folder, "main.adoc")
-            type_main_exists = os.path.exists(type_main_adoc)
-            if not type_main_exists:
+            if not os.path.exists(type_main_adoc):
                 with open(type_main_adoc, "w") as type_file:
-                    type_file.write(f"=== {type}\n")
+                    type_file.write(f"==== {type}\n")
+
+            # Existing actions check
+            existing_actions = set()
+            if os.path.exists(type_main_adoc):
+                with open(type_main_adoc, "r") as type_file:
+                    for line in type_file:
+                        if line.strip().startswith("include::") and ".adoc[]" in line:
+                            existing_action = line.split("::")[1].split(".")[0]
+                            existing_actions.add(existing_action)
 
             for action in actions:
                 action_file_path = os.path.join(type_folder, f"{action}.adoc")
                 if not os.path.exists(action_file_path):
                     with open(action_file_path, "w") as action_file:
-                        action_file.write(f"==== {action}\n")
+                        action_file.write(f"===== {action}\n")
 
-                    if not type_main_exists:
-                        with open(type_main_adoc, "a") as type_file:
-                            type_file.write(f"include::{action}.adoc[]\n")
-
-            if not type_main_exists:
-                with open(tag_main_adoc, "a") as tag_file:
-                    tag_file.write(f"include::{type}/main.adoc[]\n")
+                # Append new action to type's main.adoc if not already present
+                if action not in existing_actions:
+                    with open(type_main_adoc, "a") as type_file:
+                        type_file.write(f"include::{action}.adoc[]\n")
 
 
 def create_global_main_adoc(folder_structure, main_adoc_path="main.adoc"):

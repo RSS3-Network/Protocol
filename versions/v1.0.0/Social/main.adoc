@@ -1,4 +1,7 @@
-== Social
+=== Social
+
+`Social` is an integral part of the Open Web.
+
 include::Comment/main.adoc[]
 include::Mint/main.adoc[]
 include::Post/main.adoc[]
