@@ -1,0 +1,8 @@
+== Social
+include::Comment/main.adoc[]
+include::Mint/main.adoc[]
+include::Post/main.adoc[]
+include::Profile/main.adoc[]
+include::Revise/main.adoc[]
+include::Reward/main.adoc[]
+include::Share/main.adoc[]

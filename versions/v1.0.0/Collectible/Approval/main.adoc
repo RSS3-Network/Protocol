@@ -1,0 +1,3 @@
+=== Approval
+include::Approve.adoc[]
+include::Revoke.adoc[]

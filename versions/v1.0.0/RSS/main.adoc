@@ -1,0 +1,2 @@
+== RSS
+include::Feed/main.adoc[]

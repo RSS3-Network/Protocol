@@ -1,0 +1,3 @@
+=== Trade
+include::Buy.adoc[]
+include::Sell.adoc[]
