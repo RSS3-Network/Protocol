@@ -1,1 +1,45 @@
 ===== Buy
+
+===== Interface
+
+[,typescript]
+----
+interface ActionCollectibleTradeBuy {
+    action: string;
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    uri: string;
+    standard: string;
+    cost: {
+        value: string;
+        name: string;
+        symbol: string;
+        decimals: number;
+    };
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "buy",
+    "address": "0x74EE68a33f6c9f113e22B3B77418B75f85d07D22",
+    "id": "5",
+    "value": "1",
+    "name": "Zerion Genesis Collection",
+    "symbol": "ZGC",
+    "uri": "ipfs://QmXBUGFTXuAeBfK9oB9G1NAhGq7AwosWjHFRHMdahETeRK",
+    "standard": "ERC-1155",
+    "cost": {
+        "value": "14525000000000000",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "decimals": 18
+    }
+}
+----
