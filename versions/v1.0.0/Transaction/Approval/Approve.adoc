@@ -1,1 +1,18 @@
 ===== Approve
+
+
+Here we follow the original Approve specification to preserve the fields.
+
+[,typescript]
+----
+interface Approve {
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    uri: string;
+    decimals: number;
+    standard: string;
+}
+----

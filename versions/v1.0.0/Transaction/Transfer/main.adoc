@@ -1,1 +1,17 @@
 ==== Transfer
+
+Here we follow the original Transfer specification to preserve the fields.
+
+[,typescript]
+----
+interface Transfer {
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    uri: string;
+    decimals: number;
+    standard: string;
+}
+----
