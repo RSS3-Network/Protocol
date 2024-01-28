@@ -1,1 +1,17 @@
 ==== Mint
+
+Here we follow the original Mint specification to preserve the fields.
+
+[,typescript]
+----
+interface Mint {
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    uri: string;
+    decimals: number;
+    standard: string;
+}
+----

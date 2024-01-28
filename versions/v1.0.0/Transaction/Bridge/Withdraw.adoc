@@ -1,1 +1,20 @@
 ===== Withdraw
+
+
+Here we follow the original Withdraw specification to preserve the fields.
+
+[,typescript]
+----
+interface Withdraw {
+    source_network: string; // "ethereum", "polygon", "optimism", "arbitrum", "fantom", "crossbell", "rss", "arweave", "farcaster", "base", "avax"
+    target_network: string; // "ethereum", "polygon", "optimism", "arbitrum", "fantom", "crossbell", "rss", "arweave", "farcaster", "base", "avax"
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    uri: string;
+    decimals: number;
+    standard: string;
+}
+----
