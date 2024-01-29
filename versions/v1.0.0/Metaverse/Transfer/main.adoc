@@ -1,1 +1,20 @@
 ==== Transfer
+
+interface RootObject {
+  action: string;
+  address: string;
+  cost: Cost;
+  id: string;
+  name: string;
+  standard: string;
+  symbol: string;
+  uri: string;
+  value: string;
+}
+
+interface Cost {
+  decimals: number;
+  name: string;
+  symbol: string;
+  value: string;
+}

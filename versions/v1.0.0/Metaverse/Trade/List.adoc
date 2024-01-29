@@ -1,1 +1,22 @@
 ===== List
+
+interface RootObject {
+  action: string;
+  address: string;
+  cost: Cost;
+  id: string;
+  name: string;
+  standard: string;
+  symbol: string;
+  uri: string;
+  value: string;
+}
+
+interface Cost {
+  address: string;
+  decimals: number;
+  name: string;
+  standard: string;
+  symbol: string;
+  value: string;
+}
