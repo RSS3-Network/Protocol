@@ -1,1 +1,33 @@
 ==== Reward
+
+Reward indicates an action of rewarding a post or character.
+
+[,typescript]
+----
+interface Reward {
+  handle: string
+  body: string
+  title: string
+  summary: string
+  media: {
+    address: string
+    mime_type: string
+  }[]
+  tags: string[]
+  author_url: string
+  profile_id: string
+  publication_id: string
+  content_uri: string
+  timestamp: number
+  reward: {
+    address: string
+    id: number
+    value: number
+    name: string
+    symbol: string
+    uri: string
+    decimals: number
+    standard: string
+  }
+}
+----

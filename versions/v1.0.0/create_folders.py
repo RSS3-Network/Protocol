@@ -6,7 +6,7 @@ import os
 # Add new tag, type and action here
 folder_structure = {
     "Collectible": {
-        "Approval": ["Approve", "Revoke", "123"],
+        "Approval": ["Approve", "Revoke"],
         "Burn": [],
         "Mint": [],
         "Trade": ["Buy", "Sell"],
@@ -32,6 +32,8 @@ folder_structure = {
         "Revise": [],
         "Reward": [],
         "Share": [],
+        "Delete": [],
+        "Proxy": [],
     },
     "Transaction": {
         "Approval": ["Approve", "Revoke"],

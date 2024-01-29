@@ -1,10 +1,10 @@
-==== Mint
+==== Delete
 
-Mint indicates an action of minting a post.
+Delete indicates an action of deleting a post.
 
 [,typescript]
 ----
-interface Mint {
+interface Delete {
   handle: string
   body: string
   title: string

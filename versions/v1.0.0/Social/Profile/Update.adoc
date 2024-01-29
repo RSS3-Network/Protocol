@@ -1,1 +1,19 @@
 ===== Update
+
+Profile Update indicates an action of updating an existing credential.
+
+[,typescript]
+----
+interface Update {
+  action: string
+  profile_id: string
+  address: string
+  handle: string
+  image_uri: string
+  bio: string
+  name: string
+  expiry: string
+  key: string
+  value: string
+}
+----

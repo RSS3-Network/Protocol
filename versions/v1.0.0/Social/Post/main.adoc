@@ -1,1 +1,23 @@
 ==== Post
+
+Post indicates an action of publishing a new post.
+
+[,typescript]
+----
+interface Post {
+  handle: string
+  body: string
+  title: string
+  summary: string
+  media: {
+    address: string
+    mime_type: string
+  }[]
+  tags: string[]
+  author_url: string
+  profile_id: string
+  publication_id: string
+  content_uri: string
+  timestamp: number
+}
+----

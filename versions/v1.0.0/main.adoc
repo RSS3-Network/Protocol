@@ -8,6 +8,7 @@
 
 . Henry (https://github.com/HenryQW[*@HenryQW*])
 . Polebug (https://github.com/Polebug[*@Polebug*])
+. pseudoyu (https://github.com/pseudoyu[*@pseudoyu*])
 
 == Abstract
 
