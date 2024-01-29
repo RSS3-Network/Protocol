@@ -1,22 +1,40 @@
 ===== Sell
 
 interface RootObject {
-  action: string;
-  address: string;
-  cost: Cost;
-  id: string;
-  name: string;
-  standard: string;
-  symbol: string;
-  uri: string;
-  value: string;
+    action: string;
+    address: string;
+    cost: {
+        address: string;
+        decimals: number;
+        name: string;
+        standard: string;
+        symbol: string;
+        value: string;
+    };
+    id: string;
+    name: string;
+    standard: string;
+    symbol: string;
+    uri: string;
+    value: string;
 }
 
-interface Cost {
-  address: string;
-  decimals: number;
-  name: string;
-  standard: string;
-  symbol: string;
-  value: string;
+Example:
+{
+    "action": "list",
+    "address": "0x86935F11C86623deC8a25696E1C19a8659CbF95d",
+    "cost": {
+        "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
+        "decimals": 18,
+        "name": "Aavegotchi GHST Token (PoS)",
+        "standard": "ERC-20",
+        "symbol": "GHST",
+        "value": "100000000000000000"
+    },
+    "id": "302",
+    "name": "Aavegotchi",
+    "standard": "ERC-721",
+    "symbol": "GOTCHI",
+    "uri": "https://app.aavegotchi.com/metadata/aavegotchis/302",
+    "value": "1"
 }

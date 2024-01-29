@@ -1,20 +1,24 @@
 ==== Transfer
 
 interface RootObject {
-  action: string;
-  address: string;
-  cost: Cost;
-  id: string;
-  name: string;
-  standard: string;
-  symbol: string;
-  uri: string;
-  value: string;
+    action: string;
+    address: string;
+    id: string;
+    name: string;
+    standard: string;
+    symbol: string;
+    uri: string;
+    value: string;
 }
 
-interface Cost {
-  decimals: number;
-  name: string;
-  symbol: string;
-  value: string;
+Example:
+
+Transfer ERC20
+{
+    "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
+    "decimals": 18,
+    "name": "Aavegotchi GHST Token (PoS)",
+    "standard": "ERC-20",
+    "symbol": "GHST",
+    "value": "50000000000000000"
 }

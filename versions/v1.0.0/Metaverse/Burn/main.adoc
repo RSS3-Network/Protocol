@@ -1,20 +1,24 @@
 ==== Burn
 
 interface RootObject {
-  action: string;
-  address: string;
-  cost: Cost;
-  id: string;
-  name: string;
-  standard: string;
-  symbol: string;
-  uri: string;
-  value: string;
+    action: string;
+    address: string;
+    id: string;
+    name: string;
+    standard: string;
+    symbol: string;
+    uri: string;
+    value: string;
 }
 
-interface Cost {
-  decimals: number;
-  name: string;
-  symbol: string;
-  value: string;
+Example:
+
+Burn ERC20
+{
+    "address": "0x403E967b044d4Be25170310157cB1A4Bf10bdD0f",
+    "decimals": 18,
+    "name": "Aavegotchi FUD",
+    "standard": "ERC-20",
+    "symbol": "FUD",
+    "value": "74800000000000000000"
 }
