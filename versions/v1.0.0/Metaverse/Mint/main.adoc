@@ -1,6 +1,11 @@
 ==== Mint
 
-interface RootObject {
+===== Interface
+
+[,typescript]
+----
+
+interface Mint {
     action: string;
     address: string;
     id: string;
@@ -10,10 +15,12 @@ interface RootObject {
     uri: string;
     value: string;
 }
+----
 
-Example:
+===== Example
 
-Mint ERC20
+[,json]
+----
 {
     "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
     "decimals": 18,

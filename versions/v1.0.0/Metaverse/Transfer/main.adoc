@@ -1,6 +1,10 @@
 ==== Transfer
 
-interface RootObject {
+===== Interface
+
+[,typescript]
+----
+interface Transfer {
     action: string;
     address: string;
     id: string;
@@ -10,10 +14,12 @@ interface RootObject {
     uri: string;
     value: string;
 }
+----
 
-Example:
+===== Example
 
-Transfer ERC20
+[,json]
+----
 {
     "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
     "decimals": 18,
@@ -22,3 +28,4 @@ Transfer ERC20
     "symbol": "GHST",
     "value": "50000000000000000"
 }
+----

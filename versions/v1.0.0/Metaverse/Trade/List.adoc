@@ -1,6 +1,11 @@
 ===== List
 
-interface RootObject {
+===== Interface
+
+[,typescript]
+----
+
+interface List {
     action: string;
     address: string;
     cost: {
@@ -18,9 +23,12 @@ interface RootObject {
     uri: string;
     value: string;
 }
+----
 
-Example:
+===== Example
 
+[,json]
+----
 {
     "action": "list",
     "address": "0x86935F11C86623deC8a25696E1C19a8659CbF95d",
@@ -38,3 +46,4 @@ Example:
     "symbol": "GOTCHI",
     "uri": "https://app.aavegotchi.com/metadata/aavegotchis/13587"
 }
+----

@@ -1,5 +1,10 @@
 ==== Burn
 
+===== Interface
+
+[,typescript]
+----
+
 interface RootObject {
     action: string;
     address: string;
@@ -11,9 +16,12 @@ interface RootObject {
     value: string;
 }
 
-Example:
+----
 
-Burn ERC20
+===== Example
+
+[,json]
+----
 {
     "address": "0x403E967b044d4Be25170310157cB1A4Bf10bdD0f",
     "decimals": 18,
@@ -22,3 +30,4 @@ Burn ERC20
     "symbol": "FUD",
     "value": "74800000000000000000"
 }
+----
