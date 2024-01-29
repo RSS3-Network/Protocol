@@ -19,3 +19,9 @@ This, in turn, promotes the free flow of Open Information.
 ## Historical Archive
 
 For the RSS3 Community's earlier efforts prior to this version, please refer to [the archive branch](https://github.com/RSS3-Network/Protocol/tree/archive).
+
+## License
+
+The RSS3 Protocol is collectively maintained by the RSS3 Community. All work under this repository is marked with [CC0 1.0](./LICENSE).
+
+By marking the work with a CC0 public domain dedication, the creator is giving up their copyright and allowing reusers to distribute, remix, adapt, and build upon the material in any medium or format, even for commercial purposes.
