@@ -23,7 +23,7 @@ interface Feed {
 ----
 {
     "title": "[Uk] Catherine, Princess of Wales, leaves hospital after surgery",
-    "description": "<div data-component="image-block" class="ssrcss-1y79c70-ComponentWrapper ep2nwvo1"><figure class="ssrcss-4qvfmb-StyledFigure e34k3c23">...</div>",
+    "description": "<div data-component=\"image-block\" class=\"ssrcss-1y79c70-ComponentWrapper ep2nwvo1\"><figure class=\"ssrcss-4qvfmb-StyledFigure e34k3c23\">...</div>",
     "pub_date": "2024-01-29T12:03:29.000Z"
 }
 ----
