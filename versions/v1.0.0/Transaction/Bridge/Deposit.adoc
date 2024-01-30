@@ -6,16 +6,17 @@
 
 ----
 interface Deposit {
+    action: string;
     source_network: string;
     target_network: string;
-    address: string;
-    id: string;
-    value: string;
-    name: string;
-    symbol: string;
-    uri: string;
-    decimals: number;
-    standard: string;
+    address?: string;
+    id?: string;
+    value?: string;
+    name?: string;
+    symbol?: string;
+    uri?: string;
+    decimals?: number;
+    standard?: string;
 }
 ----
 
@@ -24,15 +25,14 @@ interface Deposit {
 
 ----
 {
+    "action": "deposit",
     "source_network": "ethereum",
-    "target_network": "polygon",
-    "address": "0x7713Ccb297657ca84eD79bdDf5907e0196D34205",
-    "id": "6",
-    "value": "1000000000000000000",
-    "name": "CCFC",
-    "symbol": "CCFC",
-    "uri": "ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6",
+    "target_network": "ethereum",
+    "address": "0x23b891e5C62E0955ae2bD185990103928Ab817b3",
+    "value": "84265385201993306272353",
+    "name": "nUSD",
+    "symbol": "nUSD",
     "decimals": 18,
-    "standard": "ERC-721"
+    "standard": "ERC-20"
 }
 ----
