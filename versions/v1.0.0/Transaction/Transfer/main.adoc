@@ -5,14 +5,14 @@
 [,typescript]
 ----
 interface Transfer {
-    address: string;
-    id: string;
-    value: string;
-    name: string;
-    symbol: string;
-    uri: string;
-    decimals: number;
-    standard: string;
+    address?: string;
+    id?: string;
+    value?: string;
+    name?: string;
+    symbol?: string;
+    uri?: string;
+    decimals?: number;
+    standard?: string;
 }
 ----
 
@@ -21,13 +21,12 @@ interface Transfer {
 [,json]
 ----
 {
-    "address": "0x7713Ccb297657ca84eD79bdDf5907e0196D34205",
+    "address": "0x5F82a3967f279729A7C58D741E9824A6d653317E",
     "id": "7",
-    "value": "1",
-    "name": "CCFC",
-    "symbol": "CCFC",
-    "uri": "ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/7",
-    "decimals": 0,
-    "standard": "ERC-721"
+    "value": "4593020000012345678",
+    "name": "xAI",
+    "symbol": "xAI",
+    "decimals": 8,
+    "standard": "ERC-20"
 }
 ----

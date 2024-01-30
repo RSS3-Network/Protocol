@@ -5,16 +5,17 @@
 [,typescript]
 ----
 interface Withdraw {
-    source_network: string; 
+    action: string;
+    source_network: string;
     target_network: string; 
-    address: string;
-    id: string;
-    value: string;
-    name: string;
-    symbol: string;
-    uri: string;
-    decimals: number;
-    standard: string;
+    address?: string;
+    id?: string;
+    value?: string;
+    name?: string;
+    symbol?: string;
+    uri?: string;
+    decimals?: number;
+    standard?: string;
 }
 ----
 
@@ -23,16 +24,15 @@ interface Withdraw {
 [,json]
 ----
 {
-    "source_network": "ethereum",
-    "target_network": "polygon",
+    "action": "deposit",
+    "source_network": "zksync_lite",
+    "target_network": "ethereum",
     "address": "0x7713Ccb297657ca84eD79bdDf5907e0196D34205",
-    "id": "6",
-    "value": "1",
-    "name": "CCFC",
-    "symbol": "CCFC",
-    "uri": "ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6",
-    "decimals": 18,
-    "standard": "ERC-721"
+    "value": "30000000000000000",
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "uri": "https://assets.coingecko.com/coins/images/279/large/ethereum.png",
+    "decimals": 18
 }
 ----
 
