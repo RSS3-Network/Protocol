@@ -2,22 +2,38 @@
 
 Delete indicates an action of deleting a post.
 
+===== Interface
+
 [,typescript]
 ----
 interface Delete {
-  handle: string
-  body: string
-  title: string
-  summary: string
-  media: {
-    address: string
-    mime_type: string
-  }[]
-  tags: string[]
-  author_url: string
-  profile_id: string
-  publication_id: string
-  content_uri: string
-  timestamp: number
+    handle: string
+    body: string
+    title: string
+    summary: string
+    media: {
+        address: string
+        mime_type: string
+    }[]
+    tags: string[]
+    author_url: string
+    profile_id: string
+    publication_id: string
+    content_uri: string
+    timestamp: number
 }
+----
+
+===== Example
+
+[,json]
+----
+{
+    "handle": "ordi.csb",
+    "title": "YouTube Top100",
+    "body": "https://cn.noxinfluencer.com/youtube-channel-rank/top-100-all-all-youtuber-sorted-by-subs-weekly\n\n\n1 T-Series https://www.youtube.com/@tseries\n",
+    "profile_id": "55544",
+    "publication_id": "7",
+    "content_uri": "ipfs://bafkreic7t3twgima3cu54r7ftyuut6h74wpdwtlqoxcd66ox5qtkptokmy"
+}s
 ----

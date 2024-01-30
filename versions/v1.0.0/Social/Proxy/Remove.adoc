@@ -1,0 +1,39 @@
+==== Remove
+
+Proxy Remove indicates that a user has remove their operating rights from another user.
+
+===== Interface
+
+[,typescript]
+----
+interface Remove {
+    action: string
+    profile: {
+        profile_id: string
+        address: string
+        handle: string
+        image_uri: string
+        bio: string
+        name: string
+        expiry: string
+        key: string
+        value: string
+    }
+    proxy_address: string
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "remove",
+    "proxy_address": "0x0f588318a494e4508a121a32b6670b5494ca3357",
+    "profile": {
+        "profile_id": "32010",
+        "address": "0x23c46e912b34c09c4bcc97f4ed7cdd762cee408a",
+        "handle": "brucexx.csb"
+    }
+}
+----

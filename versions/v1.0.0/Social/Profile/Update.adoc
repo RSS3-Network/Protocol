@@ -2,18 +2,35 @@
 
 Profile Update indicates an action of updating an existing credential.
 
+===== Interface
+
 [,typescript]
 ----
 interface Update {
-  action: string
-  profile_id: string
-  address: string
-  handle: string
-  image_uri: string
-  bio: string
-  name: string
-  expiry: string
-  key: string
-  value: string
+    action: string
+    profile_id: string
+    address: string
+    handle: string
+    image_uri: string
+    bio: string
+    name: string
+    expiry: string
+    key: string
+    value: string
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "update",
+    "profile_id": "0x020a73",
+    "address": "0xece7eddc02fb8f0010420d0d76911826b1536655",
+    "handle": "gupta.lens",
+    "image_uri": "ipfs://bafybeih5jwshcxwa73mtfdhwqs2rtevrbhl6t3blrtlb4n5dpea4iqplpu",
+    "bio": "I'm trader.",
+    "name": "PETE"
 }
 ----

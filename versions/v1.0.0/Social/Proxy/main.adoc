@@ -1,22 +1,2 @@
-==== Proxy
-
-Proxy indicates that a user has delegated their operating rights to another user.
-
-[,typescript]
-----
-interface Proxy {
-  action: string
-  profile: {
-    profile_id: string
-    address: string
-    handle: string
-    image_uri: string
-    bio: string
-    name: string
-    expiry: string
-    key: string
-    value: string
-  }
-  proxy_address: string
-}
-----
+include::Appoint.adoc[]
+include::Remove.adoc[]

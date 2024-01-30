@@ -33,7 +33,7 @@ folder_structure = {
         "Reward": [],
         "Share": [],
         "Delete": [],
-        "Proxy": [],
+        "Proxy": ["Appoint", "Remove"],
     },
     "Transaction": {
         "Approval": ["Approve", "Revoke"],

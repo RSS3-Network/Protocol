@@ -1,0 +1,39 @@
+==== Appoint
+
+Proxy Appoint indicates that a user has delegated their operating rights to another user.
+
+===== Interface
+
+[,typescript]
+----
+interface Appoint {
+    action: string
+    profile: {
+        profile_id: string
+        address: string
+        handle: string
+        image_uri: string
+        bio: string
+        name: string
+        expiry: string
+        key: string
+        value: string
+    }
+    proxy_address: string
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "appoint",
+    "proxy_address": "0xbbc2918c9003d264c25ecae45b44a846702c0e7c",
+    "profile": {
+        "profile_id": "55544",
+        "address": "0x8a6ddc78e3aa24f4f31980623f489a274b305762",
+        "handle": "ordi.csb"
+    }
+}
+----
