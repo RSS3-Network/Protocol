@@ -1,6 +1,6 @@
 ==== Mint
 
-Here we follow the original Mint specification to preserve the fields.
+===== Interface
 
 [,typescript]
 ----
@@ -13,5 +13,21 @@ interface Mint {
     uri: string;
     decimals: number;
     standard: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0x7713Ccb297657ca84eD79bdDf5907e0196D34205",
+    "id": "7",
+    "value": "1",
+    "name": "CCFC",
+    "symbol": "CCFC",
+    "uri": "ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/7",
+    "decimals": 0,
+    "standard": "ERC-721"
 }
 ----

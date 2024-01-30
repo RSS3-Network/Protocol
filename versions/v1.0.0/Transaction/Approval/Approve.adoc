@@ -1,11 +1,11 @@
 ===== Approve
 
-
-Here we follow the original Approve specification to preserve the fields.
+===== Interface
 
 [,typescript]
 ----
 interface Approve {
+    action: string;
     address: string;
     id: string;
     value: string;
@@ -14,5 +14,22 @@ interface Approve {
     uri: string;
     decimals: number;
     standard: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "approve",
+    "address": "0x7713Ccb297657ca84eD79bdDf5907e0196D34205",
+    "id": "6",
+    "value": "1000000000000000000",
+    "name": "CCFC",
+    "symbol": "CCFC",
+    "uri": "ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6",
+    "decimals": 18,
+    "standard": "ERC-721"
 }
 ----
