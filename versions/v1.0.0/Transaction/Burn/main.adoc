@@ -17,8 +17,8 @@ interface Burn {
 ----
 
 ===== Example
-[,json]
 
+[,json]
 ----
 {
     "address": "0x1f961BCEAEF8eDF6fb2797C0293FfBDe3E994614",

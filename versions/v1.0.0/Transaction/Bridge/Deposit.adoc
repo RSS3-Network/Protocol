@@ -3,7 +3,6 @@
 ===== Interface
 
 [,typescript]
-
 ----
 interface Deposit {
     action: string;
@@ -23,8 +22,8 @@ interface Deposit {
 ----
 
 ===== Example
-[,json]
 
+[,json]
 ----
 {
   "action": "deposit",
