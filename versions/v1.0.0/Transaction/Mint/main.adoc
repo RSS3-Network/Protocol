@@ -28,5 +28,4 @@ interface Mint {
     "uri": "https://3webx.cc/0.json",
     "standard": "ERC-1155"
 }
-
 ----

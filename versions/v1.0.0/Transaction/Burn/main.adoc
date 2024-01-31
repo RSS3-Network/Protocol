@@ -28,6 +28,5 @@ interface Burn {
     "decimals": 9,
     "standard": "ERC-20"
 }
-
 ----
 
