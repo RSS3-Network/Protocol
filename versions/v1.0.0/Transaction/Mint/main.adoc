@@ -1,1 +1,31 @@
 ==== Mint
+
+===== Interface
+
+[,typescript]
+----
+interface Mint {
+    address?: string;
+    id?: string;
+    value?: string;
+    name?: string;
+    symbol?: string;
+    uri?: string;
+    standard?: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0x5F1B0A5dBc388a631F324f38C5245bC3410be991",
+    "id": "0",
+    "value": "1",
+    "name":  "SpaceX Voucher 71 of 100",
+    "symbol": "Reward at 3webx.cc",
+    "uri": "https://3webx.cc/0.json",
+    "standard": "ERC-1155"
+}
+----

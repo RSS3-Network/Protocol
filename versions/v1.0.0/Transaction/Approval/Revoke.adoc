@@ -1,1 +1,35 @@
 ===== Revoke
+
+===== Interface
+
+[,typescript]
+----
+interface Revoke {
+    action: string;
+    address?: string;
+    id?: string;
+    value?: string;
+    name?: string;
+    symbol?: string;
+    uri?: string;
+    decimals?: number;
+    standard?: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "revoke",
+    "address": "0x72e4f9F808C49A2a61dE9C5896298920Dc4EEEa9",
+    "id": "6",
+    "value": "100000000000",
+    "name": "HarryPotterObamaSonic10Inu",
+    "symbol": "BITCOIN",
+    "uri": "https://assets.coingecko.com/coins/images/30323/thumb/hpos10i_logo_casino_night-dexview.png?1696529224",
+    "decimals": 8,
+    "standard": "ERC-20"
+}
+----
