@@ -1,1 +1,43 @@
 ===== Stake
+
+===== Interface
+
+[,typescript]
+----
+interface ActionExchangeStakingStake {
+    action: string;
+    token: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    };
+    period?: {
+        start: Date,
+        end: Date,
+    }
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "stake",
+  "token": {
+    "address": "0xc98D64DA73a6616c42117b582e832812e7B8D57F",
+    "value": "5931560000000000000000",
+    "name": "RSS3",
+    "symbol": "RSS3",
+    "decimals": 18,
+    "standard": "ERC-20"
+  },
+  "period": {
+    "start": "2023-02-02T12:26:59Z",
+    "end": "2023-05-03T12:26:59Z"
+  }
+}
+----

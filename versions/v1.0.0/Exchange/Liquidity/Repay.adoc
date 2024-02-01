@@ -1,0 +1,37 @@
+===== Repay
+
+===== Interface
+
+[,typescript]
+----
+interface ActionExchangeLiquidityRepay {
+    action: string;
+    tokens: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    }[];
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "repay",
+  "tokens": [
+    {
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "value": "451826732",
+      "name": "(PoS) Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "standard": "ERC-20"
+    }
+  ]
+}
+----

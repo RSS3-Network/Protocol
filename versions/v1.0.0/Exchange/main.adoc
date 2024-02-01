@@ -1,6 +1,6 @@
 === Exchange
 
-`Exchange` covers transactions taking placine on Decentralized Finance platforms and exchanges.
+`Exchange` covers transactions taking place on Decentralized Finance platforms and exchanges.
 
 include::Swap/main.adoc[]
 include::Liquidity/main.adoc[]

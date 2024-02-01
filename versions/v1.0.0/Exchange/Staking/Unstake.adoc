@@ -1,1 +1,35 @@
 ===== Unstake
+
+===== Interface
+
+[,typescript]
+----
+interface ActionExchangeStakingUnstake {
+    action: string;
+    tokens: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    }[];
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "unstake",
+  "token": {
+    "address": "0xc98D64DA73a6616c42117b582e832812e7B8D57F",
+    "value": "4160170000000000000000",
+    "name": "RSS3",
+    "symbol": "RSS3",
+    "decimals": 18,
+    "standard": "ERC-20"
+  }
+}
+----
