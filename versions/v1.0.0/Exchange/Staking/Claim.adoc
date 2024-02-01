@@ -1,1 +1,35 @@
 ===== Claim
+
+===== Interface
+
+[,typescript]
+----
+interface ActionExchangeStakingClaim {
+    action: string;
+    tokens: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    }[];
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "claim",
+  "token": {
+    "address": "0xc98D64DA73a6616c42117b582e832812e7B8D57F",
+    "value": "5764251642130434218884",
+    "name": "RSS3",
+    "symbol": "RSS3",
+    "decimals": 18,
+    "standard": "ERC-20"
+  }
+}
+----

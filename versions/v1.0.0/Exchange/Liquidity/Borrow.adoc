@@ -1,0 +1,37 @@
+===== Borrow
+
+===== Interface
+
+[,typescript]
+----
+interface ActionExchangeLiquidityBorrow {
+    action: string;
+    tokens: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    }[];
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "borrow",
+  "tokens": [
+    {
+      "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+      "value": "800000000",
+      "name": "(PoS) Tether USD",
+      "symbol": "USDT",
+      "decimals": 6,
+      "standard": "ERC-20"
+    }
+  ]
+}
+----
