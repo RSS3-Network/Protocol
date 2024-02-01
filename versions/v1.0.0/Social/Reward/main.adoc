@@ -1,1 +1,56 @@
 ==== Reward
+
+Reward indicates an action of rewarding a post or character.
+
+===== Interface
+
+[,typescript]
+----
+interface Reward {
+    handle: string
+    body: string
+    title: string
+    summary: string
+    media: {
+        address: string
+        mime_type: string
+    }[]
+    tags: string[]
+    author_url: string
+    profile_id: string
+    publication_id: string
+    content_uri: string
+    timestamp: number
+    reward: {
+        address: string
+        id: number
+        value: number
+        name: string
+        symbol: string
+        uri: string
+        decimals: number
+        standard: string
+    }
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "reward": {
+        "address": "0xc2132D05D31c914a87C6611C10748AEb04B58e8F",
+        "value": "690000",
+        "name": "(PoS) Tether USD",
+        "symbol": "USDT",
+        "decimals": 6,
+        "standard": "ERC-20"
+    },
+    "target": {
+        "handle": "chorsee",
+        "title": "Crying with Tama",
+        "summary": "The Resonance of the Concert to End Violence Against Women by Chorsee."
+    }
+}
+----

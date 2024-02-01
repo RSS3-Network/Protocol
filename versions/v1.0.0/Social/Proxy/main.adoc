@@ -1,0 +1,2 @@
+include::Appoint.adoc[]
+include::Remove.adoc[]

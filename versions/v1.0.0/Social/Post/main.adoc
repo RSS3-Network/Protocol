@@ -1,1 +1,48 @@
 ==== Post
+
+Post indicates an action of publishing a new post.
+
+===== Interface
+
+[,typescript]
+----
+interface Post {
+    handle: string
+    body: string
+    title: string
+    summary: string
+    media: {
+        address: string
+        mime_type: string
+    }[]
+    tags: string[]
+    author_url: string
+    profile_id: string
+    publication_id: string
+    content_uri: string
+    timestamp: number
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "handle": "mstrbstrd.lens",
+    "body": "Missed my lens frens :) happy to be back.",
+    "media": [
+        {
+            "address": "ipfs://QmVKY2PnqeeRgtbzPqPuXhJokkV2TmfVeu9kk81fE93UqB",
+            "mime_type": "image/jpeg"
+        }
+    ],
+    "profile_id": "0x019c14",
+    "publication_id": "0x80",
+    "content_uri": "ar://JasdNwPn2LotuM1MjquEiHrEyzpe_a9ejnCtNr3KAIo",
+    "tags": [
+        "orbpaidcollect"
+    ],
+    "timestamp": 1699329250
+}
+----

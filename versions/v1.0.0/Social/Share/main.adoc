@@ -1,1 +1,65 @@
 ==== Share
+
+Share indicates an action of sharing an existing post or comment, think of it as retweet.
+
+===== Interface
+
+[,typescript]
+----
+interface Share {
+    handle: string
+    body: string
+    title: string
+    summary: string
+    media: {
+        address: string
+        mime_type: string
+    }[]
+    tags: string[]
+    author_url: string
+    profile_id: string
+    publication_id: string
+    content_uri: string
+    timestamp: number
+    target: {
+        handle: string
+        body: string
+        title: string
+        summary: string
+        media: {
+        address: string
+        mime_type: string
+        }[]
+        tags: string[]
+        author_url: string
+        profile_id: string
+        publication_id: string
+        content_uri: string
+    }
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "handle": "sujiyan.lens",
+    "profile_id": "0x2e62",
+    "publication_id": "0x27",
+    "timestamp": 1683197102,
+    "target": {
+        "handle": "lindao.lens",
+        "body": "@sujiyan.lens 🇯🇵",
+        "media": [
+            {
+                "address": "ipfs://QmPs5HNkak9CmXguyaYUiH4ypRgzaKQAxkVXnhq8UjaJ3r",
+                "mime_type": "image/jpeg"
+            }
+        ],
+        "profile_id": "0x01a8ae",
+        "publication_id": "0x14",
+        "content_uri": "https://arweave.net/8QcdcOITWAOiel6ZBE7MzlztD0gmrssLfspKCiWpXfY"
+    }
+}
+----

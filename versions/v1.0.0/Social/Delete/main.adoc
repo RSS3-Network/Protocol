@@ -1,12 +1,12 @@
-==== Revise
+==== Delete
 
-Revise indicates an action of updating an existing post.
+Delete indicates an action of deleting a post.
 
 ===== Interface
 
 [,typescript]
 ----
-interface Revise {
+interface Delete {
     handle: string
     body: string
     title: string
@@ -35,5 +35,5 @@ interface Revise {
     "profile_id": "55544",
     "publication_id": "7",
     "content_uri": "ipfs://bafkreic7t3twgima3cu54r7ftyuut6h74wpdwtlqoxcd66ox5qtkptokmy"
-}
+}s
 ----
