@@ -1,1 +1,29 @@
 ==== Burn
+
+===== Interface
+
+[,typescript]
+----
+interface TypeCollectibleBurn {
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    standard: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0x889edC2eDab5f40e902b864aD4d7AdE8E412F9B1",
+    "id": "1685",
+    "value": "1",
+    "name": "Lido: stETH Withdrawal NFT",
+    "symbol": "unstETH",
+    "standard": "ERC-721"
+}
+----

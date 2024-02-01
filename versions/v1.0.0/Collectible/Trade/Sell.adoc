@@ -1,1 +1,49 @@
 ===== Sell
+
+===== Interface
+
+[,typescript]
+----
+interface ActionCollectibleTradeSell {
+    action: string;
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    uri: string;
+    standard: string;
+    cost: {
+        address: string;
+        value: string;
+        name: string;
+        symbol: string;
+        decimals: number;
+        standard: string;
+    };
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "sell",
+    "address": "0x306b1ea3ecdf94aB739F1910bbda052Ed4A9f949",
+    "id": "159",
+    "value": "1",
+    "name": "Beanz",
+    "symbol": "BEANZ",
+    "uri": "ipfs://QmdYeDpkVZedk1mkGodjNmF35UNxwafhFLVvsHrWgJoz6A/beanz_metadata/159",
+    "standard": "ERC-721",
+    "cost": {
+        "address": "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2",
+        "value": "10500000000000000",
+        "name": "Wrapped Ether",
+        "symbol": "WETH",
+        "decimals": 18,
+        "standard": "ERC-20"
+    }
+}
+----

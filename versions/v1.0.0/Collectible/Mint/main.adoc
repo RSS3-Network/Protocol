@@ -1,1 +1,31 @@
 ==== Mint
+
+===== Interface
+
+[,typescript]
+----
+interface TypeCollectibleMint {
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    uri: string;
+    standard: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0xFC19B4536a4b9B9EEc1C362894f7dC505457538D",
+    "id": "696",
+    "value": "1",
+    "name": "R3FUS3",
+    "symbol": "R3FUS3",
+    "uri": "https://highlight-creator-assets.highlight.xyz/main/base-dir/b0b61e2c-f741-48c4-94ca-f090c9f5817e/onChainDir/696",
+    "standard": "ERC-721"
+}
+----

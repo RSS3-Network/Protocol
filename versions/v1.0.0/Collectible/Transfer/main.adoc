@@ -1,1 +1,31 @@
 ==== Transfer
+
+===== Interface
+
+[,typescript]
+----
+interface TypeCollectibleTransfer {
+    address: string;
+    id: string;
+    value: string;
+    name: string;
+    symbol: string;
+    uri: string;
+    standard: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0x5452C7fB99D99fAb3Cc1875E9DA9829Cb50F7A13",
+    "id": "1032",
+    "value": "1",
+    "name": "The Genesis RSS3 Avatar NFT",
+    "symbol": "The Genesis RSS3 Avatar NFT",
+    "uri": "data:application/json;base64,eyJuYW1lIjogIlRoZSBHZW5lc2lzIFJTUzMgQXZhdGFyIE5GVCAjMTAzMiIsICJkZXNjcmlwdGlvbiI6ICJUaGUgR2VuZXNpcyBSU1MzIEF2YXRhciBORlQgaXMgYSBjb2xsZWN0aW9uIG9mIDEwLDAwMCB1bmlxdWUgYXZhdGFycyBtZXRpY3Vsb3VzbHkgZGVzaWduZWQgdG8gaWRlbnRpZnkgUlNTMyBjb21tdW5pdHkgbWVtYmVycy4iLCAiaW1hZ2UiOiAiaXBmczovL1FtU1g5UWl3alRHQms1bTIyVXNjVGczdnJiTXdVZkZzbXhWek1INTdoa1BENVUvMTAzMi5wbmcifQ==",
+    "standard": "ERC-721"
+}
+----

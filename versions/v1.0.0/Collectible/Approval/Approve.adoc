@@ -1,1 +1,31 @@
 ===== Approve
+
+===== Interface
+
+[,typescript]
+----
+interface ActionCollectibleApprovalApprove {
+    action: string;
+    address: string;
+    id: string;
+    name: string;
+    standard: string;
+    symbol: string;
+    uri: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "approve",
+    "address": "0x7713Ccb297657ca84eD79bdDf5907e0196D34205",
+    "id": "6",
+    "name": "CCFC",
+    "standard": "ERC-721",
+    "symbol": "CCFC",
+    "uri": " ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6"
+}
+----
