@@ -1,19 +1,21 @@
 ==== Burn
 
+Burn indicates an action of burning a token or tokens.
+
 ===== Interface
 
 [,typescript]
 ----
 
-interface RootObject {
-    action: string;
-    address: string;
-    id: string;
-    name: string;
-    standard: string;
-    symbol: string;
-    uri: string;
+interface Burn {
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
     value: string;
+    uri?: string;
+    parsed_image_url?: string;
 }
 
 ----

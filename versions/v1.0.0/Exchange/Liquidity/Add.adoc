@@ -1,10 +1,12 @@
 ===== Add
 
+Add indicates an action of adding a token/tokens to liquidity pool.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeLiquidityAdd {
+interface Add {
     action: string;
     tokens: {
         address?: string;

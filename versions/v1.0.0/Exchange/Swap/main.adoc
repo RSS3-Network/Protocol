@@ -1,10 +1,12 @@
 ==== Swap
 
+Swap indicates an action of a token swapping on a DEX.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeSwap {
+interface Swap {
     from: {
         address?: string;
         value: string;

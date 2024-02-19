@@ -1,5 +1,7 @@
 ===== Withdraw
 
+Withdraw indicates an action of withdrawing a token from one network to another.
+
 ===== Interface
 
 [,typescript]
@@ -7,11 +9,11 @@
 interface Withdraw {
     action: string;
     source_network: string;
-    target_network: string; 
+    target_network: string;
     token: {
         address?: string;
         id?: string;
-        value?: string;
+        value: string;
         name?: string;
         symbol?: string;
         uri?: string;

@@ -1,17 +1,21 @@
 ===== Revoke
 
+Revoke indicates an action of revoking permissions to assets in a wallet.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionCollectibleApprovalRevoke {
+interface Revoke {
     action: string;
-    address: string;
-    id: string;
-    name: string;
-    standard: string;
-    symbol: string;
-    uri: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
+    value: string;
+    uri?: string;
+    parsed_image_url?: string;
 }
 ----
 

@@ -1,5 +1,7 @@
 ==== Transfer
 
+Transfer indicates a transfer of a token/tokens to other addresses.
+
 ===== Interface
 
 [,typescript]
@@ -7,7 +9,7 @@
 interface Transfer {
     address?: string;
     id?: string;
-    value?: string;
+    value: string;
     name?: string;
     symbol?: string;
     uri?: string;

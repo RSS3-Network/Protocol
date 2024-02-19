@@ -1,5 +1,7 @@
 ===== List
 
+List indicates an action of selling in-game items for trading.
+
 ===== Interface
 
 [,typescript]
@@ -7,21 +9,22 @@
 
 interface List {
     action: string;
-    address: string;
-    cost: {
-        address: string;
-        decimals: number;
-        name: string;
-        standard: string;
-        symbol: string;
-        value: string;
-    };
-    id: string;
-    name: string;
-    standard: string;
-    symbol: string;
-    uri: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
     value: string;
+    uri?: string;
+    parsed_image_url?: string;
+    cost: {
+        name?: string;
+        symbol?: string;
+        decimals?: number;
+        value: string;
+        address?: string;
+        standard?: string;
+    };
 }
 ----
 

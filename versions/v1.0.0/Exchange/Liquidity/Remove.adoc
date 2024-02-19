@@ -1,10 +1,12 @@
 ===== Remove
 
+Remove indicates an action of remove a token/tokens from a pool.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeLiquidityRemove {
+interface Remove {
     action: string;
     tokens: {
         address?: string;

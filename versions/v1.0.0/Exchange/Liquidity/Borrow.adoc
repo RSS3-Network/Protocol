@@ -1,10 +1,12 @@
 ===== Borrow
 
+Borrow indicates an action of borrowing a token/tokens from a lender.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeLiquidityBorrow {
+interface Borrow {
     action: string;
     tokens: {
         address?: string;

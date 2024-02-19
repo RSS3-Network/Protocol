@@ -1,17 +1,20 @@
 ==== Mint
 
+Mint indicates an action of minting a new token/tokens.
+
 ===== Interface
 
 [,typescript]
 ----
-interface TypeCollectibleMint {
-    address: string;
-    id: string;
+interface Mint {
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
     value: string;
-    name: string;
-    symbol: string;
-    uri: string;
-    standard: string;
+    uri?: string;
+    parsed_image_url?: string;
 }
 ----
 

@@ -1,10 +1,12 @@
 ===== Stake
 
+Stake indicates an action to staking a token/tokens.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeStakingStake {
+interface Stake {
     action: string;
     token: {
         address?: string;

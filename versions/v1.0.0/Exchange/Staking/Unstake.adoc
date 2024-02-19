@@ -1,10 +1,12 @@
 ===== Unstake
 
+Unstake indicates an action to unstaking a token/tokens from the pool.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeStakingUnstake {
+interface Unstake {
     action: string;
     tokens: {
         address?: string;

@@ -1,10 +1,12 @@
 ===== Claim
 
+Claim indicates an action to claim the staking reward.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeStakingClaim {
+interface Claim {
     action: string;
     tokens: {
         address?: string;

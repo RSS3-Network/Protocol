@@ -1,10 +1,12 @@
 ===== Supply
 
+Supply indicates an action of supply a token/tokens to a lender.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeLiquiditySupply {
+interface Supply {
     action: string;
     tokens: {
         address?: string;

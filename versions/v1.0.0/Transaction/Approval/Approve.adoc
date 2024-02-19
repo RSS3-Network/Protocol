@@ -1,5 +1,7 @@
 ===== Approve
 
+Approve indicates an action of giving permissions to assets in a wallet.
+
 ===== Interface
 
 [,typescript]
