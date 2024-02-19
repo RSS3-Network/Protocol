@@ -21,7 +21,7 @@ interface Share {
     publication_id?: string
     content_uri?: string
     timestamp?: number
-    target?: {
+    target: {
         handle?: string
         body?: string
         title?: string
