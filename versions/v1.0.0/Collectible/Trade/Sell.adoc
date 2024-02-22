@@ -1,4 +1,4 @@
-===== Sell
+==== Sell
 
 Sell indicates an action of selling a token.
 

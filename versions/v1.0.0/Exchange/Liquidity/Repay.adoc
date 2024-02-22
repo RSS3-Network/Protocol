@@ -1,6 +1,6 @@
-===== Repay
+==== Repay
 
-Repay indicates an action of borrowing tokens to a lender.
+`Repay` indicates an action of repaying tokens to a lender.
 
 ===== Interface
 

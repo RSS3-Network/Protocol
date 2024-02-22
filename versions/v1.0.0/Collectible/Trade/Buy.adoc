@@ -1,4 +1,4 @@
-===== Buy
+==== Buy
 
 Buy indicates an action of buying a token.
 

@@ -1,6 +1,6 @@
-===== Supply
+==== Supply
 
-Supply indicates an action of supply a token/tokens to a lender.
+Supply indicates an action of supplying token(s) to a lender.
 
 ===== Interface
 

@@ -1,21 +1,20 @@
 ==== Burn
 
-Burn indicates an action of burning a token or tokens.
+Burn indicates an action of burning token(s).
 
 ===== Interface
 
 [,typescript]
 ----
-
 interface Burn {
-    address?: string;
-    id?: string;
-    name?: string;
-    standard?: string;
-    symbol?: string;
-    value: string;
-    uri?: string;
-    parsed_image_url?: string;
+  address?: string;
+  id?: string;
+  name?: string;
+  standard?: string;
+  symbol?: string;
+  value: string;
+  uri?: string;
+  parsed_image_url?: string;
 }
 
 ----
@@ -25,11 +24,11 @@ interface Burn {
 [,json]
 ----
 {
-    "address": "0x403E967b044d4Be25170310157cB1A4Bf10bdD0f",
-    "decimals": 18,
-    "name": "Aavegotchi FUD",
-    "standard": "ERC-20",
-    "symbol": "FUD",
-    "value": "74800000000000000000"
+"address": "0x403E967b044d4Be25170310157cB1A4Bf10bdD0f",
+  "decimals": 18,
+  "name": "Aavegotchi FUD",
+  "standard": "ERC-20",
+  "symbol": "FUD",
+  "value": "74800000000000000000"
 }
 ----

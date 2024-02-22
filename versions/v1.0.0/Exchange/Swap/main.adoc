@@ -1,6 +1,6 @@
 ==== Swap
 
-Swap indicates an action of a token swapping on a DEX.
+`Swap` indicates an action of swapping token from one to another.
 
 ===== Interface
 

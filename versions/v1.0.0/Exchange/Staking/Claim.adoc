@@ -1,6 +1,6 @@
-===== Claim
+==== Claim
 
-Claim indicates an action to claim the staking reward.
+`Claim` indicates an action of claiming staking rewards.
 
 ===== Interface
 

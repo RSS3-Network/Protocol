@@ -1,6 +1,6 @@
-===== Unstake
+==== Unstake
 
-Unstake indicates an action to unstaking a token/tokens from the pool.
+`Unstake` indicates an action of unstaking token(s).
 
 ===== Interface
 

@@ -1,6 +1,6 @@
-===== Stake
+==== Stake
 
-Stake indicates an action to staking a token/tokens.
+`Stake` indicates an action of staking token(s).
 
 ===== Interface
 

@@ -1,6 +1,6 @@
-===== Remove
+==== Remove
 
-Remove indicates an action of remove a token/tokens from a pool.
+`Remove` indicates an action of removing token(s) from a liquidity pool.
 
 ===== Interface
 

@@ -1,4 +1,4 @@
-===== Revoke
+==== Revoke
 
 Revoke indicates an action of revoking permissions to assets in a wallet.
 
