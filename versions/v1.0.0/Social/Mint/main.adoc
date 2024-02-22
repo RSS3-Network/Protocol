@@ -1,6 +1,6 @@
 ==== Mint
 
-Mint indicates an action of minting a post.
+`Mint` indicates an action of minting a post.
 
 ===== Interface
 

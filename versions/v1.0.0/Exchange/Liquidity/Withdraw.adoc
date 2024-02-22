@@ -1,6 +1,6 @@
 ==== Withdraw
 
-`Withdraw` indicates a token transfer from either a CEX or a DEX.
+`Withdraw` indicates token(s) transfer from either a CEX or a DEX.
 
 ===== Interface
 

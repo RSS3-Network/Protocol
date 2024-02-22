@@ -1,6 +1,6 @@
 ==== Remove
 
-Proxy Remove indicates that a user has remove their operating rights from another user.
+`Remove` indicates an action of removing a proxy.
 
 ===== Interface
 

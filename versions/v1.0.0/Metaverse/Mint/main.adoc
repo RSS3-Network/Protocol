@@ -1,6 +1,6 @@
 ==== Mint
 
-Mint indicates an action of minting token(s).
+`Mint` indicates an action of minting token(s).
 
 ===== Interface
 

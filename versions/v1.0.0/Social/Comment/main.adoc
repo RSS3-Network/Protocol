@@ -1,6 +1,6 @@
 ==== Comment
 
-Comment indicates an action of commenting on an existing post.
+`Comment` indicates an action of commenting on an existing post.
 
 ===== Interface
 

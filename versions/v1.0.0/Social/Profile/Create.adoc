@@ -1,6 +1,6 @@
 ===== Create
 
-Profile Create indicates an action of creating new credential.
+`Create` indicates an action of creating new credentials.
 
 ===== Interface
 

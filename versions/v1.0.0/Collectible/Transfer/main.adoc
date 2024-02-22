@@ -1,6 +1,6 @@
 ==== Transfer
 
-Transfer indicates a transfer of a token/tokens to other addresses.
+`Transfer` indicates an aciton of transferring token(s) to others.
 
 ===== Interface
 

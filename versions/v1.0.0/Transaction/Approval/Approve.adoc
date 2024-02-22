@@ -1,6 +1,6 @@
 ===== Approve
 
-Approve indicates an action of giving permissions to assets in a wallet.
+`Approve` indicates an action of granting permissions to assets.
 
 ===== Interface
 

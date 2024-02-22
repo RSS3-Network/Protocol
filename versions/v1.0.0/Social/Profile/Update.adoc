@@ -1,6 +1,6 @@
 ===== Update
 
-Profile Update indicates an action of updating an existing credential.
+`Update` indicates an action of updating an existing credential.
 
 ===== Interface
 

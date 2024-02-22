@@ -1,6 +1,6 @@
 ==== Sell
 
-Sell indicates an action of selling a token.
+Sell indicates an action of selling token(s).
 
 ===== Interface
 
