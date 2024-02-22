@@ -1,5 +1,7 @@
 ==== Burn
 
+Burn indicates an action of burning a token or tokens.
+
 ===== Interface
 
 [,typescript]
@@ -7,7 +9,7 @@
 interface Burn {
     address?: string;
     id?: string;
-    value?: string;
+    value: string;
     name?: string;
     symbol?: string;
     uri?: string;

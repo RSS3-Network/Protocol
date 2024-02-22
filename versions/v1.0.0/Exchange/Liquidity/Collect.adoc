@@ -1,10 +1,12 @@
 ===== Collect
 
+Collect indicates an action of collecting tokens from a user.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeLiquidityCollect {
+interface Collect {
     action: string;
     tokens: {
         address?: string;

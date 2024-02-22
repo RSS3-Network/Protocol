@@ -7,34 +7,34 @@ Comment indicates an action of commenting on an existing post.
 [,typescript]
 ----
 interface Comment {
-    handle: string
-    body: string
-    title: string
-    summary: string
-    media: {
+    handle?: string
+    body?: string
+    title?: string
+    summary?: string
+    media?: {
         address: string
         mime_type: string
     }[]
-    tags: string[]
-    author_url: string
-    profile_id: string
-    publication_id: string
-    content_uri: string
-    timestamp: number
+    tags?: string[]
+    author_url?: string
+    profile_id?: string
+    publication_id?: string
+    content_uri?: string
+    timestamp?: number
     target: {
-        handle: string
-        body: string
-        title: string
-        summary: string
-        media: {
-        address: string
-        mime_type: string
+        handle?: string
+        body?: string
+        title?: string
+        summary?: string
+        media?: {
+            address: string
+            mime_type: string
         }[]
-        tags: string[]
-        author_url: string
-        profile_id: string
-        publication_id: string
-        content_uri: string
+        tags?: string[]
+        author_url?: string
+        profile_id?: string
+        publication_id?: string
+        content_uri?: string
     }
 }
 ----

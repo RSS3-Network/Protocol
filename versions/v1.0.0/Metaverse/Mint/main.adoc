@@ -1,19 +1,21 @@
 ==== Mint
 
+Mint indicates an action of minting a new token/tokens.
+
 ===== Interface
 
 [,typescript]
 ----
 
 interface Mint {
-    action: string;
-    address: string;
-    id: string;
-    name: string;
-    standard: string;
-    symbol: string;
-    uri: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
     value: string;
+    uri?: string;
+    parsed_image_url?: string;
 }
 ----
 

@@ -9,6 +9,9 @@
 . Henry (https://github.com/HenryQW[*@HenryQW*])
 . Polebug (https://github.com/Polebug[*@Polebug*])
 . pseudoyu (https://github.com/pseudoyu[*@pseudoyu*])
+. BruceXC (https://github.com/brucexc[*@brucexc*])
+. Nya Candy (https://github.com/Candinya[*@Candinya*])
+. Thomas (https://github.com/naaive[*@naaive*])
 
 == Abstract
 

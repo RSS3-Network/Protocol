@@ -1,10 +1,12 @@
 ===== Repay
 
+Repay indicates an action of borrowing tokens to a lender.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeLiquidityRepay {
+interface Repay {
     action: string;
     tokens: {
         address?: string;

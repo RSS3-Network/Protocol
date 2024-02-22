@@ -1,5 +1,7 @@
 ===== Sell
 
+Sell indicates an action of selling in-game items.
+
 ===== Interface
 
 [,typescript]
@@ -7,21 +9,22 @@
 
 interface Sell {
     action: string;
-    address: string;
-    cost: {
-        address: string;
-        decimals: number;
-        name: string;
-        standard: string;
-        symbol: string;
-        value: string;
-    };
-    id: string;
-    name: string;
-    standard: string;
-    symbol: string;
-    uri: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
     value: string;
+    uri?: string;
+    parsed_image_url?: string;
+    cost: {
+        name?: string;
+        symbol?: string;
+        decimals?: number;
+        value: string;
+        address?: string;
+        standard?: string;
+    };
 }
 ----
 
@@ -29,5 +32,21 @@ interface Sell {
 
 [,json]
 ----
-
+{
+    "action": "sell",
+    "address": "0x86935F11C86623deC8a25696E1C19a8659CbF95d",
+    "cost": {
+    "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
+        "decimals": 18,
+        "name": "Aavegotchi GHST Token (PoS)",
+        "standard": "ERC-20",
+        "symbol": "GHST",
+        "value": "1500000000000000000000"
+    },
+    "id": "11222",
+    "name": "Aavegotchi",
+    "standard": "ERC-721",
+    "symbol": "GOTCHI",
+    "uri": "https://app.aavegotchi.com/metadata/aavegotchis/11222"
+}
 ----

@@ -1,17 +1,20 @@
 ==== Transfer
 
+Transfer indicates a transfer of a token/tokens to other addresses.
+
 ===== Interface
 
 [,typescript]
 ----
-interface TypeCollectibleTransfer {
-    address: string;
-    id: string;
+interface Transfer {
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
     value: string;
-    name: string;
-    symbol: string;
-    uri: string;
-    standard: string;
+    uri?: string;
+    parsed_image_url?: string;
 }
 ----
 

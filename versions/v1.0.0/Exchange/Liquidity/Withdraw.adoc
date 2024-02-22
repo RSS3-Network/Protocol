@@ -1,10 +1,12 @@
 ===== Withdraw
 
+Withdraw indicates a token transfer from either a CEX or a DEX.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionExchangeLiquidityWithdraw {
+interface Withdraw {
     action: string;
     tokens: {
         address?: string;

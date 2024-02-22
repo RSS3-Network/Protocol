@@ -1,17 +1,21 @@
 ===== Approve
 
+Approve indicates an action of giving permissions to assets in a wallet.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionCollectibleApprovalApprove {
+interface Approve {
     action: string;
-    address: string;
-    id: string;
-    name: string;
-    standard: string;
-    symbol: string;
-    uri: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
+    value: string;
+    uri?: string;
+    parsed_image_url?: string;
 }
 ----
 

@@ -1,5 +1,7 @@
 ===== Deposit
 
+Deposit indicates an action of depositing a token from one network to another.
+
 ===== Interface
 
 [,typescript]
@@ -11,7 +13,7 @@ interface Deposit {
     token: {
         address?: string;
         id?: string;
-        value?: string;
+        value: string;
         name?: string;
         symbol?: string;
         uri?: string;

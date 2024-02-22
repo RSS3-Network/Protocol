@@ -1,25 +1,28 @@
 ===== Sell
 
+Sell indicates an action of selling a token.
+
 ===== Interface
 
 [,typescript]
 ----
-interface ActionCollectibleTradeSell {
+interface Sell {
     action: string;
-    address: string;
-    id: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
     value: string;
-    name: string;
-    symbol: string;
-    uri: string;
-    standard: string;
+    uri?: string;
+    parsed_image_url?: string;
     cost: {
-        address: string;
+        name?: string;
+        symbol?: string;
+        decimals?: number;
         value: string;
-        name: string;
-        symbol: string;
-        decimals: number;
-        standard: string;
+        address?: string;
+        standard?: string;
     };
 }
 ----

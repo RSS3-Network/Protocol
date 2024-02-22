@@ -1,18 +1,20 @@
 ==== Transfer
 
+Transfer indicates an action of transfering in-game item to others.
+
 ===== Interface
 
 [,typescript]
 ----
 interface Transfer {
-    action: string;
-    address: string;
-    id: string;
-    name: string;
-    standard: string;
-    symbol: string;
-    uri: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
     value: string;
+    uri?: string;
+    parsed_image_url?: string;
 }
 ----
 
