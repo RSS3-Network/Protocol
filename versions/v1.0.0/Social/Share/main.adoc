@@ -1,6 +1,6 @@
 ==== Share
 
-Share indicates an action of sharing an existing post or comment, think of it as retweet.
+`Share` indicates an action of sharing an existing post or comment.
 
 ===== Interface
 

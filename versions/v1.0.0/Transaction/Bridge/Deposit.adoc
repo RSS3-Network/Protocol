@@ -1,6 +1,6 @@
 ===== Deposit
 
-Deposit indicates an action of depositing token(s) from one network to another.
+`Deposit` indicates an action of depositing token(s) from one network to another.
 
 ===== Interface
 

@@ -1,6 +1,6 @@
 ==== Revise
 
-Revise indicates an action of updating an existing post.
+`Revise` indicates an action of updating an existing post.
 
 ===== Interface
 

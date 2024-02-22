@@ -1,6 +1,6 @@
 ==== Burn
 
-Burn indicates an action of burning token(s) or tokens.
+`Burn` indicates an action of burning token(s).
 
 ===== Interface
 

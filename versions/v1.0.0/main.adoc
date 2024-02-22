@@ -18,6 +18,7 @@
 
 RSS3 Protocol v1.0.0 is completely rewritten from the ground up, replacing its predecessor v0.4.0-rc.1.
 It has been tested on the RSS3 DSL v0.4 - v0.9 for over 1 year and is now ready to be employed by the RSS3 DSL v1.0.0.
+The Protocol improves scalability, interoperability, and performance while reducing the stroage cost for the RSS3 DSL.
 
 == Specification
 include::Collectible/main.adoc[]
