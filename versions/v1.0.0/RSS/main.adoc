@@ -1,0 +1,5 @@
+=== RSS
+
+`RSS` is de facto very first Open Standard for information dissemination on the Internet.
+
+include::Feed/main.adoc[]

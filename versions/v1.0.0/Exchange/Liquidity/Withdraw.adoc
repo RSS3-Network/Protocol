@@ -1,0 +1,39 @@
+===== Withdraw
+
+Withdraw indicates a token transfer from either a CEX or a DEX.
+
+===== Interface
+
+[,typescript]
+----
+interface Withdraw {
+    action: string;
+    tokens: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    }[];
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "withdraw",
+  "tokens": [
+    {
+      "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+      "value": "124996062957",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "standard": "ERC-20"
+    }
+  ]
+}
+----

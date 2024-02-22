@@ -1,0 +1,34 @@
+===== Create
+
+Profile Create indicates an action of creating new credential.
+
+===== Interface
+
+[,typescript]
+----
+interface Create {
+    action: string
+    profile_id?: string
+    address?: string
+    handle?: string
+    image_uri?: string
+    bio?: string
+    name?: string
+    expiry?: string
+    key?: string
+    value?: string
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "create",
+    "profile_id": "3569",
+    "address": "0x3f54953e56a0fe272f3e1e61615bda1fd6578101",
+    "handle": "beh.csb",
+    "image_uri": "ipfs://bafkreidj4jdpwxi6aiz43ubokv5c3tnqlf4nfpkoss2rysfjzrdetgiekm"
+}
+----

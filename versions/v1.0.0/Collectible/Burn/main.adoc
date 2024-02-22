@@ -1,0 +1,33 @@
+==== Burn
+
+Burn indicates an action of burning a token or tokens.
+
+===== Interface
+
+[,typescript]
+----
+interface Burn {
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
+    value: string;
+    uri?: string;
+    parsed_image_url?: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0x889edC2eDab5f40e902b864aD4d7AdE8E412F9B1",
+    "id": "1685",
+    "value": "1",
+    "name": "Lido: stETH Withdrawal NFT",
+    "symbol": "unstETH",
+    "standard": "ERC-721"
+}
+----

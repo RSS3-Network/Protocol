@@ -1,0 +1,43 @@
+===== Deposit
+
+Deposit indicates an action of depositing a token from one network to another.
+
+===== Interface
+
+[,typescript]
+----
+interface Deposit {
+    action: string;
+    source_network: string;
+    target_network: string;
+    token: {
+        address?: string;
+        id?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        uri?: string;
+        decimals?: number;
+        standard?: string;
+    }
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "deposit",
+  "source_network": "ethereum",
+  "target_network": "ethereum",
+  "token": {
+    "address": "0x23b891e5C62E0955ae2bD185990103928Ab817b3",
+    "value": "84265385201993306272353",
+    "name": "nUSD",
+    "symbol": "nUSD",
+    "decimals": 18,
+    "standard": "ERC-20"
+  }
+}
+----

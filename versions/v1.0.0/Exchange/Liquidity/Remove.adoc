@@ -1,0 +1,47 @@
+===== Remove
+
+Remove indicates an action of remove a token/tokens from a pool.
+
+===== Interface
+
+[,typescript]
+----
+interface Remove {
+    action: string;
+    tokens: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    }[];
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "remove",
+  "tokens": [
+    {
+      "address": "0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6",
+      "value": "234654",
+      "name": "(PoS) Wrapped BTC",
+      "symbol": "WBTC",
+      "decimals": 8,
+      "standard": "ERC-20"
+    },
+    {
+      "address": "0x7ceB23fD6bC0adD59E62ac25578270cFf1b9f619",
+      "value": "39315876980378304",
+      "name": "Wrapped Ether",
+      "symbol": "WETH",
+      "decimals": 18,
+      "standard": "ERC-20"
+    }
+  ]
+}
+----

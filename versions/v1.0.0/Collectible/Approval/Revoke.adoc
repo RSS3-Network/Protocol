@@ -1,0 +1,35 @@
+===== Revoke
+
+Revoke indicates an action of revoking permissions to assets in a wallet.
+
+===== Interface
+
+[,typescript]
+----
+interface Revoke {
+    action: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
+    value: string;
+    uri?: string;
+    parsed_image_url?: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "revoke",
+    "address": "0x5452C7fB99D99fAb3Cc1875E9DA9829Cb50F7A13",
+    "id": "1032",
+    "name": "The Genesis RSS3 Avatar NFT",
+    "symbol": "The Genesis RSS3 Avatar NFT",
+    "uri": "data:application/json;base64,eyJuYW1lIjogIlRoZSBHZW5lc2lzIFJTUzMgQXZhdGFyIE5GVCAjMTAzMiIsICJkZXNjcmlwdGlvbiI6ICJUaGUgR2VuZXNpcyBSU1MzIEF2YXRhciBORlQgaXMgYSBjb2xsZWN0aW9uIG9mIDEwLDAwMCB1bmlxdWUgYXZhdGFycyBtZXRpY3Vsb3VzbHkgZGVzaWduZWQgdG8gaWRlbnRpZnkgUlNTMyBjb21tdW5pdHkgbWVtYmVycy4iLCAiaW1hZ2UiOiAiaXBmczovL1FtU1g5UWl3alRHQms1bTIyVXNjVGczdnJiTXdVZkZzbXhWek1INTdoa1BENVUvMTAzMi5wbmcifQ==",
+    "standard": "ERC-721"
+}
+----

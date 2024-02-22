@@ -1,0 +1,39 @@
+==== Mint
+
+Mint indicates an action of minting a post.
+
+===== Interface
+
+[,typescript]
+----
+interface Mint {
+    handle?: string
+    body?: string
+    title?: string
+    summary?: string
+    media?: {
+        address: string
+        mime_type: string
+    }[]
+    tags?: string[]
+    author_url?: string
+    profile_id?: string
+    publication_id?: string
+    content_uri?: string
+    timestamp?: number
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "handle": "henryqw.lens",
+    "body": "\"demos\", meaning people, and \"kratos\" meaning power; so democracy can be thought of as \"power of the people\": a way of governing which depends on the will of the people.",
+    "profile_id": "0x83a6",
+    "publication_id": "0x08",
+    "content_uri": "https://arweave.net/aMAYipJXf9rVHnwRYnNF7eUCxBc1zfkaopBt5TJwLWw",
+    "timestamp": 1679902646
+}
+----

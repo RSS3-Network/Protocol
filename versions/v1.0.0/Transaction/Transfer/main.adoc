@@ -1,0 +1,34 @@
+==== Transfer
+
+Transfer indicates a transfer of a token/tokens to other addresses.
+
+===== Interface
+
+[,typescript]
+----
+interface Transfer {
+    address?: string;
+    id?: string;
+    value: string;
+    name?: string;
+    symbol?: string;
+    uri?: string;
+    decimals?: number;
+    standard?: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0x5F82a3967f279729A7C58D741E9824A6d653317E",
+    "id": "7",
+    "value": "4593020000012345678",
+    "name": "xAI",
+    "symbol": "xAI",
+    "decimals": 8,
+    "standard": "ERC-20"
+}
+----

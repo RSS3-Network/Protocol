@@ -1,0 +1,9 @@
+=== Collectible
+
+`Collectible` covers operations that involve non-fungible tokens (NFTs).
+
+include::Approval/main.adoc[]
+include::Burn/main.adoc[]
+include::Mint/main.adoc[]
+include::Trade/main.adoc[]
+include::Transfer/main.adoc[]

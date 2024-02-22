@@ -1,0 +1,33 @@
+==== Transfer
+
+Transfer indicates an action of transfering in-game item to others.
+
+===== Interface
+
+[,typescript]
+----
+interface Transfer {
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
+    value: string;
+    uri?: string;
+    parsed_image_url?: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0x385Eeac5cB85A38A9a07A70c73e0a3271CfB54A7",
+    "decimals": 18,
+    "name": "Aavegotchi GHST Token (PoS)",
+    "standard": "ERC-20",
+    "symbol": "GHST",
+    "value": "50000000000000000"
+}
+----

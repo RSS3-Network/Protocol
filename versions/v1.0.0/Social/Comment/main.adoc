@@ -1,0 +1,67 @@
+==== Comment
+
+Comment indicates an action of commenting on an existing post.
+
+===== Interface
+
+[,typescript]
+----
+interface Comment {
+    handle?: string
+    body?: string
+    title?: string
+    summary?: string
+    media?: {
+        address: string
+        mime_type: string
+    }[]
+    tags?: string[]
+    author_url?: string
+    profile_id?: string
+    publication_id?: string
+    content_uri?: string
+    timestamp?: number
+    target: {
+        handle?: string
+        body?: string
+        title?: string
+        summary?: string
+        media?: {
+            address: string
+            mime_type: string
+        }[]
+        tags?: string[]
+        author_url?: string
+        profile_id?: string
+        publication_id?: string
+        content_uri?: string
+    }
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "handle": "romain_millon.lens",
+    "body": "You are not far, soon ahead...",
+    "profile_id": "0x01ce63",
+    "publication_id": "0x73",
+    "content_uri": "ar://snYKMd1W5Hzp6Q4qkC-InfSzEVWZDx39M_7MuY4Rld4",
+    "timestamp": 1699341732,
+    "target": {
+        "handle": "jessyjeanne.lens",
+        "body": "Jessy is a queen.you want it or not. 👸🏻🍟🙊 \n\nI feel Fakemous being in the top 3 key with highest price value after @lens/stani \n\nIt gives me Britney b*tch vibes 😍😂🍟",
+        "media": [
+            {
+                "address": "ipfs://QmT5tE8WeLYgjCkxJwJHAdw9HtkiAGWRuUKEGKkQwtLkat",
+                "mime_type": "image/jpeg"
+            }
+        ],
+        "profile_id": "0x73b1",
+        "publication_id": "0x3d81",
+        "content_uri": "ar://ggN86IfdpZL15nln0Zk3kLWVVt3lnxZOL2REaRhD9Qs"
+    }
+}
+----

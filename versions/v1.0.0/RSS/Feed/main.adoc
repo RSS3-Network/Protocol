@@ -1,0 +1,29 @@
+==== Feed
+
+Here we follow the original RSS specification to preserve the fields.
+
+===== Interface
+
+[,typescript]
+----
+interface Feed {
+    title: string
+    description: string
+    pub_date?: string // Publication date in ISO 8601 format (e.g., "2023-11-09T15:11:35.000Z")
+    tags?: string[]
+    authors?: {
+      name: string
+    }[]
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "title": "[Uk] Catherine, Princess of Wales, leaves hospital after surgery",
+    "description": "<div data-component=\"image-block\" class=\"ssrcss-1y79c70-ComponentWrapper ep2nwvo1\"><figure class=\"ssrcss-4qvfmb-StyledFigure e34k3c23\">...</div>",
+    "pub_date": "2024-01-29T12:03:29.000Z"
+}
+----

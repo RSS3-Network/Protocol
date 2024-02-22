@@ -1,0 +1,34 @@
+==== Burn
+
+Burn indicates an action of burning a token or tokens.
+
+===== Interface
+
+[,typescript]
+----
+interface Burn {
+    address?: string;
+    id?: string;
+    value: string;
+    name?: string;
+    symbol?: string;
+    uri?: string;
+    decimals?: number;
+    standard?: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "address": "0x1f961BCEAEF8eDF6fb2797C0293FfBDe3E994614",
+    "value": "9000000000000000",
+    "name": "Dingo Token",
+    "symbol": "DINGO",
+    "decimals": 9,
+    "standard": "ERC-20"
+}
+----
+

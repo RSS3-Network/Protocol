@@ -1,0 +1,49 @@
+==== Swap
+
+Swap indicates an action of a token swapping on a DEX.
+
+===== Interface
+
+[,typescript]
+----
+interface Swap {
+    from: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    };
+    to: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: number;
+        standard?: string;
+    };
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "from": {
+    "value": "141100000000000000000",
+    "name": "Ethereum",
+    "symbol": "ETH",
+    "decimals": 18,
+  },
+  "to": {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "value": "317236429301",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "decimals": 6,
+    "standard": "ERC-20"
+  }
+}
+----

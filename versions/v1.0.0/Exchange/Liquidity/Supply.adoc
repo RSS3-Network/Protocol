@@ -1,0 +1,39 @@
+===== Supply
+
+Supply indicates an action of supply a token/tokens to a lender.
+
+===== Interface
+
+[,typescript]
+----
+interface Supply {
+    action: string;
+    tokens: {
+        address?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        decimals?: string;
+        standard?: string;
+    }[];
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+  "action": "supply",
+  "tokens": [
+    {
+      "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359",
+      "value": "700000000",
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "decimals": 6,
+      "standard": "ERC-20"
+    }
+  ]
+}
+----

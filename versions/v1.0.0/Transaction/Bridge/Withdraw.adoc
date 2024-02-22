@@ -1,0 +1,44 @@
+===== Withdraw
+
+Withdraw indicates an action of withdrawing a token from one network to another.
+
+===== Interface
+
+[,typescript]
+----
+interface Withdraw {
+    action: string;
+    source_network: string;
+    target_network: string;
+    token: {
+        address?: string;
+        id?: string;
+        value: string;
+        name?: string;
+        symbol?: string;
+        uri?: string;
+        decimals?: number;
+        standard?: string;
+    }
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "deposit",
+    "source_network": "zksync_lite",
+    "target_network": "ethereum",
+    "token": {
+        "address": "0x7713Ccb297657ca84eD79bdDf5907e0196D34205",
+        "value": "30000000000000000",
+        "name": "Ethereum",
+        "symbol": "ETH",
+        "uri": "https://assets.coingecko.com/coins/images/279/large/ethereum.png",
+        "decimals": 18
+    }
+}
+----
+

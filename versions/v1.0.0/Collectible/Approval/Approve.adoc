@@ -1,0 +1,35 @@
+===== Approve
+
+Approve indicates an action of giving permissions to assets in a wallet.
+
+===== Interface
+
+[,typescript]
+----
+interface Approve {
+    action: string;
+    address?: string;
+    id?: string;
+    name?: string;
+    standard?: string;
+    symbol?: string;
+    value: string;
+    uri?: string;
+    parsed_image_url?: string;
+}
+----
+
+===== Example
+
+[,json]
+----
+{
+    "action": "approve",
+    "address": "0x7713Ccb297657ca84eD79bdDf5907e0196D34205",
+    "id": "6",
+    "name": "CCFC",
+    "standard": "ERC-721",
+    "symbol": "CCFC",
+    "uri": " ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6"
+}
+----
