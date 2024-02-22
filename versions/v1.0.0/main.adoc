@@ -6,11 +6,12 @@
 
 == Editors
 
+. BruceXC (https://github.com/brucexc[*@brucexc*])
 . Henry (https://github.com/HenryQW[*@HenryQW*])
+. KallyDev https://github.com/kallydev[*@kallydev*]
+. Nya Candy (https://github.com/Candinya[*@Candinya*])
 . Polebug (https://github.com/Polebug[*@Polebug*])
 . pseudoyu (https://github.com/pseudoyu[*@pseudoyu*])
-. BruceXC (https://github.com/brucexc[*@brucexc*])
-. Nya Candy (https://github.com/Candinya[*@Candinya*])
 . Thomas (https://github.com/naaive[*@naaive*])
 
 == Abstract
