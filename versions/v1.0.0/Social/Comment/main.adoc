@@ -2,6 +2,8 @@
 
 `Comment` indicates an action of commenting on an existing post.
 
+When a user comments on an existing post, the protocol will convert and record it as Comment metadata following the interface below.
+
 ===== Interface
 
 [,typescript]
@@ -38,6 +40,39 @@ interface Comment {
     }
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `handle`            | *Optional.* The handle/username of the user who is commenting.
+| `body`              | *Optional.* The main content of the comment.
+| `title`             | *Optional.* The title of the comment.
+| `summary`           | *Optional.* A short summary of the comment.
+| `media`             | *Optional.* An array of media objects that are attached to the comment.
+| `media.address`     | *Required.* The url/address of the media object.
+| `media.mime_type`   | *Required.* The mime type of the media object.
+| `tags`              | *Optional.* An array of tags that the comment belongs to.
+| `author_url`        | *Optional.* The url of the author.
+| `profile_id`        | *Optional.* The profile ID of the author.
+| `publication_id`    | *Optional.* The publication ID of the comment.
+| `content_uri`       | *Optional.* The content URI of the comment.
+| `timestamp`         | *Optional.* The timestamp of the comment.
+| `target`            | *Required.* The target post being commented on.
+| `target.handle`     | *Optional.* The handle/username of the user who created the original post.
+| `target.body`       | *Optional.* The main content of the original post.
+| `target.title`      | *Optional.* The title of the original post.
+| `target.summary`    | *Optional.* A short summary of the original post.
+| `target.media`      | *Optional.* An array of media objects that are attached to the original post.
+| `target.media.address` | *Required.* The url/address of the media object.
+| `target.media.mime_type` | *Required.* The mime type of the media object.
+| `target.tags`       | *Optional.* An array of tags that the original post belongs to.
+| `target.author_url` | *Optional.* The url of the author of the original post.
+| `target.profile_id` | *Optional.* The profile ID of the author of the original post.
+| `target.publication_id` | *Optional.* The publication ID of the original post.
+| `target.content_uri` | *Optional.* The content URI of the original post.
+|===
 
 ===== Example
 

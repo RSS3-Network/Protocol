@@ -2,6 +2,8 @@
 
 `Create` indicates an action of creating new credentials.
 
+When a user creates new credentials, the protocol will convert and record it as Create metadata following the interface below.
+
 ===== Interface
 
 [,typescript]
@@ -19,6 +21,23 @@ interface Create {
     value?: string
 }
 ----
+
+===== Description
+
+|===
+| Field          | Description
+
+| `action`       | *Required.* The action of creating new credentials.
+| `profile_id`   | *Optional.* The profile ID associated with the new credentials.
+| `address`      | *Optional.* The address associated with the new credentials.
+| `handle`       | *Optional.* The handle/username associated with the new credentials.
+| `image_uri`    | *Optional.* The image URI associated with the new credentials.
+| `bio`          | *Optional.* The biography associated with the new credentials.
+| `name`         | *Optional.* The name associated with the new credentials.
+| `expiry`       | *Optional.* The expiry date associated with the new credentials.
+| `key`          | *Optional.* The key associated with the new credentials.
+| `value`        | *Optional.* The value associated with the new credentials.
+|===
 
 ===== Example
 

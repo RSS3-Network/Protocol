@@ -2,6 +2,8 @@
 
 `Mint` indicates an action of minting a post.
 
+When a user mints a post, the protocol will convert and record it as Mint metadata following the interface below.
+
 ===== Interface
 
 [,typescript]
@@ -23,6 +25,26 @@ interface Mint {
     timestamp?: number
 }
 ----
+
+===== Description
+
+|===
+| Field           | Description
+
+| `handle`        | *Optional.* The handle/username of the user who is minting the post.
+| `body`          | *Optional.* The main content of the post being minted.
+| `title`         | *Optional.* The title of the post being minted.
+| `summary`       | *Optional.* A short summary of the post being minted.
+| `media`         | *Optional.* An array of media objects that are attached to the post being minted.
+| `media.address` | *Required.* The url/address of the media object.
+| `media.mime_type` | *Required.* The mime type of the media object.
+| `tags`          | *Optional.* An array of tags that the post being minted belongs to.
+| `author_url`    | *Optional.* The url of the author.
+| `profile_id`    | *Optional.* The profile ID of the author.
+| `publication_id` | *Optional.* The publication ID of the post being minted.
+| `content_uri`   | *Optional.* The content URI of the post being minted.
+| `timestamp`     | *Optional.* The timestamp of the post being minted.
+|===
 
 ===== Example
 

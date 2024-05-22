@@ -2,6 +2,8 @@
 
 `Update` indicates an action of updating an existing credential.
 
+When a user updates an existing credential, the protocol will convert and record it as Update metadata following the interface below.
+
 ===== Interface
 
 [,typescript]
@@ -19,6 +21,23 @@ interface Update {
     value?: string
 }
 ----
+
+===== Description
+
+|===
+| Field          | Description
+
+| `action`       | *Required.* The action of updating an existing credential.
+| `profile_id`   | *Optional.* The profile ID associated with the credential being updated.
+| `address`      | *Optional.* The address associated with the credential being updated.
+| `handle`       | *Optional.* The handle/username associated with the credential being updated.
+| `image_uri`    | *Optional.* The image URI associated with the credential being updated.
+| `bio`          | *Optional.* The biography associated with the credential being updated.
+| `name`         | *Optional.* The name associated with the credential being updated.
+| `expiry`       | *Optional.* The expiry date associated with the credential being updated.
+| `key`          | *Optional.* The key associated with the credential being updated.
+| `value`        | *Optional.* The value associated with the credential being updated.
+|===
 
 ===== Example
 
