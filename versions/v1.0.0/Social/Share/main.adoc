@@ -46,20 +46,20 @@ interface Share {
 |===
 | Field               | Description
 
-| `handle`            | *Optional.* The handle/username of the user who is sharing.
-| `body`              | *Optional.* The main content of the share.
-| `title`             | *Optional.* The title of the share.
-| `summary`           | *Optional.* A short summary of the share.
-| `media`             | *Optional.* An array of media objects that are attached to the share.
-| `media.address`     | *Required.* The url/address of the media object.
-| `media.mime_type`   | *Required.* The mime type of the media object.
-| `tags`              | *Optional.* An array of tags that the share belongs to.
-| `author_url`        | *Optional.* The url of the author.
-| `profile_id`        | *Optional.* The profile ID of the author.
-| `publication_id`    | *Optional.* The publication ID of the share.
-| `content_uri`       | *Optional.* The content URI of the share.
-| `timestamp`         | *Optional.* The timestamp of the share.
-| `target`            | *Required.* The target post or comment being shared.
+| `handle`        | *Optional.* The handle/username of the user who is posting.
+| `body`          | *Optional.* The main content of the post.
+| `title`         | *Optional.* The title of the post.
+| `summary`       | *Optional.* A short summary of the post.
+| `media`         | *Optional.* An array of media objects that are attached to the post.
+| `media.address` | *Required.* The url/address of the media object.
+| `media.mime_type` | *Required.* The mime type of the media object.*
+| `tags`          | *Optional.* An array of tags that the post belongs to.
+| `author_url`    | *Optional.* The url of the author.
+| `profile_id`    | *Optional.* The profile ID of the author.
+| `publication_id` | *Optional.* The publication ID of the post.
+| `content_uri`   | *Optional.* The content URI of the post.
+| `timestamp`     | *Optional.* The timestamp of the post.
+| `target`            | *Required.* The post or comment being shared.
 | `target.handle`     | *Optional.* The handle/username of the user who created the original post or comment.
 | `target.body`       | *Optional.* The main content of the original post or comment.
 | `target.title`      | *Optional.* The title of the original post or comment.

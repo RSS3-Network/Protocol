@@ -1,6 +1,8 @@
 ==== Transfer
 
-`Transfer` indicates an aciton of transferring token(s) to others.
+`Transfer` indicates an action of transferring collectible assets to others.
+
+When a user transfers collectible assets to others, the protocol will convert and record it as Transfer metadata following the interface below.
 
 ===== Interface
 
@@ -17,6 +19,21 @@ interface Transfer {
     parsed_image_url?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `address`           | *Optional.* The token address of the transferred collectible assets.
+| `id`                | *Optional.* The token ID of the transferred collectible assets.
+| `name`              | *Optional.* The token name of the transferred collectible assets.
+| `standard`          | *Optional.* The token standard of the transferred collectible assets.
+| `symbol`            | *Optional.* The token symbol of the transferred collectible assets.
+| `value`             | *Required.* The token amount/value of the transferred collectible assets.
+| `uri`               | *Optional.* The token URI of the transferred collectible assets.
+| `parsed_image_url`  | *Optional.* The parsed image URL of the transferred collectible assets.
+|===
 
 ===== Example
 

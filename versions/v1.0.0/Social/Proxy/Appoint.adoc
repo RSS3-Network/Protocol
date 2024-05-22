@@ -1,8 +1,8 @@
 ==== Appoint
 
-`Appoint` indicates an action of delegating rights to a proxy address.
+`Appoint` indicates an action of delegating rights to a proxy account.
 
-When a user appoints rights to a proxy address, the protocol will convert and record it as Appoint metadata following the interface below.
+When a user appoints rights to a proxy account, the protocol will convert and record it as Appoint metadata following the interface below.
 
 ===== Interface
 
@@ -30,17 +30,17 @@ interface Appoint {
 |===
 | Field              | Description
 
-| `action`           | *Required.* The action of appointing rights to a proxy address.
-| `profile.profile_id` | *Optional.* The profile ID associated with the appoint action.
-| `profile.address`    | *Optional.* The address associated with the appoint action.
-| `profile.handle`     | *Optional.* The handle/username associated with the appoint action.
-| `profile.image_uri`  | *Optional.* The image URI associated with the appoint action.
-| `profile.bio`        | *Optional.* The biography associated with the appoint action.
-| `profile.name`       | *Optional.* The name associated with the appoint action.
-| `profile.expiry`     | *Optional.* The expiry date associated with the appoint action.
-| `profile.key`        | *Optional.* The key associated with the appoint action.
-| `profile.value`      | *Optional.* The value associated with the appoint action.
-| `proxy_address`     | *Required.* The proxy address to which rights are being delegated.
+| `action`           | *Required.* The action of appointing rights to a proxy account.
+| `profile.profile_id` | *Optional.* The profile ID of the profile.
+| `profile.address`    | *Optional.* The address of the profile.
+| `profile.handle`     | *Optional.* The handle/username of the profile.
+| `profile.image_uri`  | *Optional.* The image URI of the profile.
+| `profile.bio`        | *Optional.* The biography of the profile.
+| `profile.name`       | *Optional.* The name of the profile.
+| `profile.expiry`     | *Optional.* The expiry date of the profile.
+| `profile.key`        | *Optional.* The key of the profile.
+| `profile.value`      | *Optional.* The value of the profile.
+| `proxy_address`     | *Required.* The proxy address to which the profile'rights are being delegated.
 |===
 
 ===== Example

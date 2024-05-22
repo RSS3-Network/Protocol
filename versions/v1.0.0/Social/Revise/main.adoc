@@ -31,19 +31,19 @@ interface Revise {
 |===
 | Field           | Description
 
-| `handle`        | *Required.* The handle/username of the user who is posting.
-| `body`          | *Required.* The main content of the post.
-| `title`         | *Required.* The title of the post.
-| `summary`       | *Required.* A short summary of the post.
-| `media`         | *Required.* An array of media objects that are attached to the post.
-| `media.address` | *Required.* The url/address of the media object.
-| `media.mime_type` | *Required.* The mime type of the media object.
-| `tags`          | *Required.* An array of tags that the post belongs to.
-| `author_url`    | *Required.* The url of the author.
-| `profile_id`    | *Required.* The profile ID of the author.
-| `publication_id` | *Required.* The publication ID of the post.
-| `content_uri`   | *Required.* The content URI of the post.
-| `timestamp`     | *Required.* The timestamp of the post.
+| `handle`        | *Optional.* The handle/username of the user who is revising.
+| `body`          | *Optional.* The updated content of the post.
+| `title`         | *Optional.* The updated title of the post.
+| `summary`       | *Optional.* The updated short summary of the post.
+| `media`         | *Optional.* The updated array of media objects that are attached to the post.
+| `media.address` | *Required.* The updated url/address of the media object.
+| `media.mime_type` | *Required.* The updated mime type of the media object.*
+| `tags`          | *Optional.* The updated array of tags that the post belongs to.
+| `author_url`    | *Optional.* The url of the author.
+| `profile_id`    | *Optional.* The profile ID of the author.
+| `publication_id` | *Optional.* The updated publication ID of the post.
+| `content_uri`   | *Optional.* The updated content URI of the post.
+| `timestamp`     | *Optional.* The updated timestamp of the post.
 |===
 
 

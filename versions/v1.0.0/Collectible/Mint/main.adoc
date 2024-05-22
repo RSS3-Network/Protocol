@@ -1,6 +1,8 @@
 ==== Mint
 
-`Mint` indicates an action of minting token(s).
+`Mint` indicates an action of minting collectible assets.
+
+When a user mints collectible assets, the protocol will convert and record it as Mint metadata following the interface below.
 
 ===== Interface
 
@@ -17,6 +19,21 @@ interface Mint {
     parsed_image_url?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `address`           | *Optional.* The token address of the minted collectible assets.
+| `id`                | *Optional.* The token ID of the minted collectible assets.
+| `name`              | *Optional.* The token name of the minted collectible assets.
+| `standard`          | *Optional.* The token standard of the minted collectible assets.
+| `symbol`            | *Optional.* The token symbol of the minted collectible assets.
+| `value`             | *Required.* The token amount/value of the minted collectible assets.
+| `uri`               | *Optional.* The token URI of the minted collectible assets.
+| `parsed_image_url`  | *Optional.* The parsed image URL of the minted collectible assets.
+|===
 
 ===== Example
 

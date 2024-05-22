@@ -1,8 +1,8 @@
 ===== Create
 
-`Create` indicates an action of creating new credentials.
+`Create` indicates an action of creating a new profile.
 
-When a user creates new credentials, the protocol will convert and record it as Create metadata following the interface below.
+When a user creates a new profile, the protocol will convert and record it as Create metadata following the interface below.
 
 ===== Interface
 
@@ -27,16 +27,16 @@ interface Create {
 |===
 | Field          | Description
 
-| `action`       | *Required.* The action of creating new credentials.
-| `profile_id`   | *Optional.* The profile ID associated with the new credentials.
-| `address`      | *Optional.* The address associated with the new credentials.
-| `handle`       | *Optional.* The handle/username associated with the new credentials.
-| `image_uri`    | *Optional.* The image URI associated with the new credentials.
-| `bio`          | *Optional.* The biography associated with the new credentials.
-| `name`         | *Optional.* The name associated with the new credentials.
-| `expiry`       | *Optional.* The expiry date associated with the new credentials.
-| `key`          | *Optional.* The key associated with the new credentials.
-| `value`        | *Optional.* The value associated with the new credentials.
+| `action`       | *Required.* The action of creating a new profile.
+| `profile_id`   | *Optional.* The ID of the new profile.
+| `address`      | *Optional.* The address of the new profile.
+| `handle`       | *Optional.* The handle/username of the newly created profile.
+| `image_uri`    | *Optional.* The image URI of the new profile.
+| `bio`          | *Optional.* The biography of the new profile.
+| `name`         | *Optional.* The name of the new profile.
+| `expiry`       | *Optional.* The expiry date of the new profile.
+| `key`          | *Optional.* The key of the new profile.
+| `value`        | *Optional.* The value of the new profile.
 |===
 
 ===== Example

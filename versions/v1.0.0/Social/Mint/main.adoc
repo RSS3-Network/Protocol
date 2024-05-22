@@ -31,19 +31,19 @@ interface Mint {
 |===
 | Field           | Description
 
-| `handle`        | *Optional.* The handle/username of the user who is minting the post.
-| `body`          | *Optional.* The main content of the post being minted.
-| `title`         | *Optional.* The title of the post being minted.
-| `summary`       | *Optional.* A short summary of the post being minted.
-| `media`         | *Optional.* An array of media objects that are attached to the post being minted.
+| `handle`        | *Optional.* The handle/username of the user who minted the post.
+| `body`          | *Optional.* The main content of the minted post.
+| `title`         | *Optional.* The title of tthe minted post.
+| `summary`       | *Optional.* A short summary of the minted post.
+| `media`         | *Optional.* An array of media objects that are attached to the minted post.
 | `media.address` | *Required.* The url/address of the media object.
 | `media.mime_type` | *Required.* The mime type of the media object.
-| `tags`          | *Optional.* An array of tags that the post being minted belongs to.
+| `tags`          | *Optional.* An array of tags that the minted post belongs to.
 | `author_url`    | *Optional.* The url of the author.
 | `profile_id`    | *Optional.* The profile ID of the author.
-| `publication_id` | *Optional.* The publication ID of the post being minted.
-| `content_uri`   | *Optional.* The content URI of the post being minted.
-| `timestamp`     | *Optional.* The timestamp of the post being minted.
+| `publication_id` | *Optional.* The publication ID of the minted post.
+| `content_uri`   | *Optional.* The content URI of the minted post.
+| `timestamp`     | *Optional.* The timestamp of the minted post.
 |===
 
 ===== Example

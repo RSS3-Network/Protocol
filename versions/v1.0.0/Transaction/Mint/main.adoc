@@ -2,6 +2,8 @@
 
 `Mint` indicates an action of minting token(s).
 
+When a user mints token(s), the protocol will convert and record it as Mint metadata following the interface below.
+
 ===== Interface
 
 [,typescript]
@@ -17,6 +19,21 @@ interface Mint {
     standard?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `address`           | *Optional.* The token address of the minted assets.
+| `id`                | *Optional.* The token ID of the minted assets.
+| `name`              | *Optional.* The token name of the minted assets.
+| `standard`          | *Optional.* The token standard of the minted assets.
+| `symbol`            | *Optional.* The token symbol of the minted assets.
+| `value`             | *Required.* The token amount/value of the minted assets.
+| `uri`               | *Optional.* The token URI of the minted assets.
+| `decimals`          | *Optional.* The token decimals of the minted assets.
+|===
 
 ===== Example
 

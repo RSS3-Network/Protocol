@@ -1,6 +1,8 @@
 ==== Transfer
 
-`Transfer` indicates an action of transferring token(s) to others.
+`Transfer` indicates an action of transferring assets to others.
+
+When a user transfers assets to others, the protocol will convert and record it as Transfer metadata following the interface below.
 
 ===== Interface
 
@@ -17,6 +19,21 @@ interface Transfer {
     standard?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `address`           | *Optional.* The token address of the transferred assets.
+| `id`                | *Optional.* The token ID of the transferred assets.
+| `name`              | *Optional.* The token name of the transferred assets.
+| `standard`          | *Optional.* The token standard of the transferred assets.
+| `symbol`            | *Optional.* The token symbol of the transferred assets.
+| `value`             | *Required.* The token amount/value of the transferred assets.
+| `uri`               | *Optional.* The token URI of the transferred assets.
+| `decimals`          | *Optional.* The token decimals of the transferred assets.
+|===
 
 ===== Example
 

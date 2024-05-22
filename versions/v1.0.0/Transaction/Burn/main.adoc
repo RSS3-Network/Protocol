@@ -1,6 +1,8 @@
 ==== Burn
 
-`Burn` indicates an action of burning token(s).
+`Burn` indicates an action of burning assets.
+
+When a user burns assets, the protocol will convert and record it as Burn metadata following the interface below.
 
 ===== Interface
 
@@ -17,6 +19,21 @@ interface Burn {
     standard?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `address`           | *Optional.* The token address of the burnt assets.
+| `id`                | *Optional.* The token ID of the burnt assets.
+| `name`              | *Optional.* The token name of the burnt assets.
+| `standard`          | *Optional.* The token standard of the burnt assets.
+| `symbol`            | *Optional.* The token symbol of the burnt assets.
+| `value`             | *Required.* The token amount/value of the burnt assets.
+| `uri`               | *Optional.* The token URI of the burnt assets.
+| `decimals`          | *Optional.* The token decimals of the burnt assets.
+|===
 
 ===== Example
 

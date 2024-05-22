@@ -1,6 +1,8 @@
 ==== Sell
 
-`Sell` indicates an action of selling token(s).
+`Sell` indicates an action of selling collectible assets.
+
+When a user sells collectible assets, the protocol will convert and record it as Sell metadata following the interface below.
 
 ===== Interface
 
@@ -26,6 +28,29 @@ interface Sell {
     };
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `action`            | *Required.* The action of selling collectible assets.
+| `address`           | *Optional.* The token address of the sold collectible assets.
+| `id`                | *Optional.* The token ID of the sold collectible assets.
+| `name`              | *Optional.* The token name of the sold collectible assets.
+| `standard`          | *Optional.* The token standard of the sold collectible assets.
+| `symbol`            | *Optional.* The token symbol of the sold collectible assets.
+| `value`             | *Required.* The token amount/value of the sold collectible assets.
+| `uri`               | *Optional.* The token URI of the sold collectible assets.
+| `parsed_image_url`  | *Optional.* The parsed image URL of the sold collectible assets.
+| `cost`              | *Required.* The cost details of the buying action.
+| `cost.name`         | *Optional.* The token name of the cost token.
+| `cost.symbol`       | *Optional.* The token symbol of the cost token.
+| `cost.decimals`     | *Optional.* The token decimal places of the cost token.
+| `cost.value`        | *Required.* The token amount/value of the cost token.
+| `cost.address`      | *Optional.* The token address of the cost token.
+| `cost.standard`     | *Optional.* The token standard of the cost token.
+|===
 
 ===== Example
 

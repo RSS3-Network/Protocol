@@ -2,6 +2,8 @@
 
 `Revoke` indicates an action of removing permissions to assets.
 
+When a user revokes permissions to assets, the protocol will convert and record it as Revoke metadata following the interface below.
+
 ===== Interface
 
 [,typescript]
@@ -18,6 +20,22 @@ interface Revoke {
     standard?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `action`            | *Required.* The action of removing permissions to assets.
+| `address`           | *Optional.* The token address of the revoked assets.
+| `id`                | *Optional.* The token ID of the revoked assets.
+| `name`              | *Optional.* The token name of the revoked assets.
+| `standard`          | *Optional.* The token standard of the revoked assets.
+| `symbol`            | *Optional.* The token symbol of the revoked assets.
+| `value`             | *Required.* The token amount/value of the revoked assets.
+| `uri`               | *Optional.* The token URI of the revoked assets.
+| `decimals`          | *Optional.* The token decimals of the revoked assets.
+|===
 
 ===== Example
 

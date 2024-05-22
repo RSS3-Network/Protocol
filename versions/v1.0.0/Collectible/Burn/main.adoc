@@ -1,6 +1,8 @@
 ==== Burn
 
-`Burn` indicates an action of burning token(s).
+`Burn` indicates an action of burning collectible assets.
+
+When a user burns collectible assets, the protocol will convert and record it as Burn metadata following the interface below.
 
 ===== Interface
 
@@ -17,6 +19,21 @@ interface Burn {
     parsed_image_url?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `address`           | *Optional.* The token address of the burnt collectible assets.
+| `id`                | *Optional.* The token ID of the burnt collectible assets.
+| `name`              | *Optional.* The token name of the burnt collectible assets.
+| `standard`          | *Optional.* The token standard of the burnt collectible assets.
+| `symbol`            | *Optional.* The token symbol of the burnt collectible assets.
+| `value`             | *Required.* The token amount/value of the burnt collectible assets.
+| `uri`               | *Optional.* The token URI of the burnt collectible assets.
+| `parsed_image_url`  | *Optional.* The parsed image URL of the burnt collectible assets.
+|===
 
 ===== Example
 

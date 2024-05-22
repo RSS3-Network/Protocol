@@ -1,6 +1,8 @@
 ===== Deposit
 
-`Deposit` indicates an action of depositing token(s) from one network to another.
+`Deposit` indicates an action of depositing assets from one network to another.
+
+When a user deposits assets from one network to another, the protocol will convert and record it as Deposit metadata following the interface below.
 
 ===== Interface
 
@@ -22,6 +24,25 @@ interface Deposit {
     }
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `action`            | *Required.* The action of depositing assets from one network to another.
+| `source_network`    | *Required.* The source network from which the tokens are deposited.
+| `target_network`    | *Required.* The target network to which the tokens are deposited.
+| `token`             | *Required.* Details of the deposited token.
+| `token.address`     | *Optional.* The token address of the deposited token.
+| `token.id`          | *Optional.* The token ID of the deposited token.
+| `token.value`       | *Required.* The token value of the deposited token.
+| `token.name`        | *Optional.* The token name of the deposited token.
+| `token.symbol`      | *Optional.* The token symbol of the deposited token.
+| `token.uri`         | *Optional.* The token URI of the deposited token.
+| `token.decimals`    | *Optional.* The token decimal of the deposited token.
+| `token.standard`    | *Optional.* The token standard of the deposited token.
+|===
 
 ===== Example
 

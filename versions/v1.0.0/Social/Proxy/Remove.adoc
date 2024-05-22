@@ -30,17 +30,17 @@ interface Remove {
 |===
 | Field              | Description
 
-| `action`           | *Required.* The action of removing a proxy.
-| `profile.profile_id` | *Optional.* The profile ID associated with the removal action.
-| `profile.address`    | *Optional.* The address associated with the removal action.
-| `profile.handle`     | *Optional.* The handle/username associated with the removal action.
-| `profile.image_uri`  | *Optional.* The image URI associated with the removal action.
-| `profile.bio`        | *Optional.* The biography associated with the removal action.
-| `profile.name`       | *Optional.* The name associated with the removal action.
-| `profile.expiry`     | *Optional.* The expiry date associated with the removal action.
-| `profile.key`        | *Optional.* The key associated with the removal action.
-| `profile.value`      | *Optional.* The value associated with the removal action.
-| `proxy_address`     | *Required.* The proxy address to be removed.
+| `action`           | *Required.* The action of removing a proxy account.
+| `profile.profile_id` | *Optional.* The profile ID of the profile.
+| `profile.address`    | *Optional.* The address of the profile.
+| `profile.handle`     | *Optional.* The handle/username of the profile.
+| `profile.image_uri`  | *Optional.* The image URI of the profile.
+| `profile.bio`        | *Optional.* The biography of the profile.
+| `profile.name`       | *Optional.* The name of the profile.
+| `profile.expiry`     | *Optional.* The expiry date of the profile.
+| `profile.key`        | *Optional.* The key of the profile.
+| `profile.value`      | *Optional.* The value of the profile.
+| `proxy_address`     | *Required.* The proxy address to be removed from the profile.
 |===
 
 ===== Example

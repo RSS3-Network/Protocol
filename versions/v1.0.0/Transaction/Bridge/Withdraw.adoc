@@ -1,6 +1,8 @@
 ===== Withdraw
 
-`Withdraw` indicates an action of withdrawing token(s) from one network to another.
+`Withdraw` indicates an action of withdrawing assets from one network to another.
+
+When a user withdraws assets from one network to another, the protocol will convert and record it as Withdraw metadata following the interface below.
 
 ===== Interface
 
@@ -22,6 +24,25 @@ interface Withdraw {
     }
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `action`            | *Required.* The action of withdrawing assets from one network to another.
+| `source_network`    | *Required.* The source network from which the tokens are withdrawn.
+| `target_network`    | *Required.* The target network to which the tokens are withdrawn.
+| `token`             | *Required.* Details of the withdrawn token.
+| `token.address`     | *Optional.* The token address of the withdrawn token.
+| `token.id`          | *Optional.* The token ID of the withdrawn token.
+| `token.value`       | *Required.* The token value of the withdrawn token.
+| `token.name`        | *Optional.* The token name of the withdrawn token.
+| `token.symbol`      | *Optional.* The token symbol of the withdrawn token.
+| `token.uri`         | *Optional.* The token URI of the withdrawn token.
+| `token.decimals`    | *Optional.* The token decimal of the withdrawn token.
+| `token.standard`    | *Optional.* The token standard of the withdrawn token.
+|===
 
 ===== Example
 

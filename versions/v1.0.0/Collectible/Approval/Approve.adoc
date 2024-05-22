@@ -1,6 +1,8 @@
 ==== Approve
 
-`Approve` indicates an action of granting permissions to assets.
+`Approve` indicates an action of granting permissions to collectible assets.
+
+When a user approves permissions to collectible assets, the protocol will convert and record it as Approve metadata following the interface below.
 
 ===== Interface
 
@@ -18,6 +20,22 @@ interface Approve {
     parsed_image_url?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `action`            | *Required.* The action of granting permissions to collectible assets.
+| `address`           | *Optional.* The token address of the approved collectible assets.
+| `id`                | *Optional.* The token ID of the approved collectible assets.
+| `name`              | *Optional.* The token name of the approved collectible assets.
+| `standard`          | *Optional.* The token standard of the approved collectible assets.
+| `symbol`            | *Optional.* The token symbol of the approved collectible assets.
+| `value`             | *Required.* The token amount/value of the approved collectible assets.
+| `uri`               | *Optional.* The token URI of the approved collectible assets.
+| `parsed_image_url`  | *Optional.* The parsed image URL of the approved collectible assets.
+|===
 
 ===== Example
 

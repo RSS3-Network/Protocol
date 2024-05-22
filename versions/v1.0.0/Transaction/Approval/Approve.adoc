@@ -2,6 +2,8 @@
 
 `Approve` indicates an action of granting permissions to assets.
 
+When a user approves permissions to assets, the protocol will convert and record it as Approve metadata following the interface below.
+
 ===== Interface
 
 [,typescript]
@@ -18,6 +20,22 @@ interface Approve {
     standard?: string;
 }
 ----
+
+===== Description
+
+|===
+| Field               | Description
+
+| `action`            | *Required.* The action of granting permissions to assets.
+| `address`           | *Optional.* The token address of the approved assets.
+| `id`                | *Optional.* The token ID of the approved assets.
+| `name`              | *Optional.* The token name of the approved assets.
+| `standard`          | *Optional.* The token standard of the approved assets.
+| `symbol`            | *Optional.* The token symbol of the approved assets.
+| `value`             | *Required.* The token amount/value of the approved assets.
+| `uri`               | *Optional.* The token URI of the approved assets.
+| `decimals`          | *Optional.* The token decimals of the approved assets.
+|===
 
 ===== Example
 
