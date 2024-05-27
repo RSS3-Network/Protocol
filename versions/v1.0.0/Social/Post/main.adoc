@@ -51,20 +51,17 @@ interface Post {
 [,json]
 ----
 {
-    "handle": "mstrbstrd.lens",
-    "body": "Missed my lens frens :) happy to be back.",
+    "body": "Good morning ",
+    "content_uri": "ar://EL2IPR_FUSiw2_7xTL7F9fWS_S9cGY2cJCZb8Map88k",
+    "handle": "103786.lens",
     "media": [
-        {
-            "address": "ipfs://QmVKY2PnqeeRgtbzPqPuXhJokkV2TmfVeu9kk81fE93UqB",
-            "mime_type": "image/jpeg"
-        }
+    {
+        "address": "https://media3.giphy.com/media/JPHUCiioastGw/giphy.gif?cid=236415cd7ky2ps2edkxiuioxr46yvs5j9tfqdm51vv9isyvz&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+        "mime_type": "image/gif"
+    }
     ],
-    "profile_id": "0x019c14",
-    "publication_id": "0x80",
-    "content_uri": "ar://JasdNwPn2LotuM1MjquEiHrEyzpe_a9ejnCtNr3KAIo",
-    "tags": [
-        "orbpaidcollect"
-    ],
-    "timestamp": 1699329250
+    "profile_id": "0x010254",
+    "publication_id": "0x030e",
+    "timestamp": 1712773702
 }
 ----

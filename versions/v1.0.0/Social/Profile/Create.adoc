@@ -45,9 +45,8 @@ interface Create {
 ----
 {
     "action": "create",
-    "profile_id": "3569",
-    "address": "0x3f54953e56a0fe272f3e1e61615bda1fd6578101",
-    "handle": "beh.csb",
-    "image_uri": "ipfs://bafkreidj4jdpwxi6aiz43ubokv5c3tnqlf4nfpkoss2rysfjzrdetgiekm"
+    "address": "0x0b5e6100243f793e480de6088de6ba70aa9f3872",
+    "handle": "painfjj.lens",
+    "profile_id": "0x05272f"
 }
 ----

@@ -79,22 +79,16 @@ interface Share {
 [,json]
 ----
 {
-    "handle": "sujiyan.lens",
-    "profile_id": "0x2e62",
-    "publication_id": "0x27",
-    "timestamp": 1683197102,
+    "handle": "rabby1.lens",
+    "profile_id": "0x02caf8",
+    "publication_id": "0x33",
     "target": {
-        "handle": "lindao.lens",
-        "body": "@sujiyan.lens 🇯🇵",
-        "media": [
-            {
-                "address": "ipfs://QmPs5HNkak9CmXguyaYUiH4ypRgzaKQAxkVXnhq8UjaJ3r",
-                "mime_type": "image/jpeg"
-            }
-        ],
-        "profile_id": "0x01a8ae",
-        "publication_id": "0x14",
-        "content_uri": "https://arweave.net/8QcdcOITWAOiel6ZBE7MzlztD0gmrssLfspKCiWpXfY"
-    }
+    "body": "Asami did a great walkthrough earlier on how to use @lens/orb and @lens/bloomerstv✨\nWith a small detour by showing how the @lens/galverse MamaAI works too.\n\nIf you are new here, have a look!",
+    "content_uri": "ar://zKfqATzRdazjjYNP-SqDiIvCMxRe_gswJoLYZS5yYv8",
+    "handle": "kayakiko.lens",
+    "profile_id": "0x01c74b",
+    "publication_id": "0xe5"
+    },
+    "timestamp": 1712478136
 }
 ----

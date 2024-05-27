@@ -51,11 +51,20 @@ interface Mint {
 [,json]
 ----
 {
-    "handle": "henryqw.lens",
-    "body": "\"demos\", meaning people, and \"kratos\" meaning power; so democracy can be thought of as \"power of the people\": a way of governing which depends on the will of the people.",
-    "profile_id": "0x83a6",
-    "publication_id": "0x08",
-    "content_uri": "https://arweave.net/aMAYipJXf9rVHnwRYnNF7eUCxBc1zfkaopBt5TJwLWw",
-    "timestamp": 1679902646
+    "body": "💫 **Director Ayaka featured in GQ Japan!**\n\nGQ JAPAN are highlighting Director @lens/ayaka_ohira's work as an animation artist + the upcoming Galverse anime!\n\n📸 Watch it on Instagram: instagram.com/p/C68Ms9NtSci/\n📺 Watch it on TikTok: vt.tiktok.com/ZSYdhUaLw/\n\n_Check it out + like + share ❤️_",
+    "content_uri": "ar://K8BiVK02MkWW_Qu4js66mqBwm6ZbLn9mGZaRbuyfyNc",
+    "handle": "galverse.lens",
+    "media": [
+    {
+        "address": "ipfs://QmRqN3KTHqaV9mmxotxXa4i1vKFdaYJJPUgUCF8ccMukfP",
+        "mime_type": "image/png"
+    }
+    ],
+    "profile_id": "0x01c5b9",
+    "publication_id": "0x49",
+    "tags": [
+    "orbcommunitiesGalverse"
+    ],
+    "timestamp": 1715724978
 }
 ----

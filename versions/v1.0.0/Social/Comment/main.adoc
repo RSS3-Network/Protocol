@@ -79,24 +79,18 @@ interface Comment {
 [,json]
 ----
 {
-    "handle": "romain_millon.lens",
-    "body": "You are not far, soon ahead...",
-    "profile_id": "0x01ce63",
-    "publication_id": "0x73",
-    "content_uri": "ar://snYKMd1W5Hzp6Q4qkC-InfSzEVWZDx39M_7MuY4Rld4",
-    "timestamp": 1699341732,
+    "body": "Cool.🌸",
+    "content_uri": "ar://TN8jBlQja25mMgyZIDGoiMAjctKUneUyLyKdY9ZdCnE",
+    "handle": "looktanl.lens",
+    "profile_id": "0x01ed62",
+    "publication_id": "0x1d",
     "target": {
-        "handle": "jessyjeanne.lens",
-        "body": "Jessy is a queen.you want it or not. 👸🏻🍟🙊 \n\nI feel Fakemous being in the top 3 key with highest price value after @lens/stani \n\nIt gives me Britney b*tch vibes 😍😂🍟",
-        "media": [
-            {
-                "address": "ipfs://QmT5tE8WeLYgjCkxJwJHAdw9HtkiAGWRuUKEGKkQwtLkat",
-                "mime_type": "image/jpeg"
-            }
-        ],
-        "profile_id": "0x73b1",
-        "publication_id": "0x3d81",
-        "content_uri": "ar://ggN86IfdpZL15nln0Zk3kLWVVt3lnxZOL2REaRhD9Qs"
-    }
+    "body": "Just dropped a song about @lens/hey, mind's blown 🤯 Made with AI.",
+    "content_uri": "ar://z_o6aXzWKxxlQkXuEfZuRl0EolTIEDYaFzibwYRLhqs",
+    "handle": "yoginth.lens",
+    "profile_id": "0x0d",
+    "publication_id": "0x0472"
+    },
+    "timestamp": 1712293392
 }
 ----

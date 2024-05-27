@@ -45,11 +45,10 @@ interface Update {
 ----
 {
     "action": "update",
-    "profile_id": "0x020a73",
-    "address": "0xece7eddc02fb8f0010420d0d76911826b1536655",
-    "handle": "gupta.lens",
-    "image_uri": "ipfs://bafybeih5jwshcxwa73mtfdhwqs2rtevrbhl6t3blrtlb4n5dpea4iqplpu",
-    "bio": "I'm trader.",
-    "name": "PETE"
+    "address": "0x76d4ffda8c66864fa07f0a285b8e01e11b4bb7b3",
+    "handle": "brinse.lens",
+    "image_uri": "https://media.orb.ac/thumbnailDimension768/https://statics-polygon-lens.s3.eu-west-1.amazonaws.com/profile/nft-0x6441543C6537FF430f2e1d6fE8FFFcfc05d52D04_polygon_0x5D666F215a85B87Cb042D59662A7ecd2C8Cc44e6_3097622.gif",
+    "name": "Paperhandoooooor",
+    "profile_id": "0x01766e"
 }
 ----
