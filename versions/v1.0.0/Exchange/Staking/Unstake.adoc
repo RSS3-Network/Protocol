@@ -19,6 +19,18 @@ interface Unstake {
 }
 ----
 
+===== Fields
+
+`action` *Required*:: Action of the staking transaction, e.g. `unstake`.
+`tokens` *Required*:: Array of tokens unstaked from the staking pool.
+`tokens.address` *Optional*:: Contract address of the unstaked token.
+If the token is a native token, this field is not required, e.g. `0xc98D64DA73a6616c42117b582e832812e7B8D57F`.
+`tokens.value` *Required*:: Amount of the unstaked token, e.g. `5764251642130434218884`.
+`tokens.name` *Optional*:: Name of the unstaked token, e.g. `RSS3`.
+`tokens.symbol` *Optional*:: Symbol of the unstaked token, e.g. `RSS3`.
+`tokens.decimals` *Optional*:: Decimals of the unstaked token, e.g. `18`.
+`tokens.standard` *Optional*:: Standard of the unstaked token, e.g. `ERC-20`.
+
 ===== Example
 
 [,json]

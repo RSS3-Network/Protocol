@@ -19,6 +19,18 @@ interface Repay {
 }
 ----
 
+===== Fields
+
+`action` *Required*:: Action of the liquidity transaction, e.g. `repay`.
+`tokens` *Required*:: Array of tokens repaid from the liquidity pool.
+`tokens.address` *Optional*:: Contract address of the repaid token.
+If the token is a native token, this field is not required, e.g. `0xc2132D05D31c914a87C6611C10748AEb04B58e8F`.
+`tokens.value` *Required*:: Amount of the repaid token, e.g. `451826732`.
+`tokens.name` *Optional*:: Name of the repaid token, e.g. `(PoS) Tether USD`.
+`tokens.symbol` *Optional*:: Symbol of the repaid token, e.g. `USDT`.
+`tokens.decimals` *Optional*:: Decimals of the repaid token, e.g. `6`.
+`tokens.standard` *Optional*:: Standard of the repaid token, e.g. `ERC-20`.
+
 ===== Example
 
 [,json]

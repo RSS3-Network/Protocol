@@ -19,6 +19,18 @@ interface Withdraw {
 }
 ----
 
+===== Fields
+
+`action` *Required*:: Action of the liquidity transaction, e.g. `withdraw`.
+`tokens` *Required*:: Array of tokens withdrawn from the liquidity pool.
+`tokens.address` *Optional*:: Contract address of the withdrawn token.
+If the token is a native token, this field is not required, e.g. `0xaf88d065e77c8cC2239327C5EDb3A432268e5831`.
+`tokens.value` *Required*:: Amount of the withdrawn token, e.g. `124996062957`.
+`tokens.name` *Optional*:: Name of the withdrawn token, e.g. `USD Coin`.
+`tokens.symbol` *Optional*:: Symbol of the withdrawn token, e.g. `USDC`.
+`tokens.decimals` *Optional*:: Decimals of the withdrawn token, e.g. `6`.
+`tokens.standard` *Optional*:: Standard of the withdrawn token, e.g. `ERC-20`.
+
 ===== Example
 
 [,json]

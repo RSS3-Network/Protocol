@@ -26,6 +26,25 @@ interface Swap {
 }
 ----
 
+===== Fields
+
+`from` *Required*:: Token that was swapped from.
+`from.address` *Optional*:: Contract address of the token that was swapped from.
+If the token is a native token, this field is not required, e.g. null.
+`from.value` *Required*:: Amount of the token that was swapped from, e.g. `141100000000000000000`.
+`from.name` *Optional*:: Name of the token that was swapped from, e.g. `Ethereum`.
+`from.symbol` *Optional*:: Symbol of the token that was swapped from, e.g. `ETH`.
+`from.decimals` *Optional*:: Decimals of the token that was swapped from, e.g. `18`.
+`from.standard` *Optional*:: Standard of the token that was swapped from, e.g. null.
+`to` *Required*:: Token that was swapped to.
+`to.address` *Optional*:: Contract address of the token that was swapped to.
+If the token is a native token, this field is not required, e.g. `0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48`.
+`to.value` *Required*:: Amount of the token that was swapped to, e.g. `317236429301`.
+`to.name` *Optional*:: Name of the token that was swapped to, e.g. `USD Coin`.
+`to.symbol` *Optional*:: Symbol of the token that was swapped to., e.g. `USDC`.
+`to.decimals` *Optional*:: Decimals of the token that was swapped to, e.g. `6`.
+`to.standard` *Optional*:: Standard of the token that was swapped to., e.g. `ERC-20`.
+
 ===== Example
 
 [,json]
@@ -35,7 +54,7 @@ interface Swap {
     "value": "141100000000000000000",
     "name": "Ethereum",
     "symbol": "ETH",
-    "decimals": 18,
+    "decimals": 18
   },
   "to": {
     "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",

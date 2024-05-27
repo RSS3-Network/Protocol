@@ -19,6 +19,18 @@ interface Borrow {
 }
 ----
 
+===== Fields
+
+`action` *Required*:: Action of the liquidity transaction, e.g. `borrow`.
+`tokens` *Required*:: Array of borrowed tokens from the liquidity pool.
+`tokens.address` *Optional*:: Contract address of the borrowed token.
+If the token is a native token, this field is not required, e.g. `0xc2132D05D31c914a87C6611C10748AEb04B58e8F`.
+`tokens.value` *Required*:: Amount of the borrowed token, e.g. `800000000`.
+`tokens.name` *Optional*:: Name of the borrowed token, e.g. `(PoS) Tether USD`.
+`tokens.symbol` *Optional*:: Symbol of the borrowed token, e.g. `USDT`.
+`tokens.decimals` *Optional*:: Decimals of the borrowed token, e.g. `6`.
+`tokens.standard` *Optional*:: Standard of the borrowed token, e.g. `ERC-20`.
+
 ===== Example
 
 [,json]

@@ -19,6 +19,18 @@ interface Supply {
 }
 ----
 
+===== Fields
+
+`action` *Required*:: Action of the liquidity transaction, e.g. `supply`.
+`tokens` *Required*:: Array of tokens supplied from the liquidity pool.
+`tokens.address` *Optional*:: Contract address of the supplied token.
+If the token is a native token, this field is not required, e.g. `0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359`.
+`tokens.value` *Required*:: Amount of the supplied token, e.g. `700000000`.
+`tokens.name` *Optional*:: Name of the supplied token, e.g. `USD Coin`.
+`tokens.symbol` *Optional*:: Symbol of the supplied token, e.g. `USDC`.
+`tokens.decimals` *Optional*:: Decimals of the supplied token, e.g. `6`.
+`tokens.standard` *Optional*:: Standard of the supplied token, e.g. `ERC-20`.
+
 ===== Example
 
 [,json]
