@@ -47,7 +47,7 @@ interface Comment {
 | Field               | Description
 
 | `handle`        | *Optional.* The handle/username of the user who is commenting.
-| `body`          | *Optional.* The main content of the comment.
+| `body`          | *Required.* The main content of the comment.
 | `title`         | *Optional.* The title of the comment.
 | `summary`       | *Optional.* A short summary of the comment.
 | `media`         | *Optional.* An array of media objects that are attached to the comment.
@@ -61,7 +61,7 @@ interface Comment {
 | `timestamp`     | *Optional.* The timestamp of the comment.
 | `target`            | *Required.* The post or comment being commented.
 | `target.handle`     | *Optional.* The handle/username of the user who created the original post or comment.
-| `target.body`       | *Optional.* The main content of the original post or comment.
+| `target.body`       | *Required.* The main content of the original post or comment.
 | `target.title`      | *Optional.* The title of the original post or comment.
 | `target.summary`    | *Optional.* A short summary of the original post or comment.
 | `target.media`      | *Optional.* An array of media objects that are attached to the original post or comment.

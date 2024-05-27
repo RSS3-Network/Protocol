@@ -10,9 +10,9 @@ When a user creates a new profile, the protocol will convert and record it as Cr
 ----
 interface Create {
     action: string
-    profile_id?: string
-    address?: string
-    handle?: string
+    profile_id: string
+    address: string
+    handle: string
     image_uri?: string
     bio?: string
     name?: string
@@ -28,9 +28,9 @@ interface Create {
 | Field          | Description
 
 | `action`       | *Required.* The action of creating a new profile.
-| `profile_id`   | *Optional.* The ID of the new profile.
-| `address`      | *Optional.* The address of the new profile.
-| `handle`       | *Optional.* The handle/username of the newly created profile.
+| `profile_id`   | *Required.* The ID of the new profile.
+| `address`      | *Required.* The address of the new profile.
+| `handle`       | *Required.* The handle/username of the newly created profile.
 | `image_uri`    | *Optional.* The image URI of the new profile.
 | `bio`          | *Optional.* The biography of the new profile.
 | `name`         | *Optional.* The name of the new profile.

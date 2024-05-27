@@ -11,9 +11,9 @@ When a user removes a proxy, the protocol will convert and record it as Remove m
 interface Remove {
     action: string
     profile: {
-        profile_id?: string
-        address?: string
-        handle?: string
+        profile_id: string
+        address: string
+        handle: string
         image_uri?: string
         bio?: string
         name?: string
@@ -31,9 +31,9 @@ interface Remove {
 | Field              | Description
 
 | `action`           | *Required.* The action of removing a proxy account.
-| `profile.profile_id` | *Optional.* The profile ID of the profile.
-| `profile.address`    | *Optional.* The address of the profile.
-| `profile.handle`     | *Optional.* The handle/username of the profile.
+| `profile.profile_id` | *Required.* The profile ID of the profile.
+| `profile.address`    | *Required.* The address of the profile.
+| `profile.handle`     | *Required.* The handle/username of the profile.
 | `profile.image_uri`  | *Optional.* The image URI of the profile.
 | `profile.bio`        | *Optional.* The biography of the profile.
 | `profile.name`       | *Optional.* The name of the profile.
