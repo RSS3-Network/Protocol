@@ -39,6 +39,35 @@ interface Comment {
 }
 ----
 
+===== Fields
+
+`handle` *Optional*:: Handle/username of the user who is commenting, e.g. `looktanl.lens`.
+`body` *Required*:: Main content of the comment, e.g. `Cool.🌸`.
+`title` *Optional*:: Title of the comment.
+`summary` *Optional*:: Short summary of the comment.
+`media` *Optional*:: Array of media objects that are attached to the comment.
+`media.address` *Required*:: Url/address of the media object.
+`media.mime_type` *Required*:: The mime type of the media object.
+`tags` *Optional*:: Array of tags that the comment belongs to.
+`author_url` *Optional*:: Url of the commentor.
+`profile_id` *Optional*:: Profile ID of the commentor, e.g. `0x01ed62`.
+`publication_id` *Optional*:: Publication ID of the comment, e.g. `0x1d`.
+`content_uri` *Optional*:: Content URI of the comment, e.g. `ar://TN8jBlQja25mMgyZIDGoiMAjctKUneUyLyKdY9ZdCnE`.
+`timestamp` *Optional*:: Timestamp of the comment, e.g. `1712293392`.
+`target` *Required*:: Post or comment being commented.
+`target.handle` *Optional*:: Handle/username of the user who created the original post or comment, e.g. `yoginth.lens`.
+`target.body` *Required*:: Main content of the original post or comment, e.g. `Just dropped a song about @lens/hey, mind's blown 🤯 Made with AI.`.
+`target.title` *Optional*:: Title of the original post or comment.
+`target.summary` *Optional*:: Short summary of the original post or comment.
+`target.media` *Optional*:: Array of media objects that are attached to the original post or comment.
+`target.media.address` *Required*:: Url/address of the media object.
+`target.media.mime_type` *Required*:: Mime type of the media object.
+`target.tags` *Optional*:: Array of tags that the original post or comment belongs to.
+`target.author_url` *Optional*:: Url of the author of the original post or comment.
+`target.profile_id` *Optional*:: Profile ID of the author of the original post or comment, e.g. `0x0d`.
+`target.publication_id` *Optional*:: Publication ID of the original post or comment, e.g. `0x0472`.
+`target.content_uri` *Optional*:: Content URI of the original post or comment, e.g. `ar://z_o6aXzWKxxlQkXuEfZuRl0EolTIEDYaFzibwYRLhqs`.
+
 ===== Example
 
 [,json]

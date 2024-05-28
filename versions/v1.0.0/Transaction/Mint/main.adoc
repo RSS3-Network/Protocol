@@ -18,6 +18,17 @@ interface Mint {
 }
 ----
 
+===== Fields
+
+`address` *Optional*:: Address of the minted assets. If the token is a native token, this field is not required, e.g. `0x5F1B0A5dBc388a631F324f38C5245bC3410be991`.
+`id` *Optional*:: ID of the minted assets, e.g. `0`.
+`name` *Optional*:: Name of the minted assets, e.g. `SpaceX Voucher 71 of 100`.
+`standard` *Optional*:: Standard of the minted assets, e.g. `ERC-1155`.
+`symbol` *Optional*:: Symbol of the minted assets, e.g. `Reward at 3webx.cc`.
+`value` *Required*:: Amount of the minted assets, e.g. `1`.
+`uri` *Optional*:: URI of the minted assets, e.g. `https://3webx.cc/0.json`.
+`decimals` *Optional*:: Decimals of the minted assets, e.g. `18`.
+
 ===== Example
 
 [,json]

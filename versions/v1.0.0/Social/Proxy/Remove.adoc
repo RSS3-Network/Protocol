@@ -23,6 +23,20 @@ interface Remove {
 }
 ----
 
+===== Fields
+
+`action` *Required*:: Action of removing a proxy account, e.g. `remove`.
+`profile.profile_id` *Required*:: Profile ID of the profile, e.g. `32010`.
+`profile.address` *Required*:: Address of the profile, e.g. `0x23c46e912b34c09c4bcc97f4ed7cdd762cee408a`.
+`profile.handle` *Required*:: Handle/username of the profile, e.g. `brucexx.csb`.
+`profile.image_uri` *Optional*:: Image URI of the profile.
+`profile.bio` *Optional*:: Biography of the profile.
+`profile.name` *Optional*:: Name of the profile.
+`profile.expiry` *Optional*:: Expiry date of the profile.
+`profile.key` *Optional*:: Key of the profile.
+`profile.value` *Optional*:: Value of the profile.
+`proxy_address` *Required*:: Proxy address to be removed from the profile, e.g. `0x0f588318a494e4508a121a32b6670b5494ca3357`.
+
 ===== Example
 
 [,json]

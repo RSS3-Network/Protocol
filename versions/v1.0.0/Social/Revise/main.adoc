@@ -24,6 +24,22 @@ interface Revise {
 }
 ----
 
+===== Fields
+
+`handle` *Optional*:: Handle/username of the user who is revising, e.g. `ordi.csb`.
+`body` *Optional*:: Updated content of the post, e.g. `https://cn.noxinfluencer.com/youtube-channel-rank/top-100-all...`.
+`title` *Optional*:: Updated title of the post, e.g. `YouTube Top100`.
+`summary` *Optional*:: Updated short summary of the post.
+`media` *Optional*:: Updated array of media objects that are attached to the post.
+`media.address` *Required*:: Updated url/address of the media object.
+`media.mime_type` *Required*:: Updated mime type of the media object.
+`tags` *Optional*:: Updated array of tags that the post belongs to.
+`author_url` *Optional*:: Url of the author.
+`profile_id` *Optional*:: Profile ID of the author, e.g. `55544`.
+`publication_id` *Optional*:: Updated publication ID of the post, e.g. `7`.
+`content_uri` *Optional*:: Updated content URI of the post, e.g. `ipfs://bafkreic7t3twgima3cu54r7ftyuut6h74wpdwtlqoxcd66ox5qtkptokmy`.
+`timestamp` *Optional*:: Updated timestamp of the post.
+
 ===== Example
 
 [,json]

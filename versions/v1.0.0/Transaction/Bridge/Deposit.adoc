@@ -23,6 +23,21 @@ interface Deposit {
 }
 ----
 
+===== Fields
+
+`action` *Required*:: Action of depositing assets from one network to another, e.g. `deposit`.
+`source_network` *Required*:: Source network from which the tokens are deposited, e.g. `ethereum`.
+`target_network` *Required*:: Target network to which the tokens are deposited, e.g. `ethereum`.
+`token` *Required*:: Details of the deposited token.
+`token.address` *Optional*:: Address of the deposited token. If the token is a native token, this field is not required, e.g. `0x23b891e5C62E0955ae2bD185990103928Ab817b3`.
+`token.id` *Optional*:: ID of the deposited token, e.g. `0x23b891e5C62E0955ae2bD185990103928Ab817b3`.
+`token.value` *Required*:: Amount of the deposited token, e.g. `84265385201993306272353`.
+`token.name` *Optional*:: Name of the deposited token, e.g. `nUSD`.
+`token.symbol` *Optional*:: Symbol of the deposited token, e.g. `nUSD`.
+`token.uri` *Optional*:: URI of the deposited token, e.g. `https://assets.coingecko.com/coins/images/279/large/ethereum.png`.
+`token.decimals` *Optional*:: Decimal of the deposited token, e.g. `18`.
+`token.standard` *Optional*:: Standard of the deposited token, e.g. `ERC-20`.
+
 ===== Example
 
 [,json]

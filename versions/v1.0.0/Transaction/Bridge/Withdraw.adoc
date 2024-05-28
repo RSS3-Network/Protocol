@@ -23,6 +23,21 @@ interface Withdraw {
 }
 ----
 
+===== Fields
+
+`action` *Required*:: Action of withdrawing assets from one network to another, e.g. `withdraw`.
+`source_network` *Required*:: Source network from which the tokens are withdrawn, e.g. `zksync_lite`.
+`target_network` *Required*:: Target network to which the tokens are withdrawn, e.g. `ethereum`.
+`token` *Required*:: Details of the withdrawn token.
+`token.address` *Optional*:: Address of the withdrawn token. If the token is a native token, this field is not required, e.g. `0x7713Ccb297657ca84eD79bdDf5907e0196D34205`.
+`token.id` *Optional*:: ID of the withdrawn token.
+`token.value` *Required*:: Amount of the withdrawn token, e.g. `30000000000000000`.
+`token.name` *Optional*:: Name of the withdrawn token, e.g. `Ethereum`.
+`token.symbol` *Optional*:: Symbol of the withdrawn token, e.g. `ETH`.
+`token.uri` *Optional*:: URI of the withdrawn token, e.g. `https://assets.coingecko.com/coins/images/279/large/ethereum.png`.
+`token.decimals` *Optional*:: Decimal of the withdrawn token, e.g. `18`.
+`token.standard` *Optional*:: Standard of the withdrawn token, e.g. `ERC20`.
+
 ===== Example
 
 [,json]

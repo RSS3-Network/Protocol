@@ -39,6 +39,35 @@ interface Share {
 }
 ----
 
+===== Fields
+
+`handle` *Optional*:: Handle/username of the user who is sharing, e.g. `rabby1.lens`.
+`body` *Optional*:: Main content of the post.
+`title` *Optional*:: Title of the post.
+`summary` *Optional*:: Short summary of the post.
+`media` *Optional*:: Array of media objects that are attached to the post.
+`media.address` *Required*:: Url/address of the media object.
+`media.mime_type` *Required*:: Mime type of the media object.
+`tags` *Optional*:: Array of tags that the post belongs to.
+`author_url` *Optional*:: Url of the author.
+`profile_id` *Optional*:: Profile ID of the author, e.g. `0x02caf8`.
+`publication_id` *Optional*:: Publication ID of the post, e.g. `0x33`.
+`content_uri` *Optional*:: Content URI of the post.
+`timestamp` *Optional*:: Timestamp of the post, e.g. `1712478136`.
+`target` *Required*:: Post or comment being shared.
+`target.handle` *Optional*:: Handle/username of the user who created the original post or comment, e.g. `kayakiko.lens`.
+`target.body` *Optional*:: The main content of the original post or comment, e.g. `Asami did a great walkthrough earlier on how to use @lens/orb and @lens/bloomerstv✨\nWith a small detour by showing how the @lens/galverse MamaAI works too.\n\nIf you are new here, have a look!`.
+`target.title` *Optional*:: Title of the original post or comment.
+`target.summary` *Optional*:: Short summary of the original post or comment.
+`target.media` *Optional*:: Array of media objects that are attached to the original post or comment.
+`target.media.address` *Required*:: Url/address of the media object.
+`target.media.mime_type` *Required*:: Mime type of the media object.
+`target.tags` *Optional*:: Array of tags that the original post or comment belongs to.
+`target.author_url` *Optional*:: Url of the author of the original post or comment.
+`target.profile_id` *Optional*:: Profile ID of the author of the original post or comment, e.g. `0x01c74b`.
+`target.publication_id` *Optional*:: Publication ID of the original post or comment, e.g. `0xe5`.
+`target.content_uri` *Optional*:: Content URI of the original post or comment, e.g. `ar://zKfqATzRdazjjYNP-SqDiIvCMxRe_gswJoLYZS5yYv8`.
+
 ===== Example
 
 [,json]

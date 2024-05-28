@@ -19,6 +19,17 @@ interface Burn {
 
 ----
 
+===== Fields
+
+`address` *Optional*:: Address of the burnt metaverse token, e.g. `0x889edC2eDab5f40e902b864aD4d7AdE8E412F9B1`.
+`id` *Optional*:: ID of the burnt metaverse token, e.g. `1685`.
+`name` *Optional*:: Name of the burnt metaverse token, e.g. `Lido: stETH Withdrawal NFT`.
+`standard` *Optional*:: Standard of the burnt metaverse token, e.g. `ERC-721`.
+`symbol` *Optional*:: Symbol of the burnt metaverse token, e.g. `unstETH`.
+`value` *Required*:: Amount/value of the burnt metaverse token, e.g. `1`.
+`uri` *Optional*:: URI of the burnt metaverse token, e.g. `ipfs://QmdYeDpkVZedk1mkGodjNmF35UNxwafhFLVvsHrWgJoz6A/beanz_metadata/159`.
+`parsed_image_url` *Optional*:: Parsed image URL of the burnt metaverse token, e.g. `https://ipfs.io/ipfs/QmdYeDpkVZedk1mkGodjNmF35UNxwafhFLVvsHrWgJoz6A/beanz_metadata/159`.
+
 ===== Example
 
 [,json]

@@ -18,6 +18,17 @@ interface Burn {
 }
 ----
 
+===== Fields
+
+`address` *Optional*:: Address of the burnt assets. If the token is a native token, this field is not required, e.g. `0x1f961BCEAEF8eDF6fb2797C0293FfBDe3E994614`.
+`id` *Optional*:: ID of the burnt assets.
+`name` *Optional*:: Name of the burnt assets, e.g. `Dingo Token`.
+`standard` *Optional*:: Standard of the burnt assets, e.g. `ERC-20`.
+`symbol` *Optional*:: Symbol of the burnt assets, e.g. `DINGO`.
+`value` *Required*:: Amount of the burnt assets, e.g. `9000000000000000`.
+`uri` *Optional*:: URI of the burnt assets, e.g. `https://ipfs.io/ipfs/QmSx9QiwjTGKb5m22UscTg3vrbMwUfFsmxVzMH57hkPD5U/1032.png`.
+`decimals` *Optional*:: Decimals of the burnt assets, e.g. `9`.
+
 ===== Example
 
 [,json]

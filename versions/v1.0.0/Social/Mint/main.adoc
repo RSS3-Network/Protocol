@@ -24,6 +24,22 @@ interface Mint {
 }
 ----
 
+===== Fields
+
+`handle` *Optional*:: Handle/username of the user who minted the post, e.g. `galverse.lens`.
+`body` *Optional*:: Main content of the minted post, e.g. `💫 **Director Ayaka featured in GQ Japan!**\n\nGQ JAPAN are highlighting Director @lens/ayaka_ohira's work as an animation artist + the upcoming Galverse anime!\n\n📸 Watch it on Instagram: instagram.com/p/C68Ms9NtSci/\n📺 Watch it on TikTok: vt.tiktok.com/ZSYdhUaLw/\n\n_Check it out + like + share ❤️_`.
+`title` *Optional*:: Title of the minted post.
+`summary` *Optional*:: Short summary of the minted post.
+`media` *Optional*:: Array of media objects that are attached to the minted post.
+`media.address` *Required*:: Url/address of the media object, e.g. `ipfs://QmRqN3KTHqaV9mmxotxXa4i1vKFdaYJJPUgUCF8ccMukfP`.
+`media.mime_type` *Required*:: Mime type of the media object, e.g. `image/png`.
+`tags` *Optional*:: Array of tags that the minted post belongs to, e.g. `["orbcommunitiesGalverse"]`.
+`author_url` *Optional*:: Url of the author.
+`profile_id` *Optional*:: Profile ID of the author, e.g. `0x01c5b9`.
+`publication_id` *Optional*:: Publication ID of the minted post, e.g. `0x49`.
+`content_uri` *Optional*:: Content URI of the minted post, e.g. `ar://K8BiVK02MkWW_Qu4js66mqBwm6ZbLn9mGZaRbuyfyNc`.
+`timestamp` *Optional*:: Timestamp of the minted post, e.g. `1715724978`.
+
 ===== Example
 
 [,json]

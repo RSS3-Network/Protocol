@@ -34,6 +34,31 @@ interface Reward {
 }
 ----
 
+===== Fields
+
+`handle` *Optional*:: Handle/username of the user who is posting, e.g. `chorsee`.
+`body` *Optional*:: Main content of the post.
+`title` *Optional*:: Title of the post, e.g. `Crying with Tama`.
+`summary` *Optional*:: Short summary of the post, e.g. `The Resonance of the Concert to End Violence Against Women by Chorsee.`.
+`media` *Optional*:: Array of media objects that are attached to the post.
+`media.address` *Required*:: Url/address of the media object.
+`media.mime_type` *Required*:: Mime type of the media object.
+`tags` *Optional*:: Array of tags that the post belongs to.
+`author_url` *Optional*:: Url of the author.
+`profile_id` *Optional*:: Profile ID of the author.
+`publication_id` *Optional*:: Publication ID of the post.
+`content_uri` *Optional*:: Content URI of the post.
+`timestamp` *Optional*:: Timestamp of the post.
+`reward` *Required*:: Reward details.
+`reward.address` *Optional*:: Address of the reward token, If the token is a native token, this field is not required, e.g. `0xc2132D05D31c914a87C6611C10748AEb04B58e8F`.
+`reward.id` *Optional*:: ID of the reward token.
+`reward.value` *Required*:: Amount of the reward, e.g. `690000`.
+`reward.name` *Optional*:: Name of the reward token, e.g. `(PoS) Tether USD`.
+`reward.symbol` *Optional*:: Symbol of the reward token, e.g. `USDT`.
+`reward.uri` *Optional*:: URI of the reward token.
+`reward.decimals` *Optional*:: Decimal of the reward token, e.g. `6`.
+`reward.standard` *Optional*:: Standard of the reward token, e.g. `ERC-20`.
+
 ===== Example
 
 [,json]

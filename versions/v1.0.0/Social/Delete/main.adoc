@@ -24,6 +24,22 @@ interface Delete {
 }
 ----
 
+===== Fields
+
+`handle` *Optional*:: Handle/username of the user who deleted the post, e.g. `ordi.csb`.
+`body` *Optional*:: Main content of the deleted post, e.g. `https://cn.noxinfluencer.com/youtube-channel-rank/top-100-all-all-youtuber-sorted-by-subs-weekly\n\n\n1 T-Series https://www.youtube.com/@tseries\n`.
+`title` *Optional*:: The title of the deleted post, e.g. `YouTube Top100`.
+`summary` *Optional*:: Short summary of the deleted post.
+`media` *Optional*:: Array of media objects that are attached to the deleted post.
+`media.address` *Required*:: Url/address of the media object.
+`media.mime_type` *Required*:: Mime type of the media object.
+`tags` *Optional*:: Array of tags that the deleted post belongs to.
+`author_url` *Optional*:: Url of the author.
+`profile_id` *Optional*:: Profile ID of the author, e.g. `55544`.
+`publication_id` *Optional*:: Publication ID of the deleted post, e.g. `7`.
+`content_uri` *Optional*:: Content URI of the deleted post, e.g. `ipfs://bafkreic7t3twgima3cu54r7ftyuut6h74wpdwtlqoxcd66ox5qtkptokmy`.
+`timestamp` *Optional*:: Timestamp of the deleted post.
+
 ===== Example
 
 [,json]
