@@ -49,7 +49,7 @@ interface Reward {
 `publication_id` *Optional*:: Publication ID of the post.
 `content_uri` *Optional*:: Content URI of the post.
 `timestamp` *Optional*:: Timestamp of the post.
-`reward` *Required*:: Reward details.
+`reward` *Required*:: Reward for specific post. Should include the following fields.
 `reward.address` *Optional*:: Address of the reward token, If the token is a native token, this field is not required, e.g. `0xc2132D05D31c914a87C6611C10748AEb04B58e8F`.
 `reward.id` *Optional*:: ID of the reward token.
 `reward.value` *Required*:: Amount of the reward, e.g. `690000`.

@@ -38,7 +38,7 @@ interface Sell {
 `value` *Required*:: Amount of the sold metaverse token, e.g. `1`.
 `uri` *Optional*:: URI of the sold metaverse token, e.g. `ipfs://QmdYeDpkVZedk1mkGodjNmF35UNxwafhFLVvsHrWgJoz6A/beanz_metadata/159`.
 `parsed_image_url` *Optional*:: Parsed image URL of the sold metaverse token, e.g. `https://ipfs.io/ipfs/QmdYeDpkVZedk1mkGodjNmF35UNxwafhFLVvsHrWgJoz6A/beanz_metadata/159`.
-`cost` *Required*:: Cost details of the buying action.
+`cost` *Required*:: Cost of the sold metaverse token. Should include the following fields.
 `cost.name` *Optional*:: Name of the cost token, e.g. `Wrapped Ether`.
 `cost.symbol` *Optional*:: Symbol of the cost token, e.g. `WETH`.
 `cost.decimals` *Optional*:: Decimal places of the cost token, e.g. `18`.

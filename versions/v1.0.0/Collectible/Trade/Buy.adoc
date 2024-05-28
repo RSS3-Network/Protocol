@@ -38,7 +38,7 @@ interface Buy {
 `value` *Required*:: Amount of the bought collectible token, e.g. `1`.
 `uri` *Optional*:: URI of the bought collectible token, e.g. `ipfs://QmXBUGFTXuAeBfK9oB9G1NAhGq7AwosWjHFRHMdahETeRK`.
 `parsed_image_url` *Optional*:: Parsed image URL of the bought collectible token.
-`cost` *Required*:: Cost details of the buying action.
+`cost` *Required*:: Cost of the bought collectible token. Should include the following fields.
 `cost.name` *Optional*:: Name of the cost token, e.g. `Ethereum`.
 `cost.symbol` *Optional*:: Symbol of the cost token, e.g. `ETH`.
 `cost.decimals` *Optional*:: Decimal places of the cost token, e.g. `18`.
