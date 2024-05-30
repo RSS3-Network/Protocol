@@ -1,6 +1,6 @@
 ==== Collect
 
-`Collect` indicates an action of collecting token(s) from a user.
+`Collect` indicates the action of collecting token(s) from a user.
 
 ===== Interface
 

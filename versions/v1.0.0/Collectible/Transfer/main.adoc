@@ -1,6 +1,6 @@
 ==== Transfer
 
-`Transfer` indicates an aciton of transferring token(s) to others.
+`Transfer` indicates the aciton of transferring token(s) to others.
 
 ===== Interface
 

@@ -1,6 +1,6 @@
 ===== Revoke
 
-`Revoke` indicates an action of removing permissions to assets.
+`Revoke` indicates the action of removing permissions to assets.
 
 ===== Interface
 

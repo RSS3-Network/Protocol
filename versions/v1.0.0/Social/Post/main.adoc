@@ -1,6 +1,6 @@
 ==== Post
 
-`Post` indicates an action of publishing a new post.
+`Post` indicates the action of publishing a new post.
 
 ===== Interface
 

@@ -1,6 +1,6 @@
 ==== Unstake
 
-`Unstake` indicates an action of unstaking token(s).
+`Unstake` indicates the action of unstaking token(s).
 
 ===== Interface
 

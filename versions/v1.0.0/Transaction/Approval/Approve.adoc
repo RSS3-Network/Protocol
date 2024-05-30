@@ -1,6 +1,6 @@
 ===== Approve
 
-`Approve` indicates an action of granting permissions to assets.
+`Approve` indicates the action of granting permissions to assets.
 
 ===== Interface
 

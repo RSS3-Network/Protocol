@@ -1,6 +1,6 @@
 ==== Approve
 
-`Approve` indicates an action of granting permissions to token.
+`Approve` indicates the action of granting permissions to token.
 
 ===== Interface
 

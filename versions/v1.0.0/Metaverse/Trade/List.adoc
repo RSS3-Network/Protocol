@@ -1,6 +1,6 @@
 ==== List
 
-`List` indicates an action of selling in-game items for trading.
+`List` indicates the action of selling in-game items for trading.
 
 ===== Interface
 

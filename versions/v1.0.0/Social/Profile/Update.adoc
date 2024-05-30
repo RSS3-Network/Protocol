@@ -1,6 +1,6 @@
 ===== Update
 
-`Update` indicates an action of updating an existing credential.
+`Update` indicates the action of updating an existing credential.
 
 ===== Interface
 

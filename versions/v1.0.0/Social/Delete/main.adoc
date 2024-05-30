@@ -1,6 +1,6 @@
 ==== Delete
 
-`Delete` indicates an action of deleting a post.
+`Delete` indicates the action of deleting a post.
 
 ===== Interface
 

@@ -1,6 +1,6 @@
 ==== Transfer
 
-`Transfer` indicates an action of transfering in-game item to others.
+`Transfer` indicates the action of transfering in-game item to others.
 
 ===== Interface
 

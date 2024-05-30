@@ -1,6 +1,6 @@
 ===== Withdraw
 
-`Withdraw` indicates an action of withdrawing token(s) from one network to another.
+`Withdraw` indicates the action of withdrawing token(s) from one network to another.
 
 ===== Interface
 

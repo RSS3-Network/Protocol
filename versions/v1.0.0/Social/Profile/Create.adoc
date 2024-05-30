@@ -1,6 +1,6 @@
 ===== Create
 
-`Create` indicates an action of creating new credentials.
+`Create` indicates the action of creating new credentials.
 
 ===== Interface
 

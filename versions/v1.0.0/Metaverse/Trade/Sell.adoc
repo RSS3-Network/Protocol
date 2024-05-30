@@ -1,6 +1,6 @@
 ==== Sell
 
-`Sell` indicates an action of selling in-game items.
+`Sell` indicates the action of selling in-game items.
 
 ===== Interface
 

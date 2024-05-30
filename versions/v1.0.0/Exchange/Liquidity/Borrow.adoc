@@ -1,6 +1,6 @@
 ==== Borrow
 
-`Borrow` indicates an action of borrowing token(s) from a lender.
+`Borrow` indicates the action of borrowing token(s) from a lender.
 
 ===== Interface
 

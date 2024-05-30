@@ -1,6 +1,6 @@
 ==== Appoint
 
-`Appoint` indicates an action of delegating rights to a proxy address.
+`Appoint` indicates the action of delegating rights to a proxy address.
 
 ===== Interface
 

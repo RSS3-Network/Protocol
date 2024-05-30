@@ -1,6 +1,6 @@
 ==== Add
 
-`Add` indicates an action of adding token(s) to liquidity pool.
+`Add` indicates the action of adding token(s) to liquidity pool.
 
 ===== Interface
 

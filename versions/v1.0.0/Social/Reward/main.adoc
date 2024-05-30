@@ -1,6 +1,6 @@
 ==== Reward
 
-`Reward` indicates an action of rewarding a post or profile.
+`Reward` indicates the action of rewarding a post or profile.
 
 ===== Interface
 
