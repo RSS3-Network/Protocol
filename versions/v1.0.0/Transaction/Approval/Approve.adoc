@@ -1,6 +1,6 @@
 ===== Approve
 
-`Approve` indicates an action of granting permissions to assets.
+`Approve` indicates the action of granting permissions to assets.
 
 ===== Interface
 
@@ -18,6 +18,18 @@ interface Approve {
     standard?: string;
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of granting permissions to assets, e.g. `approve`.
+`address` *Optional*:: Address of the approved assets. If the token is a native token, this field is not required, e.g. `0x72e4f9F808C49A2a61dE9C5896298920Dc4EEEa9`.
+`id` *Optional*:: ID of the approved assets, e.g. `6`.
+`name` *Optional*:: Name of the approved assets, e.g. `HarryPotterObamaSonic10Inu`.
+`standard` *Optional*:: Standard of the approved assets, e.g. `ERC-20`.
+`symbol` *Optional*:: Symbol of the approved assets, e.g. `BITCOIN`.
+`value` *Required*:: Amount of the approved assets, e.g. `100000000000`.
+`uri` *Optional*:: URI of the approved assets, e.g. `https://assets.coingecko.com/coins/images/30323/thumb/hpos10i_logo_casino_night-dexview.png?1696529224`.
+`decimals` *Optional*:: Decimals of the approved assets, e.g. `8`.
 
 ===== Example
 

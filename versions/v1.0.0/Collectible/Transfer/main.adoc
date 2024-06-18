@@ -1,6 +1,6 @@
 ==== Transfer
 
-`Transfer` indicates an aciton of transferring token(s) to others.
+`Transfer` indicates the aciton of transferring token(s) to others.
 
 ===== Interface
 
@@ -17,6 +17,17 @@ interface Transfer {
     parsed_image_url?: string;
 }
 ----
+
+===== Fields
+
+`address` *Optional*:: Address of the transferred collectible token, e.g. `0x5452C7fB99D99fAb3Cc1875E9DA9829Cb50F7A13`.
+`id` *Optional*:: ID of the transferred collectible token, e.g. `1032`.
+`name` *Optional*:: Name of the transferred collectible token, e.g. `The Genesis RSS3 Avatar NFT`.
+`standard` *Optional*:: Standard of the transferred collectible token, e.g. `ERC-721`.
+`symbol` *Optional*:: Symbol of the transferred collectible token, e.g. `The Genesis RSS3 Avatar NFT`.
+`value` *Required*:: Amount/value of the transferred collectible token, e.g. `1`.
+`uri` *Optional*:: URI of the transferred collectible token, e.g. `ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6`.
+`parsed_image_url` *Optional*:: Parsed image URL of the transferred collectible token, e.g. `https://ipfs.io/ipfs/QmSX9QiwjTGbk5m22UscTg3vrbMwUfFsmxVzMI57hkPD5U/1032.png`.
 
 ===== Example
 

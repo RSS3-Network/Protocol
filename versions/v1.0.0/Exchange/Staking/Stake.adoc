@@ -1,6 +1,6 @@
 ==== Stake
 
-`Stake` indicates an action of staking token(s).
+`Stake` indicates the action of staking token(s).
 
 ===== Interface
 
@@ -22,6 +22,21 @@ interface Stake {
     }
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of the staking transaction, e.g. `stake`.
+`tokens` *Required*:: Array of tokens staked from the staking pool.
+`tokens.address` *Optional*:: Contract address of the staked token.
+If the token is a native token, this field is not required, e.g. `0xc98D64DA73a6616c42117b582e832812e7B8D57F`.
+`tokens.value` *Required*:: Amount of the staked token, e.g. `5764251642130434218884`.
+`tokens.name` *Optional*:: Name of the staked token, e.g. `RSS3`.
+`tokens.symbol` *Optional*:: Symbol of the staked token, e.g. `RSS3`.
+`tokens.decimals` *Optional*:: Decimals of the staked token, e.g. `18`.
+`tokens.standard` *Optional*:: Standard of the staked token, e.g. `ERC-20`.
+`period` *Optional*:: Period of the staking (if the staking has a time locker).
+`period.start` *Required*:: Start time of the staking period, e.g. `2023-02-02T12:26:59Z`.
+`period.end` *Required*:: End time of the staking period, e.g. `2023-05-03T12:26:59Z`.
 
 ===== Example
 

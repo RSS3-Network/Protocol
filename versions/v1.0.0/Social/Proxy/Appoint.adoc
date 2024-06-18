@@ -1,6 +1,6 @@
 ==== Appoint
 
-`Appoint` indicates an action of delegating rights to a proxy address.
+`Appoint` indicates the action of delegating rights to a proxy address.
 
 ===== Interface
 
@@ -22,6 +22,20 @@ interface Appoint {
     proxy_address: string
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of appointing rights to a proxy account, e.g. `appoint`.
+`profile.profile_id` *Required*:: Profile ID of the profile, e.g. `55544`.
+`profile.address` *Required*:: Address of the profile, e.g. `0x8a6ddc78e3aa24f4f31980623f489a274b305762`.
+`profile.handle` *Required*:: Handle/username of the profile, e.g. `ordi.csb`.
+`profile.image_uri` *Optional*:: Image URI of the profile.
+`profile.bio` *Optional*:: Biography of the profile.
+`profile.name` *Optional*:: Name of the profile.
+`profile.expiry` *Optional*:: Expiry date of the profile.
+`profile.key` *Optional*:: Key of the profile.
+`profile.value` *Optional*:: Value of the profile.
+`proxy_address` *Required*:: Proxy address to which the profile's rights are being delegated, e.g. `0xbbc2918c9003d264c25ecae45b44a846702c0e7c`.
 
 ===== Example
 

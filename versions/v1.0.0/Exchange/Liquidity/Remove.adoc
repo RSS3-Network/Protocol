@@ -1,6 +1,6 @@
 ==== Remove
 
-`Remove` indicates an action of removing token(s) from a liquidity pool.
+`Remove` indicates the action of removing token(s) from a liquidity pool.
 
 ===== Interface
 
@@ -18,6 +18,18 @@ interface Remove {
     }[];
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of the liquidity transaction, e.g. `remove`.
+`tokens` *Required*:: Array of tokens removed from the liquidity pool.
+`tokens.address` *Optional*:: Contract address of the removed token.
+If the token is a native token, this field is not required, e.g. `0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6`.
+`tokens.value` *Required*:: Amount of the removed token, e.g. `234654`.
+`tokens.name` *Optional*:: Name of the removed token, e.g. `(PoS) Wrapped BTC`.
+`tokens.symbol` *Optional*:: Symbol of the removed token, e.g. `WBTC`.
+`tokens.decimals` *Optional*:: Decimals of the removed token, e.g. `8`.
+`tokens.standard` *Optional*:: Standard of the removed token, e.g. `ERC-20`.
 
 ===== Example
 

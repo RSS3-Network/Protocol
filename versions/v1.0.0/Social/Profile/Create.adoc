@@ -1,6 +1,6 @@
 ===== Create
 
-`Create` indicates an action of creating new credentials.
+`Create` indicates the action of creating new credentials.
 
 ===== Interface
 
@@ -19,6 +19,19 @@ interface Create {
     value?: string
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of creating a new profile, e.g. `create`.
+`profile_id` *Required*:: ID of the new profile, e.g. `0x05272f`.
+`address` *Required*:: Address of the new profile, e.g. `0x0b5e6100243f793e480de6088de6ba70aa9f3872`.
+`handle` *Required*:: Handle/username of the newly created profile, e.g. `painfjj.lens`.
+`image_uri` *Optional*:: Image URI of the new profile.
+`bio` *Optional*:: Biography of the new profile.
+`name` *Optional*:: Name of the new profile.
+`expiry` *Optional*:: Expiry date of the new profile.
+`key` *Optional*:: Key of the new profile.
+`value` *Optional*:: Value of the new profile.
 
 ===== Example
 

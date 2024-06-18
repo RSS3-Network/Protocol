@@ -1,6 +1,6 @@
 ===== Update
 
-`Update` indicates an action of updating an existing credential.
+`Update` indicates the action of updating an existing credential.
 
 ===== Interface
 
@@ -19,6 +19,19 @@ interface Update {
     value?: string
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of updating a profile, e.g. `update`.
+`profile_id` *Optional*:: Updated ID of the profile, e.g. `0x01766e`.
+`address` *Optional*:: Updated address of the profile, e.g. `0x76d4ffda8c66864fa07f0a285b8e01e11b4bb7b3`.
+`handle` *Optional*:: Updated handle/username of the profile, e.g. `brinse.lens`.
+`image_uri` *Optional*:: Updated image URI of the profile, e.g. `https://media.orb.ac/thumbnailDimension768/https://statics-polygon-lens.s3.eu-west-1.amazonaws.com/profile/nft-0x6441543C6537FF430f2e1d6fE8FFFcfc05d52D04_polygon_0x5D666F215a85B87Cb042D59662A7ecd2C8Cc44e6_3097622.gif`.
+`bio` *Optional*:: Updated bio of the profile.
+`name` *Optional*:: Updated name of the profile, e.g. `Paperhandoooooor`.
+`expiry` *Optional*:: Updated expiry date of the profile.
+`key` *Optional*:: Updated key of the profile.
+`value` *Optional*:: Updated value of the profile.
 
 ===== Example
 

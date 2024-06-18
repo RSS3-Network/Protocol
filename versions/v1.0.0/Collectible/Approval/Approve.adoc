@@ -1,6 +1,6 @@
 ==== Approve
 
-`Approve` indicates an action of granting permissions to assets.
+`Approve` indicates the action of granting permissions to token.
 
 ===== Interface
 
@@ -18,6 +18,18 @@ interface Approve {
     parsed_image_url?: string;
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of granting permissions to collectible token, e.g. `approve`.
+`address` *Optional*:: Address of the approved collectible token, e.g. `0x7713Ccb297657ca84eD79bdDf5907e0196D34205`.
+`id` *Optional*:: ID of the approved collectible token, e.g. `6`.
+`name` *Optional*:: Name of the approved collectible token, e.g. `CCFC`.
+`standard` *Optional*:: Standard of the approved collectible token, e.g. `ERC-721`.
+`symbol` *Optional*:: Symbol of the approved collectible token, e.g. `CCFC`.
+`value` *Required*:: Amount of the approved collectible token, e.g. `1`.
+`uri` *Optional*:: URI of the approved collectible token, e.g. `ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6`.
+`parsed_image_url` *Optional*:: Parsed image URL of the approved collectible token, e.g. `https://ipfs.io/ipfs/QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR`
 
 ===== Example
 

@@ -1,6 +1,6 @@
 ==== Sell
 
-`Sell` indicates an action of selling in-game items.
+`Sell` indicates the action of selling in-game items.
 
 ===== Interface
 
@@ -26,6 +26,25 @@ interface Sell {
   };
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of selling metaverse token, e.g. `sell`.
+`address` *Optional*:: Address of the sold metaverse token, e.g. `0x306b1ea3ecdf94aB739F1910bbda052Ed4A9f949`.
+`id` *Optional*:: ID of the sold metaverse token, e.g. `159`.
+`name` *Optional*:: Name of the sold metaverse token, e.g. `Beanz`.
+`standard` *Optional*:: Standard of the sold metaverse token, e.g. `ERC-721`.
+`symbol` *Optional*:: Symbol of the sold metaverse token, e.g. `BEANZ`.
+`value` *Required*:: Amount of the sold metaverse token, e.g. `1`.
+`uri` *Optional*:: URI of the sold metaverse token, e.g. `ipfs://QmdYeDpkVZedk1mkGodjNmF35UNxwafhFLVvsHrWgJoz6A/beanz_metadata/159`.
+`parsed_image_url` *Optional*:: Parsed image URL of the sold metaverse token, e.g. `https://ipfs.io/ipfs/QmdYeDpkVZedk1mkGodjNmF35UNxwafhFLVvsHrWgJoz6A/beanz_metadata/159`.
+`cost` *Required*:: Cost of the sold metaverse token. Should include the following fields.
+`cost.name` *Optional*:: Name of the cost token, e.g. `Wrapped Ether`.
+`cost.symbol` *Optional*:: Symbol of the cost token, e.g. `WETH`.
+`cost.decimals` *Optional*:: Decimal places of the cost token, e.g. `18`.
+`cost.value` *Required*:: Amount of the cost token, e.g. `10500000000000000`.
+`cost.address` *Optional*:: Address of the cost token. If the token is a native token, this field is not required, e.g. `0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2`.
+`cost.standard` *Optional*:: Standard of the cost token, e.g. `ERC-20`.
 
 ===== Example
 

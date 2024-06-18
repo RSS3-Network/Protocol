@@ -1,6 +1,6 @@
 ==== Post
 
-`Post` indicates an action of publishing a new post.
+`Post` indicates the action of publishing a new post.
 
 ===== Interface
 
@@ -23,6 +23,22 @@ interface Post {
     timestamp?: number
 }
 ----
+
+===== Fields
+
+`handle` *Optional*:: Handle/username of the user who is posting, e.g. `mstrbstrd.lens`.
+`body` *Optional*:: Main content of the post, e.g. `Missed my lens frens :) happy to be back.`.
+`title` *Optional*:: Title of the post.
+`summary` *Optional*:: Summary of the post.
+`media` *Optional*:: Array of media objects that are attached to the post.
+`media.address` *Required*:: URL/address of the media object, e.g. `ipfs://QmVKY2PnqeeRgtbzPqPuXhJokkV2TmfVeu9kk81fE93UqB`.
+`media.mime_type` *Required*:: Mime type of the media object, e.g. `image/jpeg`.
+`tags` *Optional*:: Array of tags that the post belongs to, e.g. `["orbpaidcollect"]`.
+`author_url` *Optional*:: URL of the author.
+`profile_id` *Optional*:: Profile ID of the author, e.g. `0x019c14`.
+`publication_id` *Optional*:: Publication ID of the post, e.g. `0x80`.
+`content_uri` *Optional*:: Content URI of the post, e.g. `ar://JasdNwPn2LotuM1MjquEiHrEyzpe_a9ejnCtNr3KAIo`.
+`timestamp` *Optional*:: Timestamp of the post, e.g. `1699329250`.
 
 ===== Example
 

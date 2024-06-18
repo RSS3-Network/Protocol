@@ -1,6 +1,6 @@
 ==== Transfer
 
-`Transfer` indicates an action of transferring token(s) to others.
+`Transfer` indicates the action of transferring token(s) to others.
 
 ===== Interface
 
@@ -17,6 +17,17 @@ interface Transfer {
     standard?: string;
 }
 ----
+
+===== Fields
+
+`address` *Optional*:: Address of the transferred assets. If the token is a native token, this field is not required, e.g. `0x5F82a3967f279729A7C58D741E9824A6d653317E`.
+`id` *Optional*:: ID of the transferred assets, e.g. `7`.
+`name` *Optional*:: Name of the transferred assets, e.g. `xAI`.
+`standard` *Optional*:: Standard of the transferred assets, e.g. `ERC-20`.
+`symbol` *Optional*:: Symbol of the transferred assets, e.g. `xAI`.
+`value` *Required*:: Amount of the transferred assets, e.g. `4593020000012345678`.
+`uri` *Optional*:: URI of the transferred assets, e.g. `https://ipfs.io/ipfs/QmSx9QiwjTGKb5m22UscTg3vrbMwUfFsmxVzMH57hkPD5U/1032.png`.
+`decimals` *Optional*:: Decimals of the transferred assets, e.g. `8`.
 
 ===== Example
 

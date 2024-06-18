@@ -1,6 +1,6 @@
 ==== Mint
 
-`Mint` indicates an action of minting token(s).
+`Mint` indicates the action of minting token(s).
 
 ===== Interface
 
@@ -17,6 +17,17 @@ interface Mint {
   parsed_image_url?: string;
 }
 ----
+
+===== Fields
+
+`address` *Optional*:: Address of the minted metaverse token, e.g. `0xFC19B4536a4b9B9EEc1C362894f7dC505457538D`.
+`id` *Optional*:: ID of the minted metaverse token, e.g. `696`.
+`name` *Optional*:: Name of the minted metaverse token, e.g. `R3FUS3`.
+`standard` *Optional*:: Standard of the minted metaverse token, e.g. `ERC-721`.
+`symbol` *Optional*:: Symbol of the minted metaverse token, e.g. `R3FUS3`.
+`value` *Required*:: Amount of the minted metaverse token, e.g. `1`.
+`uri` *Optional*:: URI of the minted metaverse token, e.g. `https://api.r3fus3.com/api/v1/token/696`.
+`parsed_image_url` *Optional*:: Parsed image URL of the minted metaverse token, e.g. `https://api.r3fus3.com/api/v1/token/696/image`.
 
 ===== Example
 

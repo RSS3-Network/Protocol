@@ -1,6 +1,6 @@
 ==== Buy
 
-`Buy` indicates an action of buying token(s).
+`Buy` indicates the action of buying token(s).
 
 ===== Interface
 
@@ -26,6 +26,25 @@ interface Buy {
     };
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of buying collectible token, e.g. `buy`.
+`address` *Optional*:: Address of the bought collectible token, e.g. `0x74EE68a33f6c9f113e22B3B77418B75f85d07D22`.
+`id` *Optional*:: ID of the bought collectible token, e.g. `5`.
+`name` *Optional*:: Name of the bought collectible token, e.g. `Zerion Genesis Collection`.
+`standard` *Optional*:: Standard of the bought collectible token, e.g. `ERC-1155`.
+`symbol` *Optional*:: Symbol of the bought collectible token, e.g. `ZGC`.
+`value` *Required*:: Amount of the bought collectible token, e.g. `1`.
+`uri` *Optional*:: URI of the bought collectible token, e.g. `ipfs://QmXBUGFTXuAeBfK9oB9G1NAhGq7AwosWjHFRHMdahETeRK`.
+`parsed_image_url` *Optional*:: Parsed image URL of the bought collectible token.
+`cost` *Required*:: Cost of the bought collectible token. Should include the following fields.
+`cost.name` *Optional*:: Name of the cost token, e.g. `Ethereum`.
+`cost.symbol` *Optional*:: Symbol of the cost token, e.g. `ETH`.
+`cost.decimals` *Optional*:: Decimal places of the cost token, e.g. `18`.
+`cost.value` *Required*:: Amount of the cost token, e.g. `14525000000000000`.
+`cost.address` *Optional*:: Address of the cost token. If the token is a native token, this field is not required, e.g. `0x74EE68a33f6c9f113e22B3B77418B75f85d07D22`.
+`cost.standard` *Optional*:: Standard of the cost token, e.g. `ERC-20`.
 
 ===== Example
 

@@ -1,6 +1,6 @@
 ===== Revoke
 
-`Revoke` indicates an action of removing permissions to assets.
+`Revoke` indicates the action of removing permissions to assets.
 
 ===== Interface
 
@@ -18,6 +18,18 @@ interface Revoke {
     standard?: string;
 }
 ----
+
+===== Fields
+
+`action` *Required*:: Action of removing permissions to assets, e.g. `revoke`.
+`address` *Optional*:: Address of the revoked assets. If the token is a native token, this field is not required, e.g. `0x72e4f9F808C49A2a61dE9C5896298920Dc4EEEa9`.
+`id` *Optional*:: ID of the revoked assets, e.g. `6`.
+`name` *Optional*:: Name of the revoked assets, e.g. `HarryPotterObamaSonic10Inu`.
+`standard` *Optional*:: Standard of the revoked assets, e.g. `ERC-20`.
+`symbol` *Optional*:: Symbol of the revoked assets, e.g. `BITCOIN`.
+`value` *Required*:: Amount of the revoked assets, e.g. `100000000000`.
+`uri` *Optional*:: URI of the revoked assets, e.g. `https://assets.coingecko.com/coins/images/30323/thumb/hpos10i_logo_casino_night-dexview.png?1696529224`.
+`decimals` *Optional*:: Decimals of the revoked assets, e.g. `8`.
 
 ===== Example
 
