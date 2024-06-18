@@ -34,7 +34,7 @@ interface Revise {
 `media.address` *Required*:: Updated url/address of the media object.
 `media.mime_type` *Required*:: Updated mime type of the media object.
 `tags` *Optional*:: Updated array of tags that the post belongs to.
-`author_url` *Optional*:: Url of the author.
+`author_url` *Optional*:: URL of the author.
 `profile_id` *Optional*:: Profile ID of the author, e.g. `55544`.
 `publication_id` *Optional*:: Updated publication ID of the post, e.g. `7`.
 `content_uri` *Optional*:: Updated content URI of the post, e.g. `ipfs://bafkreic7t3twgima3cu54r7ftyuut6h74wpdwtlqoxcd66ox5qtkptokmy`.

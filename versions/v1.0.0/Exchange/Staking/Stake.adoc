@@ -34,7 +34,7 @@ If the token is a native token, this field is not required, e.g. `0xc98D64DA73a6
 `tokens.symbol` *Optional*:: Symbol of the staked token, e.g. `RSS3`.
 `tokens.decimals` *Optional*:: Decimals of the staked token, e.g. `18`.
 `tokens.standard` *Optional*:: Standard of the staked token, e.g. `ERC-20`.
-`period` *Optional*:: Period of the staking, if the staking has a time locker.
+`period` *Optional*:: Period of the staking (if the staking has a time locker).
 `period.start` *Required*:: Start time of the staking period, e.g. `2023-02-02T12:26:59Z`.
 `period.end` *Required*:: End time of the staking period, e.g. `2023-05-03T12:26:59Z`.
 

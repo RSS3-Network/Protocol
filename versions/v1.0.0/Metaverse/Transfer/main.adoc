@@ -27,7 +27,7 @@ interface Transfer {
 `symbol` *Optional*:: Symbol of the transferred metaverse token, e.g. `The Genesis RSS3 Avatar NFT`.
 `value` *Required*:: Amount/value of the transferred metaverse token, e.g. `1`.
 `uri` *Optional*:: URI of the transferred metaverse token, e.g. `ipfs://QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6`.
-`parsed_image_url` *Optional*:: The parsed image URL of the transferred metaverse token, e.g. `https://ipfs.io/ipfs/QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6.png`.
+`parsed_image_url` *Optional*:: Parsed image URL of the transferred metaverse token, e.g. `https://ipfs.io/ipfs/QmdHTECGDf8u4vNe4PLXSqBTBkYqxiCaYYfdJiUhtgiBKR/6.png`.
 
 ===== Example
 
