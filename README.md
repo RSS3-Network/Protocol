@@ -4,10 +4,10 @@ The RSS3 Protocol follows [the RSS3 Whitepaper](https://github.com/RSS3-Network/
 
 ## Motivation
 
-Open Information, indexed from multiple permissionless data sources (PDSs), is structured according to the structure outlined in this Protocol. 
+Open Information, indexed from multiple open data protocols (ODPs), is structured according to the structure outlined in this Protocol.
 Therefore, the Protocol acts as the specific data structure facilitating the dissenmination of Open Information on the RSS3 Network.
 
-Given that PDSs employ diverse data structures, within any given PDS, it's common to find products, services, and protocols, each utilizing distinct data structures to meet their unique requirements.
+Given that ODPs employ diverse data structures, within any given ODP, it's common to find products, services, and protocols, each utilizing distinct data structures to meet their unique requirements.
 This lack of standardization means limited interoperability, posing a challenge to the development of scalable applications using Open Information.
 
 ## Objective
